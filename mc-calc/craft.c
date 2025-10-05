@@ -1,0 +1,3 @@
+/*
+here i wanted to make a crafting recipe cheatsheet but im lazy
+*/

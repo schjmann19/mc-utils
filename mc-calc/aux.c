@@ -6,7 +6,7 @@
 
 void ver(void){
     printf("mc-calc version %.1f\n", VER);
-    printf("by Jimena Neumann\n\n");
+    printf("by Jimena Neumann (schjmann19@gmail.com)\n\n");
 }
 
 void enchanting_table(void){

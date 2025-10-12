@@ -44,11 +44,45 @@ int main(int argc, char *argv[])
     else if (strcmp(argv[1], "--anvil") == 0) {
         anvil();
     }
+    else if (strcmp(argv[1], "--total") == 0 || strcmp(argv[1], "-t") == 0) {
+        int stack_size = STACK;
+        int num_stacks = 0;
+        int remaining_items = 0;
+        int i = 2;
+
+        while (i < argc) {
+            if (strcmp(argv[i], "--stacks") == 0 || strcmp(argv[i], "-s") == 0) {
+                if (i + 1 >= argc) { printf("Error: --stacks requires a number\n"); return 1; }
+                num_stacks = atoi(argv[i + 1]);
+                i += 2;
+            }
+            else if (strcmp(argv[i], "--items") == 0 || strcmp(argv[i], "-i") == 0) {
+                if (i + 1 >= argc) { printf("Error: --items requires a number\n"); return 1; }
+                remaining_items = atoi(argv[i + 1]);
+                i += 2;
+            }
+            else if (strcmp(argv[i], "--stacks-small") == 0) {
+                stack_size = SMALL_STACK;
+                i++;
+            }
+            else {
+                printf("Unknown option: %s\n", argv[i]);
+                print_usage();
+                return 1;
+            }
+        }
+
+        if (num_stacks == 0 && remaining_items == 0) {
+            printf("Error: must specify at least --stacks or --items with values\n");
+            return 1;
+        }
+
+        int total = calculate_total(num_stacks, remaining_items, stack_size);
+        printf("%d.\n", total);
+    }
     else {
-        printf("Unknown option: %s\n", argv[1]);
-        print_usage();
+        printf("Unknown option: %s\n", argv[1]); print_usage();
         return 1;
     }
-
     return 0;
 }

@@ -22,13 +22,18 @@ void anvil(void){
     printf("for which you need 31 iron ingots\n");
 }
 
-void print_usage(void) {
+void print_usage(void){
     printf("Usage:\n");
-    printf("  mc-calc --goal <number> [--small]  Calculate stacks for given number\n");
-    printf("  mc-calc --enchant                  Show enchanting table requirements\n");
-    printf("  mc-calc --anvil                    Show anvil crafting requirements\n");
-    printf("  mc-calc -v, --version              Show version information\n");
-    printf("  mc-calc -h, --help                 Show this help message\n\n");
+    printf("  mc-calc --goal <number> [--small]    Calculate stacks for given number\n");
+    printf("  mc-calc --enchant                    Show enchanting table requirements\n");
+    printf("  mc-calc --anvil                      Show anvil crafting requirements\n");
+    printf("  mc-calc -v, --version                Show version information\n");
+    printf("  mc-calc -h, --help                   Show this help message\n");
+    printf("  mc-calc -t, --total                  Calculate total items from stacks and items\n");
+    printf("    Options for --total:\n");
+    printf("      -s, --stacks <number>            Number of full stacks\n");
+    printf("      -i, --items <number>             Additional individual items\n");
+    printf("      --stacks-small                   Use small stacks (16 items)\n\n");
 }
 
 void help(void){
@@ -37,4 +42,8 @@ void help(void){
     print_usage();
 }
 
-#define nl; printf("\n");
+#define nl printf("\n");
+
+int calculate_total(int num_stacks, int remaining_items, int stack_size) {
+    return (num_stacks * stack_size) + remaining_items;
+}

@@ -3,7 +3,8 @@
 #define STACK 64
 #define SMALL_STACK 16
 
-void calculate_stacks(int total_items, int stack_size) {
+void calculate_stacks
+    (int total_items, int stack_size) {
     int stacks = total_items / stack_size;
     int remainder = total_items % stack_size;
 
@@ -18,11 +19,17 @@ void calculate_stacks(int total_items, int stack_size) {
     nl;
 }
 
+int calculate_total
+    (int num_stacks, int remaining_items, int stack_size) {
+    return (num_stacks * stack_size) + remaining_items;
+}
+
+
 int main(int argc, char *argv[]) 
 {
     if (argc < 2) { help(); return 1; }
 
-    // Check for version and help flags first
+    // check for version and help flags first
     if (strcmp(argv[1], "-v") == 0 || strcmp(argv[1], "--version") == 0) { ver(); return 0; }
     
     if (strcmp(argv[1], "-h") == 0 || strcmp(argv[1], "--help") == 0) { help(); return 0; }
@@ -86,3 +93,4 @@ int main(int argc, char *argv[])
     }
     return 0;
 }
+

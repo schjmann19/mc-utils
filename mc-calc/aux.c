@@ -44,6 +44,3 @@ void help(void){
 
 #define nl printf("\n");
 
-int calculate_total(int num_stacks, int remaining_items, int stack_size) {
-    return (num_stacks * stack_size) + remaining_items;
-}

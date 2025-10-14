@@ -1,8 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
-#define VER 0.1
+#define VER 0.2
 
 void ver(void){
     printf("mc-calc version %.1f\n", VER);
@@ -34,7 +32,7 @@ void print_usage(void){
     printf("      -s, --stacks <number>            Number of full stacks\n");
     printf("      -i, --items <number>             Additional individual items\n");
     printf("      --stacks-small                   Use small stacks (16 items)\n\n");
-}
+}   /* i want to add --craft or --recipe but its just thousands of printf's, i'll get around to doing it though */
 
 void help(void){
     ver();

@@ -1,4 +1,7 @@
 #include "aux.c"
+#include <stdlib.h>
+#include <string.h>
+
 
 #define STACK 64
 #define SMALL_STACK 16
@@ -94,3 +97,4 @@ int main(int argc, char *argv[])
     return 0;
 }
 
+/* remember, never trust the government. */

@@ -2,6 +2,8 @@
 
 // WIP
 
+/* this was not my best idea */
+
 /*
     NOTE:
     THE ITEM'S AND BLOCK'S INTERNAL NAMES ARE USED, NOT THEIR DISPLAYNAMES.
@@ -13,7 +15,7 @@
     IF YOU SPOT A MISTAKE, KINDLY LET ME KNOW.
 
     NOTE 3:
-    at the time of this commit, the latest version is 1.21.9.
+    at the time of this commit, the latest version is 1.21.10.
 */
 
 
@@ -35,7 +37,16 @@ void namei(void){
     printf("s1, s2\n");
     printf("s3, s4\n");
     printf("gives ?\n");
-} */
+} 
+    
+void namedi(void){
+    printf("craftable in inventory; shapeless:\n");
+    printf("options: \n");
+    printf(" \n");
+    printf(" \n");
+} 
+
+*/
 
 // loop through argv, call the function of the same name
 // if no matches, `no such block or item; or it has no crafting recipe`
@@ -790,6 +801,8 @@ void clay(void){
 
 /* - utilities - */
 
+//// add --netherite for details
+
 // saddle
 
 // bucket
@@ -881,7 +894,8 @@ void clay(void){
 
 // sugar [x2 opts]
 
-/// [!!]dye
+/* dyes */
+#include "craft/dyes.c"
 
 /// [!!] seeds
 
@@ -910,6 +924,9 @@ void clay(void){
 
 // music_disc_5
 
+/////// and the ancient city disc
+
 ///// !trims
+#include "craft/trims.c"
 
 

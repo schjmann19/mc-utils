@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
         }
 
         if (num_stacks == 0 && remaining_items == 0) {
-            printf("Error: must specify at least --stacks or --items with values\n");
+            fprintf(stderr, "Error: must specify at least --stacks or --items with values\n");
             return 1;
         }
 
@@ -90,7 +90,7 @@ int main(int argc, char *argv[])
         printf("%d.\n", total);
     }
     else {
-        printf("Unknown option: %s\n", argv[1]); print_usage();
+        fprintf(stderr, "Unknown option: %s\n", argv[1]); print_usage();
         return 1;
     }
     return 0;

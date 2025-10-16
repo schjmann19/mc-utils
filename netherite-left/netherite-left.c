@@ -93,6 +93,7 @@ int main(int argc, char **argv)
         printf("have enough, add 1 to the counter\n");
     } else {
         printf("u need %d more netherite scraps.\n", scraps_needed);
+        printf("%d/%d.\n", total_scraps, BEACON_REQ_SCRAPS);
     }
     return 0;
 }

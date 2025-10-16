@@ -34,7 +34,7 @@ void light_gray_dye(void){
     printf("craftable in inventory; shapeless:\n");
     printf("options: \n");
     printf("white_tulip = 1 light_gray_dye\n");
-    printf("oxeye_daise = 1 light_gray_dye\n");
+    printf("oxeye_daisy = 1 light_gray_dye\n");
     printf("white_dye + white_dye + black_dye = 3 light_gray_dye");
     printf("gray_dye + white_dye = 2 light_gray_dye");
 } 
@@ -82,7 +82,7 @@ void yellow_dye(void){
     printf("options: \n");
     printf("dandelion = 1 yellow_dye\n");
     printf("sunflower = 2 yellow_dye\n");
-    printf("wildflowers =1 yellolw_dye\n");
+    printf("wildflowers = 1 yellow_dye\n");
 } 
 
 void lime_dye(void){

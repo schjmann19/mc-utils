@@ -501,7 +501,7 @@ void planks(void){
 
 // tuff_slab
 
-// resing_block
+// resin_block
 
 // resin_bricks
 
@@ -694,11 +694,11 @@ void planks(void){
 
 // iron_door
 
-// redsonte_torch
+// redstone_torch
 
 // redstone_dust
 
-// note_bock
+// note_block
 
 // [wooden_]pressure_plate
 

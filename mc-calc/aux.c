@@ -33,7 +33,7 @@ void print_usage(void){
     printf("      -i, --items <number>             Additional individual items\n");
     printf("      --stacks-small                   Use small stacks (16 items)\n\n");
 }   /* i want to add --craft or --recipe but its just thousands of printf's, i'll get around to doing it though */
-        // about a week later i'm still doing it
+        // about a week later (from starting to implement it) i'm still doing it
 
 void help(void){
     ver();

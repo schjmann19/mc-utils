@@ -9,7 +9,7 @@ since i cant have `-` in function names, the exceptions are:
 --trims-where -> trims_where()
 --colors -> ccolor()
 
-all the dyes and all the trims
+[all the dyes and all the trims]
 
 i was utterly disheartened due to having to make these exceptions; alas, hope you don't care.
 

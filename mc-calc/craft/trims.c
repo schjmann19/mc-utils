@@ -161,7 +161,7 @@ void silence_trim(void){
 
 void tide_trim(void){
     printf("can be obtained by killing elder guardians, with a chance of 0.20\n");
-    printf("note: looting does not affect the 0.20 chance");
+    printf("note: looting does not affect the 0.20 chance\n");
     printf("can be duped with 7 diamonds and 1 prismarine\n");
 }
 

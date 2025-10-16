@@ -33,10 +33,12 @@ void print_usage(void){
     printf("      -i, --items <number>             Additional individual items\n");
     printf("      --stacks-small                   Use small stacks (16 items)\n\n");
 }   /* i want to add --craft or --recipe but its just thousands of printf's, i'll get around to doing it though */
+        // about a week later i'm still doing it
 
 void help(void){
     ver();
     printf("Handy item quantity and crafting recipes calculator and cheatsheet\n\n");
+    printf("note: btw i blindly assume that your terminal is at least 115 characters wide, hope you don't mind");
     print_usage();
 }
 

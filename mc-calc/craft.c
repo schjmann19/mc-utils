@@ -1,4 +1,6 @@
-#include "aux.c"
+#include <stdio.h>
+#include <getopt.h>
+#include <string.h>
 
 // WIP
 
@@ -17,6 +19,10 @@
     NOTE 3:
     at the time of this commit, the latest version is 1.21.10.
 */
+
+void craft(int argc, char *argv[])
+{   // write the function
+}
 
 
 /* 
@@ -51,10 +57,42 @@ void namedi(void){
 // loop through argv, call the function of the same name
 // if no matches, `no such block or item; or it has no crafting recipe`
 
+
+/* helper functions */
 void nope(void){
     printf("no such block or item; or it doesn't have a crafting recipe.");
 }
 
+void ccolor(void){  // color helper; use this with '--colors' or sm like that idrk
+    printf( "the available colors in minecraft are:\n");
+    printf("white\n");
+    printf("light_gray\n");
+    printf("gray\n");
+    printf("black\n");
+    printf("brown\n");
+    printf("red\n");
+    printf("orange\n");
+    printf("yellow\n");
+    printf("lime [note: not called `light_green`]\n");
+    printf("green\n");
+    printf("cyan\n");
+    printf("light_blue\n");
+    printf("blue\n");
+    printf("purple\n");
+    printf("magenta\n");
+    printf("pink\n");
+}
+
+
+
+
+
+
+/*
+switch (opt) {
+    case name: name()
+}
+*/
 
 /* - building blocks - */
 
@@ -127,15 +165,20 @@ void clay(void){
     printf("gives 1 clay\n");
 }
 
-/* i'm tired okay? */
-
 // mossy_cobblestone
+void mossy_cobblestone(void){
+    printf("craftable in inventory; shapeless:\n");
+    printf("options: \n");
+    printf(" \n");
+    printf(" \n");
+} 
 
 // jack_o_lantern
 
 // glowstone
 
-// white_wool
+// [color_]wool
+//void wool
 
 // sandstone
 
@@ -178,7 +221,13 @@ void clay(void){
 // nether_brick_stairs
 
 /* pickle with planks, bamboo is a weirdo like me 
-   i'll see how i put these */
+   looks kinda out of place but i think it works */
+
+void planks(void){
+    printf("for <type> of plank, use the same type of log or wood block.\n");
+    printf("except for bamboo:");
+    printf("9x bamboo = 1 bamboo block; 2 bamboo block = 1 bamboo plank");
+}
 
 // quartz_block
 
@@ -190,11 +239,11 @@ void clay(void){
 
 // chiseled_quartz_block [note to self: jeo]
 
-// hay_block [note to self: called bale not block]
+// hay_block [note to self: called `bale` not `block`]
 
 // coal_block
 
-// (color)_terracota [note to self: called stained?]
+// (color)_terracota [note to self: called stained in displayname?]
 
 // packed_ice
 

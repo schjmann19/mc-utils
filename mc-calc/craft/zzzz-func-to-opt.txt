@@ -1,0 +1,16 @@
+all options (in --long form) that use a function;
+use the function of the exact same name; so:
+
+--trims -> trims()
+--craft -> craft()
+
+since i cant have `-` in function names, the exceptions are:
+
+--trims-where -> trims_where()
+--colors -> ccolor()
+
+all the dyes and all the trims
+
+i was utterly disheartened due to having to make these exceptions; alas, hope you don't care.
+
+note: this file is sleepy (zzzz) so it remains last in the folder. don't bother it.

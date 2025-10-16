@@ -1,13 +1,13 @@
 #include "aux.c"
+// not yet #include "craft.c"
 #include <stdlib.h>
 #include <string.h>
-
 
 #define STACK 64
 #define SMALL_STACK 16
 
-void calculate_stacks
-    (int total_items, int stack_size) {
+void calculate_stacks(
+    int total_items, int stack_size) {
     int stacks = total_items / stack_size;
     int remainder = total_items % stack_size;
 
@@ -22,11 +22,10 @@ void calculate_stacks
     nl;
 }
 
-int calculate_total
-    (int num_stacks, int remaining_items, int stack_size) {
+int calculate_total(
+    int num_stacks, int remaining_items, int stack_size) {
     return (num_stacks * stack_size) + remaining_items;
 }
-
 
 int main(int argc, char *argv[]) 
 {
@@ -38,10 +37,10 @@ int main(int argc, char *argv[])
     if (strcmp(argv[1], "-h") == 0 || strcmp(argv[1], "--help") == 0) { help(); return 0; }
 
     if (strcmp(argv[1], "--goal") == 0) {
-        if (argc < 3) { printf("Error: --goal requires a number\n"); return 1; }
+        if (argc < 3) { fprintf(stderr, "Error: --goal requires a number\n"); return 1; }
 
         int goal = atoi(argv[2]);
-        if (goal <= 0) { printf("Please provide a positive number\n"); return 1; }
+        if (goal <= 0) { fprintf(stderr, "Please provide a positive number\n"); return 1; }
         
         int stack_size = STACK;  // default to normal stack size
         if (argc > 3 && strcmp(argv[3], "--small") == 0) { stack_size = SMALL_STACK; } // or use small stacks
@@ -62,12 +61,12 @@ int main(int argc, char *argv[])
 
         while (i < argc) {
             if (strcmp(argv[i], "--stacks") == 0 || strcmp(argv[i], "-s") == 0) {
-                if (i + 1 >= argc) { printf("Error: --stacks requires a number\n"); return 1; }
+                if (i + 1 >= argc) { fprintf(stderr, "Error: --stacks requires a number\n"); return 1; }
                 num_stacks = atoi(argv[i + 1]);
                 i += 2;
             }
             else if (strcmp(argv[i], "--items") == 0 || strcmp(argv[i], "-i") == 0) {
-                if (i + 1 >= argc) { printf("Error: --items requires a number\n"); return 1; }
+                if (i + 1 >= argc) { fprintf(stderr, "Error: --items requires a number\n"); return 1; }
                 remaining_items = atoi(argv[i + 1]);
                 i += 2;
             }
@@ -76,7 +75,7 @@ int main(int argc, char *argv[])
                 i++;
             }
             else {
-                printf("Unknown option: %s\n", argv[i]);
+                fprintf(stderr, "Unknown option: %s\n", argv[i]);
                 print_usage();
                 return 1;
             }

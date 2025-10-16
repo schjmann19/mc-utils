@@ -7,34 +7,28 @@ as of mc 1.21.10
 note: jeo
 */
 
-// color helper func
-void ccolor(void){  // use this with '--colors' or sm like that idrk
-    printf( "the available colors in minecraft are:\n");
-    printf("white\n");
-    printf("light_gray\n");
-    printf("gray\n");
-    printf("black\n");
-    printf("brown\n");
-    printf("red\n");
-    printf("orange\n");
-    printf("yellow\n");
-    printf("lime [note: not called `light_green`]\n");
-    printf("green\n");
-    printf("cyan\n");
-    printf("light_blue\n");
-    printf("blue\n");
-    printf("purple\n");
-    printf("magenta\n");
-    printf("pink\n");
+void dyes(void){
+    printf("u can simply use --craft --color-dye");
+    printf("available options are:\n");
+    printf("white_dye\n");
+    printf("light_gray_dye\n");
+    printf("gray_dye\n");
+    printf("black_dye\n");
+    printf("brown_dye\n");
+    printf("red_dye\n");
+    printf("orange_dye\n");
+    printf("yellow_dye\n");
+    printf("lime_dye\n");
+    printf("cyan_dye\n");
 }
 
-void white_die(void){
+void white_dye(void){
     printf("craftable in inventory; shapeless\n");
     printf("ingredients: \n");
     printf("1x bone_meal or\n");
     printf("1x lily_of_the_valley\n");
     printf("gives 1 white_dye\n");
-} 
+}
 
 void light_gray_dye(void){
     printf("craftable in inventory; shapeless:\n");

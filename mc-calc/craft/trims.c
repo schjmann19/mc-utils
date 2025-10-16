@@ -5,11 +5,10 @@ as of mc 1.21.10
 note: jeo
 
 note: they shouldn't be under '--craft' but eh
-'obtain' more like but no for simplicity
+'obtain' more like but nah for simplicity
 
-*/
-
-/* template
+ 
+template
 
 void _trim(void){
     printf("can be found in \n");
@@ -21,6 +20,8 @@ void _trim(void){
 // bless the minecraft wiki
 
 #include <stdio.h>
+
+// trims() lists all trims, and the netherite upgrade; trims_where() lists all places in which trims can be obtained.
 
 void trims(void){
     printf("the true internal names are not used, instead, i will just use the unique names with `_trim` appended, so:\n");
@@ -43,9 +44,61 @@ void trims(void){
     printf("flow_trim\n");
     printf("bolt_trim\n");
     printf("netherite_upgrade\n");
+    printf("also:\n");
+    printf("you can '''filter''' by structure (or mob drop) in which they can be found. use --trims-where for that.\n");         
 }
 
-void netherite_trim(void){ printf("no such trim, do you mean the netherite upgrade?"); } /* i'm not petty. */
+void trims_where(void){
+    printf("u can simply use --trim-where --structure-name");
+    printf("Available options are:\n");
+    printf("bastion_remnants\n");
+    printf("pillager_outpost\n");
+    printf("woodland_mansion\n");
+    printf("jungle_temple\n");
+    printf("shipwreck\n");
+    printf("desert_pyramis\n");
+    printf("trail_ruins\n");
+    printf("ancient_city\n");
+    printf("nether_fortress\n"); 
+    printf("stronghold\n");
+    printf("end_city\n");
+    printf("trial_chamber\n");
+}
+
+
+/* - 'by place' - */
+
+/*
+void place(void){
+    printf("in place you can find:\n");
+    printf("\n");
+}
+*/
+
+void bastion_remnants(void){
+    printf("in bastion remnants you can find:\n");
+    printf("the netherite upgrade, and the snout trim.\n");
+}
+    
+void pillager_output(void){
+    printf("in pillager outposts you can find:\n");
+    printf("the sentry trim.\n");
+}
+
+void woodland_mansion(void){
+    printf("in woodland mansions you can find:\n");
+    printf("the vex trim.\n");
+}
+
+void jungle_temple(void){
+    printf("in place you can find:\n");
+    printf("\n");
+}
+// todo
+
+/* - trims (literals) - */
+
+void netherite_trim(void){ printf("no such trim, do you mean the netherite_upgrade?"); } /* i'm not petty. */
 void netherite_upgrade(void){
     printf("can be found in bastion remnants\n");
     printf("can be duped with 7 diamonds and 1 netherrack");
@@ -142,6 +195,8 @@ void bolt_trim(void){
     printf("can be duped with 7 diamonds and 1 block of copper (waxed or not)\n");
 }
 
+
+//void
 
 // i feel like a nice person; so i may add "filtering by where you obtain"
 // i.e. trail_ruins() to print all the ones that can be found in trail ruins, etc.

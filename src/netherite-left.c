@@ -45,7 +45,6 @@ int netherite_left(int argc, char **argv)
     int scraps = _;
     int ingots = _;
     int blocks = _;
-    int noninteractive = 0;
 
     static struct option longopts[] = {
         {"scraps",  required_argument, NULL, 's'},

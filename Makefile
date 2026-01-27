@@ -1,12 +1,18 @@
 CC ?= clang
-CFLAGS ?= -std=c11 -Wall -Wextra -O2
+CFLAGS ?= -std=c11 -Wall -Wextra -O3
+DEBUG ?= 0
+ifeq ($(DEBUG),0)
+	CFLAGS += -s
+endif
 LDFLAGS ?= -Wl,-Bstatic -L extractor/target/release -l mc_recipe_extractor -Wl,-Bdynamic -lbz2
 BIN_DIR := bin
 SRC := src/mc-utils.c
 
-.PHONY: all extractor noembed mc-util clean
+.PHONY: all extractor noembed mc-util clean debug
 
 all: mc-util
+debug: DEBUG=1
+debug: mc-util
 
 # build extractor with cargo
 extractor:

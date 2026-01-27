@@ -57,7 +57,7 @@ static int download_latest_jar(char *dest, size_t destlen) {
 
     char final_url[512];
     snprintf(final_url, sizeof(final_url), "https://launcher.mojang.com/v1/objects/%s/client.jar", sha1);
-    char curl_cmd[1024];
+    char curl_cmd[2048];
     snprintf(curl_cmd, sizeof(curl_cmd), "curl -L -o %s %s", dest, final_url);
     return system(curl_cmd);
 }

@@ -32,7 +32,6 @@ static void print_recipe(const char *item, const char *recipes_path) {
 
     char *p = buf;
     int found = 0;
-    size_t buflen = strlen(buf);
     while ((p = strstr(p, "\"result\"")) != NULL) {
         /* look for an "id": "..." inside the result object */
         char *idpos = strstr(p, "\"id\": \"");

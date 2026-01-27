@@ -4,7 +4,7 @@ DEBUG ?= 0
 ifeq ($(DEBUG),0)
 	CFLAGS += -s
 endif
-LDFLAGS ?= -Wl,-Bstatic -L extractor/target/release -l mc_recipe_extractor -Wl,-Bdynamic -lbz2
+LDFLAGS ?= -Wl,-Bstatic -L extractor/target/release -l mc_recipe_extractor -Wl,-Bdynamic -lbz2 -lssl -lcrypto -lm
 BIN_DIR := bin
 SRC := src/mc-utils.c
 

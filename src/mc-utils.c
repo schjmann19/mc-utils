@@ -7,6 +7,7 @@
 #include <unistd.h>
 
 extern int32_t extract_recipes(const char *jar_path, const char *output_path);
+extern int32_t download_minecraft_jar(const char *dest);
 
 #ifdef HAVE_EMBEDDED_EXTRACTOR
 extern unsigned char embedded_extractor[];
@@ -16,17 +17,6 @@ extern unsigned int embedded_extractor_len;
 #define STACK 64
 #define SMALL_STACK 16
 
-/* Run a command and capture the first line of stdout into out (null-terminated). */
-static int run_cmd_capture(const char *cmd, char *out, size_t outlen) {
-    FILE *p = popen(cmd, "r");
-    if (!p) return -1;
-    if (fgets(out, outlen, p) == NULL) { pclose(p); return -1; }
-    /* trim newline */
-    size_t L = strlen(out); if (L && out[L-1] == '\n') out[L-1] = '\0';
-    pclose(p);
-    return 0;
-}
-
 static int file_exists(const char *path) {
     FILE *f = fopen(path, "r");
     if (!f) return 0;
@@ -34,32 +24,10 @@ static int file_exists(const char *path) {
     return 1;
 }
 
-/* Download latest minecraft client jar into minecraftjar/<version>.jar, return path in dest (buffer) */
+/* Download latest minecraft client jar into minecraftjar/<version>.jar */
 static int download_latest_jar(char *dest, size_t destlen) {
-    char version[128] = {0};
-    if (run_cmd_capture("curl -s https://piston-meta.mojang.com/mc/game/version_manifest.json | jq -r '.latest.release'", version, sizeof(version)) != 0) return -1;
-
-    char version_url_cmd[512];
-    snprintf(version_url_cmd, sizeof(version_url_cmd), "curl -s https://piston-meta.mojang.com/mc/game/version_manifest.json | jq -r '.versions[] | select(.id==\"%s\") | .url'", version);
-    char version_url[512] = {0};
-    if (run_cmd_capture(version_url_cmd, version_url, sizeof(version_url)) != 0) return -1;
-
-    char sha_cmd[1024];
-    snprintf(sha_cmd, sizeof(sha_cmd), "curl -s %s | jq -r '.downloads.client.sha1'", version_url);
-    char sha1[128] = {0};
-    if (run_cmd_capture(sha_cmd, sha1, sizeof(sha1)) != 0) return -1;
-
-    /* destination path */
-    snprintf(dest, destlen, "minecraftjar/%s.jar", version);
-
-    /* create minecraftjar dir if needed */
-    system("mkdir -p minecraftjar");
-
-    char final_url[512];
-    snprintf(final_url, sizeof(final_url), "https://launcher.mojang.com/v1/objects/%s/client.jar", sha1);
-    char curl_cmd[2048];
-    snprintf(curl_cmd, sizeof(curl_cmd), "curl -L -o %s %s", dest, final_url);
-    return system(curl_cmd);
+    snprintf(dest, destlen, "minecraftjar/latest.jar");
+    return download_minecraft_jar(dest);
 }
 
 /* Run the extractor binary (if present) or fall back to `cargo run`.
@@ -69,10 +37,7 @@ static int run_extractor_with_jar(const char *jar_path) {
 }
 
 
-void calculate_stacks(
-    int total_items,
-    int stack_size)
-{
+void calculate_stacks(int total_items, int stack_size){
     int stacks = total_items / stack_size;
     int remainder = total_items % stack_size;
 
@@ -87,8 +52,7 @@ void calculate_stacks(
     printf("\n");
 }
 
-int calculate_total(
-    int num_stacks, int remaining_items, int stack_size) {
+int calculate_total(int num_stacks, int remaining_items, int stack_size) {
     return (num_stacks * stack_size) + remaining_items;
 }
 

@@ -10,3 +10,5 @@ crate-type = ["cdylib", "staticlib"]
 zip = "0.6"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+tokio = { version = "1", features = ["full"] }

@@ -1,4 +1,5 @@
 mod common;
+mod download;
 
 use std::ffi::CStr;
 use std::os::raw::c_char;
@@ -17,3 +18,4 @@ pub extern "C" fn extract_recipes(jar_path: *const c_char, output_path: *const c
 }
 
 pub use common::do_extract;
+pub use download::download_latest_jar;

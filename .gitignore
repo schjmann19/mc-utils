@@ -1,2 +1,4 @@
-mc-calc/craft/list.c
-settings.json
+.old
+.OBSOLETE
+extractor/target
+minecraftjar/*.jar

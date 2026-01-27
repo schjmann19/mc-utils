@@ -1,5 +1,6 @@
 #include "aux.c"
 // not yet #include "craft.c"
+#include "netherite-left.c"
 #include <stdlib.h>
 #include <string.h>
 
@@ -7,7 +8,9 @@
 #define SMALL_STACK 16
 
 void calculate_stacks(
-    int total_items, int stack_size) {
+    int total_items,
+    int stack_size)
+{
     int stacks = total_items / stack_size;
     int remainder = total_items % stack_size;
 
@@ -27,13 +30,18 @@ int calculate_total(
     return (num_stacks * stack_size) + remaining_items;
 }
 
-int main(int argc, char *argv[]) 
+int main(int argc, char *argv[])
 {
+    /* if addressed as "netherite-left"; shall become netherite-left, perpetuating its existance even after being #included. */
+    if (strcmp(argv[0], "netherite-left") == 0){
+        netherite_left(argc, argv);
+    }
+
     if (argc < 2) { help(); return 1; }
 
     // check for version and help flags first
     if (strcmp(argv[1], "-v") == 0 || strcmp(argv[1], "--version") == 0) { ver(); return 0; }
-    
+
     if (strcmp(argv[1], "-h") == 0 || strcmp(argv[1], "--help") == 0) { help(); return 0; }
 
     if (strcmp(argv[1], "--goal") == 0) {
@@ -41,10 +49,10 @@ int main(int argc, char *argv[])
 
         int goal = atoi(argv[2]);
         if (goal <= 0) { fprintf(stderr, "Please provide a positive number\n"); return 1; }
-        
+
         int stack_size = STACK;  // default to normal stack size
         if (argc > 3 && strcmp(argv[3], "--small") == 0) { stack_size = SMALL_STACK; } // or use small stacks
-        
+
         calculate_stacks(goal, stack_size);
     }
     else if (strcmp(argv[1], "--enchant") == 0) {

@@ -1,47 +1,50 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <getopt.h>
+#include "aux.c"
 
 #define BEACON_REQ_SCRAPS 5904
 
-#define VER 0.1
+#define NETHERITE_LEFT_VER 0.2
 
-static void bad_arg(void){
-    fprintf(stderr, "bad argument\n use -h or --help for help\n");
+#define _ -1
+
+static void NL_bad_arg(void){
+    fprintf(stderr, "bad argument use -h or --help for help\n");
     exit(1);
 }
 
-static void ver(void){
-    printf("netherite-left version %.1f\n", VER);
-    printf("by Jimena Neumann (schjmann19@gmail.com)\n");
+static void NL_ver(void){
+    printf("netherite-left version %.1f\n", NETHERITE_LEFT_VER);
+    puts("by Jimena Neumann (schjmann19@gmail.com)");
 }
 
-static void hint(void){
-    printf("this is also applicable to gold for the beacon, since it's the same amount as scraps.\n");
+static void NL_hint(void){
+    puts("this is also applicable to gold for the beacon, since it's the same amount as scraps.");
 }
 
-static void help(void){
-    ver();
-    printf("calculates how much more netherite you need to get a beacon.\n");
-    printf("input how many scraps, ingots, and blocks you have.\n");
-    printf("output is in scraps.\n\n");
-    hint();
-    printf("Usage:\n");
-    printf("  netherite-left [options]\n\n");
-    printf("Options:\n");
-    printf("  -s, --scraps <N>     Number of scraps (integer)\n");
-    printf("  -i, --ingots <N>     Number of ingots (integer)\n");
-    printf("  -b, --blocks <N>     Number of blocks (integer)\n");
-    printf("  -h, --help           Show this help and exit\n");
-    printf("  -v, --version        Show version and exit\n");
-    printf("  -g, --gold           Show hint for gold and exit\n");
+static void NL_help(void){
+    NL_ver();
+    puts("calculates how much more netherite you need to get a beacon.");
+    puts("input how many scraps, ingots, and blocks you have.");
+    puts("output is in scraps.");
+    NL_hint();
+    puts("Usage:");
+    puts("  netherite-left [options]");
+    puts("Options:");
+    puts("  -s, --scraps <N>     Number of scraps (integer)");
+    puts("  -i, --ingots <N>     Number of ingots (integer)");
+    puts("  -b, --blocks <N>     Number of blocks (integer)");
+    puts("  -h, --help           Show this help and exit");
+    puts("  -v, --version        Show version and exit");
+    puts("  -g, --gold           Show hint for gold and exit");
 }
 
-int main(int argc, char **argv)
-{     /* calculate in scraps, the smallest unit (gold is equivalent); accept options */
-    int scraps = -1;
-    int ingots = -1;
-    int blocks = -1;
+int netherite_left(int argc, char **argv)
+{   /* calculate in scraps, the smallest unit (gold is equivalent); accept options */
+    int scraps = _;
+    int ingots = _;
+    int blocks = _;
     int noninteractive = 0;
 
     static struct option longopts[] = {
@@ -56,15 +59,15 @@ int main(int argc, char **argv)
 
     /* short options: s,i,b require arguments; h,v,g are flags (no argument) */
     int opt;
-    while ((opt = getopt_long(argc, argv, "s:i:b:hvg", longopts, NULL)) != -1) {
+    while ((opt = getopt_long(argc, argv, "s:i:b:hvg", longopts, NULL)) != _) {
         switch (opt) {
             case 's': scraps = atoi(optarg); break;
             case 'i': ingots = atoi(optarg); break;
             case 'b': blocks = atoi(optarg); break;
-            case 'h': help(); return 0;
-            case 'v': ver(); return 0;
-            case 'g': hint(); return 0;
-            default: bad_arg(); return 1;
+            case 'h': NL_help(); return SUCCESS;
+            case 'v': NL_ver(); return SUCCESS;
+            case 'g': NL_hint(); return SUCCESS;
+            default: NL_bad_arg(); return NOT_SUCCESS;
         }
     }
 
@@ -90,10 +93,11 @@ int main(int argc, char **argv)
     int scraps_needed = BEACON_REQ_SCRAPS - total_scraps;
 
     if (scraps_needed <= 0) {
-        printf("have enough, add 1 to the counter\n");
+        //printf("have enough, add 1 to the counter\n");
+        puts("u have enough");
     } else {
         printf("u need %d more netherite scraps.\n", scraps_needed);
         printf("%d/%d.\n", total_scraps, BEACON_REQ_SCRAPS);
     }
-    return 0;
+    return SUCCESS;
 }

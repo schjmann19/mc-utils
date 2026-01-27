@@ -2,7 +2,7 @@
 
 #pragma once
 
-#define VER 0.3
+#define VER 0.4
 
 #define SUCCESS 0
 #define NOT_SUCCESS 1
@@ -38,9 +38,11 @@ void print_usage(void){
     puts("      -s, --stacks <number>            Number of full stacks");
     puts("      -i, --items <number>             Additional individual items");
     puts("      --stacks-small                   Use small stacks (16 items)\n");
-}   /* i want to add --craft or --recipe but its just thousands of puts's, i'll get around to doing it though */
-        // about a week later (from starting to implement it) i'm still doing it
-        // 4 months ago (now: Jan 25, 2026) still not implemented.
+    puts("  mc-calc --recipe <item>              Show crafting recipe for <item> (uses extractor/recipes.json)");
+    puts("    Options for --recipe:");
+    puts("      --recipes=<path>                  Use custom recipes JSON file (default: extractor/recipes.json)");
+    puts("      --netherite                       Use netherite in crafting recipes");
+}
 
 void help(void){
     ver();

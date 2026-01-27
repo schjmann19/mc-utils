@@ -1,11 +1,14 @@
 #include "aux.c"
-// not yet #include "craft.c"
 #include "netherite-left.c"
+#include "recipes.c"
+#include <stdio.h>
+#include <stddef.h>
 #include <stdlib.h>
 #include <string.h>
 
 #define STACK 64
 #define SMALL_STACK 16
+
 
 void calculate_stacks(
     int total_items,
@@ -22,7 +25,7 @@ void calculate_stacks(
     } else {
         printf("%d item%s", remainder, remainder > 1 ? "s" : "");
     }
-    nl;
+    printf("\n");
 }
 
 int calculate_total(
@@ -32,9 +35,37 @@ int calculate_total(
 
 int main(int argc, char *argv[])
 {
-    /* if addressed as "netherite-left"; shall become netherite-left, perpetuating its existance even after being #included. */
-    if (strcmp(argv[0], "netherite-left") == 0){
-        netherite_left(argc, argv);
+    /* Allow overriding recipes file: remove any --recipes=... or --recipes <path> args early */
+    const char *recipes_path = "extractor/recipes.json";
+    char **nargv = malloc(sizeof(char*) * (argc + 1));
+    if (!nargv) { fprintf(stderr, "Out of memory\n"); return 1; }
+    nargv[0] = argv[0];
+    int j = 1;
+    for (int i = 1; i < argc; ++i) {
+        if (strncmp(argv[i], "--recipes=", 10) == 0) {
+            recipes_path = argv[i] + 10;
+        } else if (strcmp(argv[i], "--recipes") == 0) {
+            if (i + 1 < argc) { recipes_path = argv[i+1]; ++i; }
+        } else {
+            nargv[j++] = argv[i];
+        }
+    }
+    int narrc = j;
+    nargv[narrc] = NULL; // ensure terminated
+    argv = nargv; argc = narrc;
+
+    /* Support calling the netherite tool via CLI flags rather than argv[0]. */
+    if (argc > 1 && (strcmp(argv[1], "-nl") == 0 || strcmp(argv[1], "--netherite") == 0 || strcmp(argv[1], "--netherite-left") == 0)) {
+        /* Build a new argv for the netherite_left() call that strips the wrapper flag */
+        int newargc = argc - 1;
+        char **newargv = malloc(sizeof(char*) * (newargc + 1));
+        if (!newargv) { fprintf(stderr, "Out of memory\n"); return 1; }
+        newargv[0] = "netherite-left";
+        for (int i = 2; i < argc; ++i) newargv[i - 1] = argv[i];
+        newargv[newargc] = NULL;
+        int ret = netherite_left(newargc, newargv);
+        free(newargv);
+        return ret;
     }
 
     if (argc < 2) { help(); return 1; }
@@ -60,6 +91,10 @@ int main(int argc, char *argv[])
     }
     else if (strcmp(argv[1], "--anvil") == 0) {
         anvil();
+    }
+    else if (strcmp(argv[1], "--recipe") == 0) {
+        if (argc < 3) { fprintf(stderr, "Error: --recipe requires an item name\n"); return 1; }
+        print_recipe(argv[2], recipes_path);
     }
     else if (strcmp(argv[1], "--total") == 0 || strcmp(argv[1], "-t") == 0) {
         int stack_size = STACK;

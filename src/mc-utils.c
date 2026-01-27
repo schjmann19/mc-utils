@@ -1,13 +1,72 @@
+#define _POSIX_C_SOURCE 200809L
 #include "aux.c"
 #include "netherite-left.c"
 #include "recipes.c"
 #include <stdio.h>
-#include <stddef.h>
-#include <stdlib.h>
-#include <string.h>
+#include <stdint.h>
+#include <unistd.h>
+
+extern int32_t extract_recipes(const char *jar_path, const char *output_path);
+
+#ifdef HAVE_EMBEDDED_EXTRACTOR
+extern unsigned char embedded_extractor[];
+extern unsigned int embedded_extractor_len;
+#endif
 
 #define STACK 64
 #define SMALL_STACK 16
+
+/* Run a command and capture the first line of stdout into out (null-terminated). */
+static int run_cmd_capture(const char *cmd, char *out, size_t outlen) {
+    FILE *p = popen(cmd, "r");
+    if (!p) return -1;
+    if (fgets(out, outlen, p) == NULL) { pclose(p); return -1; }
+    /* trim newline */
+    size_t L = strlen(out); if (L && out[L-1] == '\n') out[L-1] = '\0';
+    pclose(p);
+    return 0;
+}
+
+static int file_exists(const char *path) {
+    FILE *f = fopen(path, "r");
+    if (!f) return 0;
+    fclose(f);
+    return 1;
+}
+
+/* Download latest minecraft client jar into minecraftjar/<version>.jar, return path in dest (buffer) */
+static int download_latest_jar(char *dest, size_t destlen) {
+    char version[128] = {0};
+    if (run_cmd_capture("curl -s https://piston-meta.mojang.com/mc/game/version_manifest.json | jq -r '.latest.release'", version, sizeof(version)) != 0) return -1;
+
+    char version_url_cmd[512];
+    snprintf(version_url_cmd, sizeof(version_url_cmd), "curl -s https://piston-meta.mojang.com/mc/game/version_manifest.json | jq -r '.versions[] | select(.id==\"%s\") | .url'", version);
+    char version_url[512] = {0};
+    if (run_cmd_capture(version_url_cmd, version_url, sizeof(version_url)) != 0) return -1;
+
+    char sha_cmd[1024];
+    snprintf(sha_cmd, sizeof(sha_cmd), "curl -s %s | jq -r '.downloads.client.sha1'", version_url);
+    char sha1[128] = {0};
+    if (run_cmd_capture(sha_cmd, sha1, sizeof(sha1)) != 0) return -1;
+
+    /* destination path */
+    snprintf(dest, destlen, "minecraftjar/%s.jar", version);
+
+    /* create minecraftjar dir if needed */
+    system("mkdir -p minecraftjar");
+
+    char final_url[512];
+    snprintf(final_url, sizeof(final_url), "https://launcher.mojang.com/v1/objects/%s/client.jar", sha1);
+    char curl_cmd[1024];
+    snprintf(curl_cmd, sizeof(curl_cmd), "curl -L -o %s %s", dest, final_url);
+    return system(curl_cmd);
+}
+
+/* Run the extractor binary (if present) or fall back to `cargo run`.
+   jar_path is the path to the downloaded/provided jar. Returns 0 on success. */
+static int run_extractor_with_jar(const char *jar_path) {
+    return extract_recipes(jar_path, "extractor/recipes.json");
+}
 
 
 void calculate_stacks(
@@ -35,7 +94,7 @@ int calculate_total(
 
 int main(int argc, char *argv[])
 {
-    /* Allow overriding recipes file: remove any --recipes=... or --recipes <path> args early */
+    /* allow overriding recipes file: remove any --recipes=... or --recipes <path> args early */
     const char *recipes_path = "extractor/recipes.json";
     char **nargv = malloc(sizeof(char*) * (argc + 1));
     if (!nargv) { fprintf(stderr, "Out of memory\n"); return 1; }
@@ -54,7 +113,7 @@ int main(int argc, char *argv[])
     nargv[narrc] = NULL; // ensure terminated
     argv = nargv; argc = narrc;
 
-    /* Support calling the netherite tool via CLI flags rather than argv[0]. */
+    /* support calling the netherite tool with cli flags rather than argv[0]. */
     if (argc > 1 && (strcmp(argv[1], "-nl") == 0 || strcmp(argv[1], "--netherite") == 0 || strcmp(argv[1], "--netherite-left") == 0)) {
         /* Build a new argv for the netherite_left() call that strips the wrapper flag */
         int newargc = argc - 1;
@@ -95,6 +154,37 @@ int main(int argc, char *argv[])
     else if (strcmp(argv[1], "--recipe") == 0) {
         if (argc < 3) { fprintf(stderr, "Error: --recipe requires an item name\n"); return 1; }
         print_recipe(argv[2], recipes_path);
+    }
+    else if (strcmp(argv[1], "--generate-recipes") == 0 || strcmp(argv[1], "generate_recipes") == 0) {
+        /* options: --jar <path> or --download */
+        const char *jar_path = NULL;
+        int download = 0;
+        for (int i = 2; i < argc; ++i) {
+            if (strcmp(argv[i], "--jar") == 0 && i + 1 < argc) { jar_path = argv[i+1]; i++; }
+            else if (strncmp(argv[i], "--jar=", 6) == 0) { jar_path = argv[i] + 6; }
+            else if (strcmp(argv[i], "--download") == 0) { download = 1; }
+            else if (strcmp(argv[i], "--help") == 0) { printf("Usage: --generate-recipes [--jar path] [--download]\n"); return 0; }
+        }
+
+        char jarbuf[512];
+        if (download) {
+            printf("Downloading latest Minecraft jar...\n");
+            if (download_latest_jar(jarbuf, sizeof(jarbuf)) != 0) { fprintf(stderr, "Failed to download jar\n"); return 1; }
+            jar_path = jarbuf;
+        }
+        if (!jar_path) {
+            /* default to existing path */
+            jar_path = "minecraftjar/1.21.11.jar";
+        }
+
+        if (!file_exists(jar_path)) {
+            fprintf(stderr, "JAR not found: %s\n", jar_path);
+            return 1;
+        }
+        printf("Running extractor on %s...\n", jar_path);
+        int r = run_extractor_with_jar(jar_path);
+        if (r != 0) { fprintf(stderr, "Extractor failed (code %d)\n", r); return 1; }
+        printf("Extractor finished.\n");
     }
     else if (strcmp(argv[1], "--total") == 0 || strcmp(argv[1], "-t") == 0) {
         int stack_size = STACK;

@@ -1,66 +1,27 @@
-use std::fs::File;
-use std::io::{Read, Write};
-use zip::ZipArchive;
-use serde_json::{Value, json};
-
-fn is_real_recipe(json: &Value) -> bool {
-    match json.get("type").and_then(|v| v.as_str()) {
-        Some(t) if t.starts_with("minecraft:crafting_") => true,
-        Some("minecraft:smelting")
-        | Some("minecraft:blasting")
-        | Some("minecraft:smoking")
-        | Some("minecraft:campfire_cooking")
-        | Some("minecraft:stonecutting")
-        | Some("minecraft:smithing")
-        | Some("minecraft:smithing_transform")
-        | Some("minecraft:smithing_trim") => true,
-        _ => false,
-    }
-}
+mod common;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let jar_path = "../minecraftjar/1.21.11.jar";
-    let output_path = "recipes.json";
+    let jar_path = std::env::args().nth(1).unwrap_or_else(|| {
+        let mut path = std::env::current_dir().unwrap();
+        path.push("minecraftjar");
+        path.push("1.21.11.jar");
+        path.to_string_lossy().to_string()
+    });
+    let output_path = std::env::args().nth(2).unwrap_or_else(|| {
+        let mut path = std::env::current_dir().unwrap();
+        path.push("extractor");
+        path.push("recipes.json");
+        path.to_string_lossy().to_string()
+    });
 
-    let file = File::open(jar_path)?;
-    let mut zip = ZipArchive::new(file)?;
-
-    let mut recipes = Vec::new();
-
-    for i in 0..zip.len() {
-        let mut entry = zip.by_index(i)?;
-        let name = entry.name().to_string();
-
-        // Only JSON under data/, skip advancements entirely
-        if !name.starts_with("data/") || !name.ends_with(".json") {
-            continue;
+    match common::do_extract(&jar_path, &output_path) {
+        Ok(n) => {
+            println!("Extracted {} recipes", n);
+            Ok(())
         }
-        if name.starts_with("data/minecraft/advancement/") {
-            continue;
+        Err(e) => {
+            eprintln!("extractor error: {}", e);
+            Err(e)
         }
-
-        let mut contents = String::new();
-        entry.read_to_string(&mut contents)?;
-
-        let json_val: Value = match serde_json::from_str(&contents) {
-            Ok(v) => v,
-            Err(_) => continue, // ignore non-JSON or malformed
-        };
-
-        if !is_real_recipe(&json_val) {
-            continue;
-        }
-
-        recipes.push(json!({
-            "path": name,
-            "type": json_val.get("type"),
-            "data": json_val
-        }));
     }
-
-    let mut out = File::create(output_path)?;
-    out.write_all(serde_json::to_string_pretty(&recipes)?.as_bytes())?;
-
-    println!("Extracted {} recipes", recipes.len());
-    Ok(())
 }

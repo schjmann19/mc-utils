@@ -38,6 +38,7 @@ static void print_usage(void){
     puts("      -s, --stacks <number>            Number of full stacks");
     puts("      -i, --items <number>             Additional individual items");
     puts("      --stacks-small                   Use small stacks (16 items)\n");
+    puts("  mc-util --download                   Download latest Minecraft JAR to ./minecraftjar/");
     puts("  mc-util --recipe <item>              Show crafting recipe for <item> (uses extractor/recipes.json)");
     puts("    Options for --recipe:");
     puts("      --recipes=<path>                  Use custom recipes JSON file (default: extractor/recipes.json)");

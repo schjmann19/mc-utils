@@ -115,6 +115,15 @@ int main(int argc, char *argv[])
     else if (strcmp(argv[1], "--anvil") == 0) {
         anvil();
     }
+    else if (strcmp(argv[1], "--download") == 0) {
+        printf("Downloading latest Minecraft jar...\n");
+        char dest[] = "minecraftjar/latest.jar";
+        if (download_minecraft_jar(dest) != 0) {
+            fprintf(stderr, "Failed to download jar\n");
+            return 1;
+        }
+        printf("Downloaded to %s\n", dest);
+    }
     else if (strcmp(argv[1], "--recipe") == 0) {
         if (argc < 3) { fprintf(stderr, "Error: --recipe requires an item name\n"); return 1; }
         print_recipe(argv[2], recipes_path);

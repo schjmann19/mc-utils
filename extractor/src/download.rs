@@ -6,31 +6,37 @@ use serde_json::Value;
 
 pub fn download_latest_jar(dest: &str) -> Result<(), Box<dyn std::error::Error>> {
     // Fetch latest version info from launcher metadata
-    let version_url = "https://launcher.mojang.com/v1/metadata.json";
+    let version_url = "https://piston-meta.mojang.com/mc/game/version_manifest.json";
     let client = reqwest::blocking::Client::new();
 
     let resp = client.get(version_url).send()?;
-    let metadata: Value = resp.json()?;
+    let manifest: Value = resp.json()?;
 
-    let version = metadata
-        .get("latest")
-        .and_then(|l: &Value| l.get("release"))
-        .and_then(|v: &Value| v.as_str())
-        .ok_or("Failed to extract version from metadata")?;
+    // Get the first version (latest including snapshots)
+    let versions = manifest
+        .get("versions")
+        .and_then(|v: &Value| v.as_array())
+        .ok_or("Failed to get versions array")?;
 
-    // Fetch version details to get SHA1 and download URL
-    let version_detail_url = format!("https://launcher.mojang.com/v1/objects/{}/version.json", version);
-    let resp = client.get(&version_detail_url).send()?;
+    let version_info = versions
+        .first()
+        .ok_or("No versions available")?;
+
+    let version_json_url = version_info
+        .get("url")
+        .and_then(|u| u.as_str())
+        .ok_or("Failed to find version JSON URL")?;
+
+    // Fetch version details to get client JAR download URL
+    let resp = client.get(version_json_url).send()?;
     let version_json: Value = resp.json()?;
 
-    let sha1 = version_json
+    let jar_url = version_json
         .get("downloads")
         .and_then(|d: &Value| d.get("client"))
-        .and_then(|c: &Value| c.get("sha1"))
-        .and_then(|s: &Value| s.as_str())
-        .ok_or("Failed to extract SHA1")?;
-
-    let jar_url = format!("https://launcher.mojang.com/v1/objects/{}/client.jar", sha1);
+        .and_then(|c: &Value| c.get("url"))
+        .and_then(|u: &Value| u.as_str())
+        .ok_or("Failed to extract JAR URL")?;
 
     // Create directory if needed
     let dest_path = Path::new(dest);
@@ -39,7 +45,7 @@ pub fn download_latest_jar(dest: &str) -> Result<(), Box<dyn std::error::Error>>
     }
 
     // Download the JAR
-    let resp = client.get(&jar_url).send()?;
+    let resp = client.get(jar_url).send()?;
     let bytes = resp.bytes()?;
     fs::write(dest, bytes)?;
 

@@ -11,7 +11,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:acacia_boat"
       },
       "type": "minecraft:crafting_shaped"
@@ -27,7 +26,6 @@
         "minecraft:acacia_planks"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:acacia_button"
       },
       "type": "minecraft:crafting_shapeless"
@@ -44,7 +42,6 @@
         "minecraft:acacia_boat"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:acacia_chest_boat"
       },
       "type": "minecraft:crafting_shapeless"
@@ -107,7 +104,6 @@
         "#W#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:acacia_fence_gate"
       },
       "type": "minecraft:crafting_shaped"
@@ -164,7 +160,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:acacia_pressure_plate"
       },
       "type": "minecraft:crafting_shaped"
@@ -328,7 +323,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:amethyst_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -406,7 +400,6 @@
     "data": {
       "ingredient": "minecraft:andesite",
       "result": {
-        "count": 1,
         "id": "minecraft:andesite_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -437,7 +430,6 @@
     "data": {
       "ingredient": "minecraft:andesite",
       "result": {
-        "count": 1,
         "id": "minecraft:andesite_wall"
       },
       "type": "minecraft:stonecutting"
@@ -458,21 +450,12 @@
         "iii"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:anvil"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/anvil.json",
     "type": "minecraft:crafting_shaped"
-  },
-  {
-    "data": {
-      "category": "misc",
-      "type": "minecraft:crafting_special_armordye"
-    },
-    "path": "data/minecraft/recipe/armor_dye.json",
-    "type": "minecraft:crafting_special_armordye"
   },
   {
     "data": {
@@ -487,7 +470,6 @@
         "/_/"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:armor_stand"
       },
       "type": "minecraft:crafting_shaped"
@@ -574,7 +556,6 @@
         "minecraft:bamboo"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:bamboo_block"
       },
       "type": "minecraft:crafting_shapeless"
@@ -590,7 +571,6 @@
         "minecraft:bamboo_planks"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:bamboo_button"
       },
       "type": "minecraft:crafting_shapeless"
@@ -607,7 +587,6 @@
         "minecraft:bamboo_raft"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:bamboo_chest_raft"
       },
       "type": "minecraft:crafting_shapeless"
@@ -670,7 +649,6 @@
         "#W#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:bamboo_fence_gate"
       },
       "type": "minecraft:crafting_shaped"
@@ -711,7 +689,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:bamboo_mosaic"
       },
       "type": "minecraft:crafting_shaped"
@@ -784,7 +761,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:bamboo_pressure_plate"
       },
       "type": "minecraft:crafting_shaped"
@@ -804,7 +780,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:bamboo_raft"
       },
       "type": "minecraft:crafting_shaped"
@@ -918,14 +893,6 @@
   {
     "data": {
       "category": "misc",
-      "type": "minecraft:crafting_special_bannerduplicate"
-    },
-    "path": "data/minecraft/recipe/banner_duplicate.json",
-    "type": "minecraft:crafting_special_bannerduplicate"
-  },
-  {
-    "data": {
-      "category": "misc",
       "key": {
         "P": "#minecraft:planks",
         "S": "#minecraft:wooden_slabs"
@@ -936,7 +903,6 @@
         "PSP"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:barrel"
       },
       "type": "minecraft:crafting_shaped"
@@ -958,7 +924,6 @@
         "OOO"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:beacon"
       },
       "type": "minecraft:crafting_shaped"
@@ -979,7 +944,6 @@
         "PPP"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:beehive"
       },
       "type": "minecraft:crafting_shaped"
@@ -1000,7 +964,6 @@
         "minecraft:beetroot"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:beetroot_soup"
       },
       "type": "minecraft:crafting_shapeless"
@@ -1020,7 +983,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:birch_boat"
       },
       "type": "minecraft:crafting_shaped"
@@ -1036,7 +998,6 @@
         "minecraft:birch_planks"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:birch_button"
       },
       "type": "minecraft:crafting_shapeless"
@@ -1053,7 +1014,6 @@
         "minecraft:birch_boat"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:birch_chest_boat"
       },
       "type": "minecraft:crafting_shapeless"
@@ -1116,7 +1076,6 @@
         "#W#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:birch_fence_gate"
       },
       "type": "minecraft:crafting_shaped"
@@ -1173,7 +1132,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:birch_pressure_plate"
       },
       "type": "minecraft:crafting_shaped"
@@ -1318,13 +1276,23 @@
         " | "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:black_banner"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/black_banner.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "banner": "minecraft:black_banner",
+      "result": {
+        "id": "minecraft:black_banner"
+      },
+      "type": "minecraft:crafting_special_bannerduplicate"
+    },
+    "path": "data/minecraft/recipe/black_banner_duplicate.json",
+    "type": "minecraft:crafting_special_bannerduplicate"
   },
   {
     "data": {
@@ -1339,7 +1307,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:black_bed"
       },
       "type": "minecraft:crafting_shaped"
@@ -1370,7 +1337,6 @@
         "minecraft:black_dye"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:black_candle"
       },
       "type": "minecraft:crafting_shapeless"
@@ -1429,7 +1395,6 @@
         "minecraft:ink_sac"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:black_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -1445,7 +1410,6 @@
         "minecraft:wither_rose"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:black_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -1481,7 +1445,6 @@
         "G#G"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:black_harness"
       },
       "type": "minecraft:crafting_shaped"
@@ -1643,7 +1606,6 @@
     "data": {
       "ingredient": "minecraft:blackstone",
       "result": {
-        "count": 1,
         "id": "minecraft:blackstone_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -1674,7 +1636,6 @@
     "data": {
       "ingredient": "minecraft:blackstone",
       "result": {
-        "count": 1,
         "id": "minecraft:blackstone_wall"
       },
       "type": "minecraft:stonecutting"
@@ -1696,7 +1657,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:blast_furnace"
       },
       "type": "minecraft:crafting_shaped"
@@ -1733,13 +1693,23 @@
         " | "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:blue_banner"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/blue_banner.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "banner": "minecraft:blue_banner",
+      "result": {
+        "id": "minecraft:blue_banner"
+      },
+      "type": "minecraft:crafting_special_bannerduplicate"
+    },
+    "path": "data/minecraft/recipe/blue_banner_duplicate.json",
+    "type": "minecraft:crafting_special_bannerduplicate"
   },
   {
     "data": {
@@ -1754,7 +1724,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:blue_bed"
       },
       "type": "minecraft:crafting_shaped"
@@ -1785,7 +1754,6 @@
         "minecraft:blue_dye"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:blue_candle"
       },
       "type": "minecraft:crafting_shapeless"
@@ -1844,7 +1812,6 @@
         "minecraft:lapis_lazuli"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:blue_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -1860,7 +1827,6 @@
         "minecraft:cornflower"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:blue_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -1896,7 +1862,6 @@
         "G#G"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:blue_harness"
       },
       "type": "minecraft:crafting_shaped"
@@ -1919,7 +1884,6 @@
         "minecraft:packed_ice"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:blue_ice"
       },
       "type": "minecraft:crafting_shapeless"
@@ -2075,7 +2039,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:bone_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -2125,7 +2088,6 @@
         "minecraft:leather"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:book"
       },
       "type": "minecraft:crafting_shapeless"
@@ -2135,7 +2097,11 @@
   },
   {
     "data": {
-      "category": "misc",
+      "material": "#minecraft:book_cloning_target",
+      "result": {
+        "id": "minecraft:written_book"
+      },
+      "source": "minecraft:written_book",
       "type": "minecraft:crafting_special_bookcloning"
     },
     "path": "data/minecraft/recipe/book_cloning.json",
@@ -2154,7 +2120,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:bookshelf"
       },
       "type": "minecraft:crafting_shaped"
@@ -2170,7 +2135,6 @@
         "minecraft:vine"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:bordure_indented_banner_pattern"
       },
       "type": "minecraft:crafting_shapeless"
@@ -2191,7 +2155,6 @@
         " #X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:bow"
       },
       "type": "minecraft:crafting_shaped"
@@ -2228,7 +2191,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:bread"
       },
       "type": "minecraft:crafting_shaped"
@@ -2248,7 +2210,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:brewing_stand"
       },
       "type": "minecraft:crafting_shaped"
@@ -2324,7 +2285,6 @@
     "data": {
       "ingredient": "minecraft:bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:brick_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -2355,7 +2315,6 @@
     "data": {
       "ingredient": "minecraft:bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:brick_wall"
       },
       "type": "minecraft:stonecutting"
@@ -2374,7 +2333,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:bricks"
       },
       "type": "minecraft:crafting_shaped"
@@ -2396,13 +2354,23 @@
         " | "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:brown_banner"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/brown_banner.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "banner": "minecraft:brown_banner",
+      "result": {
+        "id": "minecraft:brown_banner"
+      },
+      "type": "minecraft:crafting_special_bannerduplicate"
+    },
+    "path": "data/minecraft/recipe/brown_banner_duplicate.json",
+    "type": "minecraft:crafting_special_bannerduplicate"
   },
   {
     "data": {
@@ -2417,7 +2385,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:brown_bed"
       },
       "type": "minecraft:crafting_shaped"
@@ -2448,7 +2415,6 @@
         "minecraft:brown_dye"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:brown_candle"
       },
       "type": "minecraft:crafting_shapeless"
@@ -2507,7 +2473,6 @@
         "minecraft:cocoa_beans"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:brown_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -2543,7 +2508,6 @@
         "G#G"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:brown_harness"
       },
       "type": "minecraft:crafting_shaped"
@@ -2665,7 +2629,6 @@
         "I"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:brush"
       },
       "type": "minecraft:crafting_shaped"
@@ -2684,7 +2647,6 @@
         " # "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:bucket"
       },
       "type": "minecraft:crafting_shaped"
@@ -2704,7 +2666,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:bundle"
       },
       "type": "minecraft:crafting_shaped"
@@ -2727,7 +2688,6 @@
         "CCC"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:cake"
       },
       "type": "minecraft:crafting_shaped"
@@ -2747,7 +2707,6 @@
         "#X#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:calibrated_sculk_sensor"
       },
       "type": "minecraft:crafting_shaped"
@@ -2769,7 +2728,6 @@
         "LLL"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:campfire"
       },
       "type": "minecraft:crafting_shaped"
@@ -2789,7 +2747,6 @@
         "H"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:candle"
       },
       "type": "minecraft:crafting_shaped"
@@ -2809,7 +2766,6 @@
         " X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:carrot_on_a_stick"
       },
       "type": "minecraft:crafting_shaped"
@@ -2830,7 +2786,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:cartography_table"
       },
       "type": "minecraft:crafting_shaped"
@@ -2850,7 +2805,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:cauldron"
       },
       "type": "minecraft:crafting_shaped"
@@ -2884,7 +2838,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:cherry_boat"
       },
       "type": "minecraft:crafting_shaped"
@@ -2900,7 +2853,6 @@
         "minecraft:cherry_planks"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:cherry_button"
       },
       "type": "minecraft:crafting_shapeless"
@@ -2917,7 +2869,6 @@
         "minecraft:cherry_boat"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:cherry_chest_boat"
       },
       "type": "minecraft:crafting_shapeless"
@@ -2980,7 +2931,6 @@
         "#W#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:cherry_fence_gate"
       },
       "type": "minecraft:crafting_shaped"
@@ -3037,7 +2987,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:cherry_pressure_plate"
       },
       "type": "minecraft:crafting_shaped"
@@ -3180,7 +3129,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:chest"
       },
       "type": "minecraft:crafting_shaped"
@@ -3196,7 +3144,6 @@
         "minecraft:minecart"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:chest_minecart"
       },
       "type": "minecraft:crafting_shapeless"
@@ -3217,7 +3164,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_bookshelf"
       },
       "type": "minecraft:crafting_shaped"
@@ -3236,7 +3182,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_copper"
       },
       "type": "minecraft:crafting_shaped"
@@ -3260,7 +3205,6 @@
     "data": {
       "ingredient": "minecraft:cut_copper",
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_copper"
       },
       "type": "minecraft:stonecutting"
@@ -3279,7 +3223,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_deepslate"
       },
       "type": "minecraft:crafting_shaped"
@@ -3291,7 +3234,6 @@
     "data": {
       "ingredient": "minecraft:cobbled_deepslate",
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_deepslate"
       },
       "type": "minecraft:stonecutting"
@@ -3310,7 +3252,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_nether_bricks"
       },
       "type": "minecraft:crafting_shaped"
@@ -3322,7 +3263,6 @@
     "data": {
       "ingredient": "minecraft:nether_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_nether_bricks"
       },
       "type": "minecraft:stonecutting"
@@ -3341,7 +3281,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_polished_blackstone"
       },
       "type": "minecraft:crafting_shaped"
@@ -3353,7 +3292,6 @@
     "data": {
       "ingredient": "minecraft:blackstone",
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_polished_blackstone"
       },
       "type": "minecraft:stonecutting"
@@ -3365,7 +3303,6 @@
     "data": {
       "ingredient": "minecraft:polished_blackstone",
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_polished_blackstone"
       },
       "type": "minecraft:stonecutting"
@@ -3384,7 +3321,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_quartz_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -3396,7 +3332,6 @@
     "data": {
       "ingredient": "minecraft:quartz_block",
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_quartz_block"
       },
       "type": "minecraft:stonecutting"
@@ -3415,7 +3350,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_red_sandstone"
       },
       "type": "minecraft:crafting_shaped"
@@ -3427,7 +3361,6 @@
     "data": {
       "ingredient": "minecraft:red_sandstone",
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_red_sandstone"
       },
       "type": "minecraft:stonecutting"
@@ -3446,7 +3379,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_resin_bricks"
       },
       "type": "minecraft:crafting_shaped"
@@ -3458,7 +3390,6 @@
     "data": {
       "ingredient": "minecraft:resin_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_resin_bricks"
       },
       "type": "minecraft:stonecutting"
@@ -3477,7 +3408,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_sandstone"
       },
       "type": "minecraft:crafting_shaped"
@@ -3489,7 +3419,6 @@
     "data": {
       "ingredient": "minecraft:sandstone",
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_sandstone"
       },
       "type": "minecraft:stonecutting"
@@ -3508,7 +3437,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_stone_bricks"
       },
       "type": "minecraft:crafting_shaped"
@@ -3520,7 +3448,6 @@
     "data": {
       "ingredient": "minecraft:stone_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_stone_bricks"
       },
       "type": "minecraft:stonecutting"
@@ -3532,12 +3459,11 @@
     "data": {
       "ingredient": "minecraft:stone",
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_stone_bricks"
       },
       "type": "minecraft:stonecutting"
     },
-    "path": "data/minecraft/recipe/chiseled_stone_bricks_stone_from_stonecutting.json",
+    "path": "data/minecraft/recipe/chiseled_stone_bricks_from_stone_stonecutting.json",
     "type": "minecraft:stonecutting"
   },
   {
@@ -3551,7 +3477,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_tuff"
       },
       "type": "minecraft:crafting_shaped"
@@ -3570,7 +3495,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_tuff_bricks"
       },
       "type": "minecraft:crafting_shaped"
@@ -3582,7 +3506,6 @@
     "data": {
       "ingredient": "minecraft:polished_tuff",
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_tuff_bricks"
       },
       "type": "minecraft:stonecutting"
@@ -3594,7 +3517,6 @@
     "data": {
       "ingredient": "minecraft:tuff_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_tuff_bricks"
       },
       "type": "minecraft:stonecutting"
@@ -3606,7 +3528,6 @@
     "data": {
       "ingredient": "minecraft:tuff",
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_tuff_bricks"
       },
       "type": "minecraft:stonecutting"
@@ -3618,7 +3539,6 @@
     "data": {
       "ingredient": "minecraft:tuff",
       "result": {
-        "count": 1,
         "id": "minecraft:chiseled_tuff"
       },
       "type": "minecraft:stonecutting"
@@ -3637,7 +3557,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:clay"
       },
       "type": "minecraft:crafting_shaped"
@@ -3658,7 +3577,6 @@
         " # "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:clock"
       },
       "type": "minecraft:crafting_shaped"
@@ -3693,7 +3611,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:coal_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -3868,7 +3785,6 @@
     "data": {
       "ingredient": "minecraft:cobbled_deepslate",
       "result": {
-        "count": 1,
         "id": "minecraft:cobbled_deepslate_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -3899,7 +3815,6 @@
     "data": {
       "ingredient": "minecraft:cobbled_deepslate",
       "result": {
-        "count": 1,
         "id": "minecraft:cobbled_deepslate_wall"
       },
       "type": "minecraft:stonecutting"
@@ -3961,7 +3876,6 @@
     "data": {
       "ingredient": "minecraft:cobblestone",
       "result": {
-        "count": 1,
         "id": "minecraft:cobblestone_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -3992,7 +3906,6 @@
     "data": {
       "ingredient": "minecraft:cobblestone",
       "result": {
-        "count": 1,
         "id": "minecraft:cobblestone_wall"
       },
       "type": "minecraft:stonecutting"
@@ -4014,7 +3927,6 @@
         "III"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:comparator"
       },
       "type": "minecraft:crafting_shaped"
@@ -4035,7 +3947,6 @@
         " # "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:compass"
       },
       "type": "minecraft:crafting_shaped"
@@ -4055,7 +3966,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:composter"
       },
       "type": "minecraft:crafting_shaped"
@@ -4076,7 +3986,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:conduit"
       },
       "type": "minecraft:crafting_shaped"
@@ -4410,7 +4319,6 @@
         " #"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:copper_axe"
       },
       "type": "minecraft:crafting_shaped"
@@ -4449,7 +4357,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:copper_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -4468,7 +4375,6 @@
         "X X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:copper_boots"
       },
       "type": "minecraft:crafting_shaped"
@@ -4512,7 +4418,6 @@
         "N"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:copper_chain"
       },
       "type": "minecraft:crafting_shaped"
@@ -4533,7 +4438,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:copper_chest"
       },
       "type": "minecraft:crafting_shaped"
@@ -4553,7 +4457,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:copper_chestplate"
       },
       "type": "minecraft:crafting_shaped"
@@ -4625,7 +4528,6 @@
         "X X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:copper_helmet"
       },
       "type": "minecraft:crafting_shaped"
@@ -4646,7 +4548,6 @@
         " #"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:copper_hoe"
       },
       "type": "minecraft:crafting_shaped"
@@ -4728,7 +4629,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:copper_ingot"
       },
       "type": "minecraft:crafting_shaped"
@@ -4810,7 +4710,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:copper_lantern"
       },
       "type": "minecraft:crafting_shaped"
@@ -4830,7 +4729,6 @@
         "X X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:copper_leggings"
       },
       "type": "minecraft:crafting_shaped"
@@ -4920,7 +4818,6 @@
         " # "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:copper_pickaxe"
       },
       "type": "minecraft:crafting_shaped"
@@ -4941,7 +4838,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:copper_shovel"
       },
       "type": "minecraft:crafting_shaped"
@@ -4962,7 +4858,6 @@
         "#  "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:copper_spear"
       },
       "type": "minecraft:crafting_shaped"
@@ -4983,7 +4878,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:copper_sword"
       },
       "type": "minecraft:crafting_shaped"
@@ -5027,7 +4921,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:copper_trapdoor"
       },
       "type": "minecraft:crafting_shaped"
@@ -5120,7 +5013,6 @@
         "RDR"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:crafter"
       },
       "type": "minecraft:crafting_shaped"
@@ -5139,7 +5031,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:crafting_table"
       },
       "show_notification": false,
@@ -5161,7 +5052,6 @@
         " L "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:creaking_heart"
       },
       "type": "minecraft:crafting_shaped"
@@ -5177,7 +5067,6 @@
         "minecraft:creeper_head"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:creeper_banner_pattern"
       },
       "type": "minecraft:crafting_shapeless"
@@ -5193,7 +5082,6 @@
         "minecraft:crimson_planks"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:crimson_button"
       },
       "type": "minecraft:crafting_shapeless"
@@ -5256,7 +5144,6 @@
         "#W#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:crimson_fence_gate"
       },
       "type": "minecraft:crafting_shaped"
@@ -5333,7 +5220,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:crimson_pressure_plate"
       },
       "type": "minecraft:crafting_shaped"
@@ -5459,7 +5345,6 @@
         " # "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:crossbow"
       },
       "type": "minecraft:crafting_shaped"
@@ -5576,7 +5461,6 @@
     "data": {
       "ingredient": "minecraft:cut_copper",
       "result": {
-        "count": 1,
         "id": "minecraft:cut_copper_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -5607,7 +5491,6 @@
     "data": {
       "ingredient": "minecraft:red_sandstone",
       "result": {
-        "count": 1,
         "id": "minecraft:cut_red_sandstone"
       },
       "type": "minecraft:stonecutting"
@@ -5680,7 +5563,6 @@
     "data": {
       "ingredient": "minecraft:sandstone",
       "result": {
-        "count": 1,
         "id": "minecraft:cut_sandstone"
       },
       "type": "minecraft:stonecutting"
@@ -5744,13 +5626,23 @@
         " | "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:cyan_banner"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/cyan_banner.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "banner": "minecraft:cyan_banner",
+      "result": {
+        "id": "minecraft:cyan_banner"
+      },
+      "type": "minecraft:crafting_special_bannerduplicate"
+    },
+    "path": "data/minecraft/recipe/cyan_banner_duplicate.json",
+    "type": "minecraft:crafting_special_bannerduplicate"
   },
   {
     "data": {
@@ -5765,7 +5657,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:cyan_bed"
       },
       "type": "minecraft:crafting_shaped"
@@ -5796,7 +5687,6 @@
         "minecraft:cyan_dye"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:cyan_candle"
       },
       "type": "minecraft:crafting_shapeless"
@@ -5908,7 +5798,6 @@
         "G#G"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:cyan_harness"
       },
       "type": "minecraft:crafting_shaped"
@@ -6028,7 +5917,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:dark_oak_boat"
       },
       "type": "minecraft:crafting_shaped"
@@ -6044,7 +5932,6 @@
         "minecraft:dark_oak_planks"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:dark_oak_button"
       },
       "type": "minecraft:crafting_shapeless"
@@ -6061,7 +5948,6 @@
         "minecraft:dark_oak_boat"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:dark_oak_chest_boat"
       },
       "type": "minecraft:crafting_shapeless"
@@ -6124,7 +6010,6 @@
         "#W#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:dark_oak_fence_gate"
       },
       "type": "minecraft:crafting_shaped"
@@ -6181,7 +6066,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:dark_oak_pressure_plate"
       },
       "type": "minecraft:crafting_shaped"
@@ -6325,7 +6209,6 @@
         "SSS"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:dark_prismarine"
       },
       "type": "minecraft:crafting_shaped"
@@ -6387,7 +6270,6 @@
     "data": {
       "ingredient": "minecraft:dark_prismarine",
       "result": {
-        "count": 1,
         "id": "minecraft:dark_prismarine_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -6409,7 +6291,6 @@
         "WWW"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:daylight_detector"
       },
       "type": "minecraft:crafting_shaped"
@@ -6419,7 +6300,13 @@
   },
   {
     "data": {
-      "category": "misc",
+      "back": "#minecraft:decorated_pot_ingredients",
+      "front": "#minecraft:decorated_pot_ingredients",
+      "left": "#minecraft:decorated_pot_ingredients",
+      "result": {
+        "id": "minecraft:decorated_pot"
+      },
+      "right": "#minecraft:decorated_pot_ingredients",
       "type": "minecraft:crafting_decorated_pot"
     },
     "path": "data/minecraft/recipe/decorated_pot.json",
@@ -6437,7 +6324,6 @@
         " # "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:decorated_pot"
       },
       "type": "minecraft:crafting_shaped"
@@ -6537,7 +6423,6 @@
     "data": {
       "ingredient": "minecraft:cobbled_deepslate",
       "result": {
-        "count": 1,
         "id": "minecraft:deepslate_brick_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -6549,7 +6434,6 @@
     "data": {
       "ingredient": "minecraft:deepslate_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:deepslate_brick_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -6561,7 +6445,6 @@
     "data": {
       "ingredient": "minecraft:polished_deepslate",
       "result": {
-        "count": 1,
         "id": "minecraft:deepslate_brick_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -6592,7 +6475,6 @@
     "data": {
       "ingredient": "minecraft:cobbled_deepslate",
       "result": {
-        "count": 1,
         "id": "minecraft:deepslate_brick_wall"
       },
       "type": "minecraft:stonecutting"
@@ -6604,7 +6486,6 @@
     "data": {
       "ingredient": "minecraft:deepslate_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:deepslate_brick_wall"
       },
       "type": "minecraft:stonecutting"
@@ -6616,7 +6497,6 @@
     "data": {
       "ingredient": "minecraft:polished_deepslate",
       "result": {
-        "count": 1,
         "id": "minecraft:deepslate_brick_wall"
       },
       "type": "minecraft:stonecutting"
@@ -6628,11 +6508,11 @@
     "data": {
       "category": "building",
       "key": {
-        "S": "minecraft:polished_deepslate"
+        "#": "minecraft:polished_deepslate"
       },
       "pattern": [
-        "SS",
-        "SS"
+        "##",
+        "##"
       ],
       "result": {
         "count": 4,
@@ -6647,7 +6527,6 @@
     "data": {
       "ingredient": "minecraft:cobbled_deepslate",
       "result": {
-        "count": 1,
         "id": "minecraft:deepslate_bricks"
       },
       "type": "minecraft:stonecutting"
@@ -6659,7 +6538,6 @@
     "data": {
       "ingredient": "minecraft:polished_deepslate",
       "result": {
-        "count": 1,
         "id": "minecraft:deepslate_bricks"
       },
       "type": "minecraft:stonecutting"
@@ -6757,7 +6635,6 @@
     "data": {
       "ingredient": "minecraft:cobbled_deepslate",
       "result": {
-        "count": 1,
         "id": "minecraft:deepslate_tile_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -6769,7 +6646,6 @@
     "data": {
       "ingredient": "minecraft:deepslate_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:deepslate_tile_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -6781,7 +6657,6 @@
     "data": {
       "ingredient": "minecraft:deepslate_tiles",
       "result": {
-        "count": 1,
         "id": "minecraft:deepslate_tile_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -6793,7 +6668,6 @@
     "data": {
       "ingredient": "minecraft:polished_deepslate",
       "result": {
-        "count": 1,
         "id": "minecraft:deepslate_tile_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -6824,7 +6698,6 @@
     "data": {
       "ingredient": "minecraft:cobbled_deepslate",
       "result": {
-        "count": 1,
         "id": "minecraft:deepslate_tile_wall"
       },
       "type": "minecraft:stonecutting"
@@ -6836,7 +6709,6 @@
     "data": {
       "ingredient": "minecraft:deepslate_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:deepslate_tile_wall"
       },
       "type": "minecraft:stonecutting"
@@ -6848,7 +6720,6 @@
     "data": {
       "ingredient": "minecraft:deepslate_tiles",
       "result": {
-        "count": 1,
         "id": "minecraft:deepslate_tile_wall"
       },
       "type": "minecraft:stonecutting"
@@ -6860,7 +6731,6 @@
     "data": {
       "ingredient": "minecraft:polished_deepslate",
       "result": {
-        "count": 1,
         "id": "minecraft:deepslate_tile_wall"
       },
       "type": "minecraft:stonecutting"
@@ -6872,11 +6742,11 @@
     "data": {
       "category": "building",
       "key": {
-        "S": "minecraft:deepslate_bricks"
+        "#": "minecraft:deepslate_bricks"
       },
       "pattern": [
-        "SS",
-        "SS"
+        "##",
+        "##"
       ],
       "result": {
         "count": 4,
@@ -6891,7 +6761,6 @@
     "data": {
       "ingredient": "minecraft:cobbled_deepslate",
       "result": {
-        "count": 1,
         "id": "minecraft:deepslate_tiles"
       },
       "type": "minecraft:stonecutting"
@@ -6903,7 +6772,6 @@
     "data": {
       "ingredient": "minecraft:deepslate_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:deepslate_tiles"
       },
       "type": "minecraft:stonecutting"
@@ -6915,7 +6783,6 @@
     "data": {
       "ingredient": "minecraft:polished_deepslate",
       "result": {
-        "count": 1,
         "id": "minecraft:deepslate_tiles"
       },
       "type": "minecraft:stonecutting"
@@ -6973,7 +6840,6 @@
         " #"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:diamond_axe"
       },
       "type": "minecraft:crafting_shaped"
@@ -6993,7 +6859,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:diamond_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -7012,7 +6877,6 @@
         "X X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:diamond_boots"
       },
       "type": "minecraft:crafting_shaped"
@@ -7032,7 +6896,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:diamond_chestplate"
       },
       "type": "minecraft:crafting_shaped"
@@ -7111,7 +6974,6 @@
         "X X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:diamond_helmet"
       },
       "type": "minecraft:crafting_shaped"
@@ -7132,7 +6994,6 @@
         " #"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:diamond_hoe"
       },
       "type": "minecraft:crafting_shaped"
@@ -7152,7 +7013,6 @@
         "X X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:diamond_leggings"
       },
       "type": "minecraft:crafting_shaped"
@@ -7173,7 +7033,6 @@
         " # "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:diamond_pickaxe"
       },
       "type": "minecraft:crafting_shaped"
@@ -7194,7 +7053,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:diamond_shovel"
       },
       "type": "minecraft:crafting_shaped"
@@ -7215,7 +7073,6 @@
         "#  "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:diamond_spear"
       },
       "type": "minecraft:crafting_shaped"
@@ -7236,7 +7093,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:diamond_sword"
       },
       "type": "minecraft:crafting_shaped"
@@ -7318,7 +7174,6 @@
     "data": {
       "ingredient": "minecraft:diorite",
       "result": {
-        "count": 1,
         "id": "minecraft:diorite_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -7349,7 +7204,6 @@
     "data": {
       "ingredient": "minecraft:diorite",
       "result": {
-        "count": 1,
         "id": "minecraft:diorite_wall"
       },
       "type": "minecraft:stonecutting"
@@ -7371,7 +7225,6 @@
         "#R#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:dispenser"
       },
       "type": "minecraft:crafting_shaped"
@@ -7393,7 +7246,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:dried_ghast"
       },
       "type": "minecraft:crafting_shaped"
@@ -7428,7 +7280,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:dried_kelp_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -7489,7 +7340,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:dripstone_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -7510,7 +7360,6 @@
         "#R#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:dropper"
       },
       "type": "minecraft:crafting_shaped"
@@ -7576,7 +7425,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:black_bed"
       },
       "type": "minecraft:crafting_shapeless"
@@ -7609,7 +7457,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:black_carpet"
       },
       "type": "minecraft:crafting_shapeless"
@@ -7642,7 +7489,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:black_harness"
       },
       "type": "minecraft:crafting_shapeless"
@@ -7675,7 +7521,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:black_wool"
       },
       "type": "minecraft:crafting_shapeless"
@@ -7708,7 +7553,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:blue_bed"
       },
       "type": "minecraft:crafting_shapeless"
@@ -7741,7 +7585,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:blue_carpet"
       },
       "type": "minecraft:crafting_shapeless"
@@ -7774,7 +7617,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:blue_harness"
       },
       "type": "minecraft:crafting_shapeless"
@@ -7807,7 +7649,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:blue_wool"
       },
       "type": "minecraft:crafting_shapeless"
@@ -7840,7 +7681,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:brown_bed"
       },
       "type": "minecraft:crafting_shapeless"
@@ -7873,7 +7713,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:brown_carpet"
       },
       "type": "minecraft:crafting_shapeless"
@@ -7906,7 +7745,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:brown_harness"
       },
       "type": "minecraft:crafting_shapeless"
@@ -7939,7 +7777,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:brown_wool"
       },
       "type": "minecraft:crafting_shapeless"
@@ -7972,7 +7809,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:cyan_bed"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8005,7 +7841,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:cyan_carpet"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8038,7 +7873,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:cyan_harness"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8071,7 +7905,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:cyan_wool"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8104,7 +7937,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:gray_bed"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8137,7 +7969,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:gray_carpet"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8170,7 +8001,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:gray_harness"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8203,7 +8033,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:gray_wool"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8236,7 +8065,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:green_bed"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8269,7 +8097,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:green_carpet"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8302,7 +8129,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:green_harness"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8335,7 +8161,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:green_wool"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8368,7 +8193,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_blue_bed"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8401,7 +8225,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_blue_carpet"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8434,7 +8257,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_blue_harness"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8467,7 +8289,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_blue_wool"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8500,7 +8321,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_gray_bed"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8533,7 +8353,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_gray_carpet"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8566,7 +8385,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_gray_harness"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8599,7 +8417,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_gray_wool"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8632,7 +8449,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:lime_bed"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8665,7 +8481,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:lime_carpet"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8698,7 +8513,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:lime_harness"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8731,7 +8545,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:lime_wool"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8764,7 +8577,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:magenta_bed"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8797,7 +8609,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:magenta_carpet"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8830,7 +8641,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:magenta_harness"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8863,7 +8673,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:magenta_wool"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8896,7 +8705,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:orange_bed"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8929,7 +8737,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:orange_carpet"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8962,7 +8769,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:orange_harness"
       },
       "type": "minecraft:crafting_shapeless"
@@ -8995,7 +8801,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:orange_wool"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9028,7 +8833,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:pink_bed"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9061,7 +8865,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:pink_carpet"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9094,7 +8897,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:pink_harness"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9127,7 +8929,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:pink_wool"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9160,7 +8961,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:purple_bed"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9193,7 +8993,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:purple_carpet"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9226,7 +9025,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:purple_harness"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9259,7 +9057,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:purple_wool"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9292,7 +9089,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:red_bed"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9325,7 +9121,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:red_carpet"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9358,7 +9153,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:red_harness"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9391,7 +9185,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:red_wool"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9424,7 +9217,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:white_bed"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9457,7 +9249,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:white_carpet"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9490,7 +9281,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:white_harness"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9523,7 +9313,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:white_wool"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9556,7 +9345,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:yellow_bed"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9589,7 +9377,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:yellow_carpet"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9622,7 +9409,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:yellow_harness"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9655,7 +9441,6 @@
         ]
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:yellow_wool"
       },
       "type": "minecraft:crafting_shapeless"
@@ -9690,7 +9475,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:emerald_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -9772,7 +9556,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:enchanting_table"
       },
       "type": "minecraft:crafting_shaped"
@@ -9794,7 +9577,6 @@
         "GTG"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:end_crystal"
       },
       "type": "minecraft:crafting_shaped"
@@ -9849,7 +9631,7 @@
       },
       "type": "minecraft:stonecutting"
     },
-    "path": "data/minecraft/recipe/end_stone_brick_slab_from_end_stone_brick_stonecutting.json",
+    "path": "data/minecraft/recipe/end_stone_brick_slab_from_end_stone_bricks_stonecutting.json",
     "type": "minecraft:stonecutting"
   },
   {
@@ -9888,19 +9670,17 @@
     "data": {
       "ingredient": "minecraft:end_stone_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:end_stone_brick_stairs"
       },
       "type": "minecraft:stonecutting"
     },
-    "path": "data/minecraft/recipe/end_stone_brick_stairs_from_end_stone_brick_stonecutting.json",
+    "path": "data/minecraft/recipe/end_stone_brick_stairs_from_end_stone_bricks_stonecutting.json",
     "type": "minecraft:stonecutting"
   },
   {
     "data": {
       "ingredient": "minecraft:end_stone",
       "result": {
-        "count": 1,
         "id": "minecraft:end_stone_brick_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -9931,19 +9711,17 @@
     "data": {
       "ingredient": "minecraft:end_stone_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:end_stone_brick_wall"
       },
       "type": "minecraft:stonecutting"
     },
-    "path": "data/minecraft/recipe/end_stone_brick_wall_from_end_stone_brick_stonecutting.json",
+    "path": "data/minecraft/recipe/end_stone_brick_wall_from_end_stone_bricks_stonecutting.json",
     "type": "minecraft:stonecutting"
   },
   {
     "data": {
       "ingredient": "minecraft:end_stone",
       "result": {
-        "count": 1,
         "id": "minecraft:end_stone_brick_wall"
       },
       "type": "minecraft:stonecutting"
@@ -9974,7 +9752,6 @@
     "data": {
       "ingredient": "minecraft:end_stone",
       "result": {
-        "count": 1,
         "id": "minecraft:end_stone_bricks"
       },
       "type": "minecraft:stonecutting"
@@ -9995,7 +9772,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:ender_chest"
       },
       "type": "minecraft:crafting_shaped"
@@ -10011,7 +9787,6 @@
         "minecraft:blaze_powder"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:ender_eye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -10030,7 +9805,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:exposed_chiseled_copper"
       },
       "type": "minecraft:crafting_shaped"
@@ -10054,7 +9828,6 @@
     "data": {
       "ingredient": "minecraft:exposed_cut_copper",
       "result": {
-        "count": 1,
         "id": "minecraft:exposed_chiseled_copper"
       },
       "type": "minecraft:stonecutting"
@@ -10227,7 +10000,6 @@
     "data": {
       "ingredient": "minecraft:exposed_cut_copper",
       "result": {
-        "count": 1,
         "id": "minecraft:exposed_cut_copper_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -10277,7 +10049,6 @@
         "minecraft:sugar"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:fermented_spider_eye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -10293,7 +10064,6 @@
         "minecraft:bricks"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:field_masoned_banner_pattern"
       },
       "type": "minecraft:crafting_shapeless"
@@ -10323,7 +10093,13 @@
   },
   {
     "data": {
-      "category": "misc",
+      "fuel": "minecraft:gunpowder",
+      "result": {
+        "count": 3,
+        "id": "minecraft:firework_rocket"
+      },
+      "shell": "minecraft:paper",
+      "star": "minecraft:firework_star",
       "type": "minecraft:crafting_special_firework_rocket"
     },
     "path": "data/minecraft/recipe/firework_rocket.json",
@@ -10347,7 +10123,19 @@
   },
   {
     "data": {
-      "category": "misc",
+      "dye": "#minecraft:dyes",
+      "fuel": "minecraft:gunpowder",
+      "result": {
+        "id": "minecraft:firework_star"
+      },
+      "shapes": {
+        "burst": "minecraft:feather",
+        "creeper": "#minecraft:skulls",
+        "large_ball": "minecraft:fire_charge",
+        "star": "minecraft:gold_nugget"
+      },
+      "trail": "minecraft:diamond",
+      "twinkle": "minecraft:glowstone_dust",
       "type": "minecraft:crafting_special_firework_star"
     },
     "path": "data/minecraft/recipe/firework_star.json",
@@ -10355,7 +10143,11 @@
   },
   {
     "data": {
-      "category": "misc",
+      "dye": "#minecraft:dyes",
+      "result": {
+        "id": "minecraft:firework_star"
+      },
+      "target": "minecraft:firework_star",
       "type": "minecraft:crafting_special_firework_star_fade"
     },
     "path": "data/minecraft/recipe/firework_star_fade.json",
@@ -10374,7 +10166,6 @@
         "# X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:fishing_rod"
       },
       "type": "minecraft:crafting_shaped"
@@ -10395,7 +10186,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:fletching_table"
       },
       "type": "minecraft:crafting_shaped"
@@ -10411,7 +10201,6 @@
         "minecraft:flint"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:flint_and_steel"
       },
       "type": "minecraft:crafting_shapeless"
@@ -10460,7 +10249,6 @@
         "minecraft:oxeye_daisy"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:flower_banner_pattern"
       },
       "type": "minecraft:crafting_shapeless"
@@ -10479,7 +10267,6 @@
         " # "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:flower_pot"
       },
       "type": "minecraft:crafting_shaped"
@@ -10499,7 +10286,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:furnace"
       },
       "type": "minecraft:crafting_shaped"
@@ -10515,7 +10301,6 @@
         "minecraft:minecart"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:furnace_minecart"
       },
       "type": "minecraft:crafting_shapeless"
@@ -10588,7 +10373,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:glistering_melon_slice"
       },
       "type": "minecraft:crafting_shaped"
@@ -10604,7 +10388,6 @@
         "minecraft:glow_ink_sac"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:glow_item_frame"
       },
       "type": "minecraft:crafting_shapeless"
@@ -10623,7 +10406,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:glowstone"
       },
       "type": "minecraft:crafting_shaped"
@@ -10643,7 +10425,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:gold_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -10740,7 +10521,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:gold_ingot"
       },
       "type": "minecraft:crafting_shaped"
@@ -10890,7 +10670,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:golden_apple"
       },
       "type": "minecraft:crafting_shaped"
@@ -10911,7 +10690,6 @@
         " #"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:golden_axe"
       },
       "type": "minecraft:crafting_shaped"
@@ -10930,7 +10708,6 @@
         "X X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:golden_boots"
       },
       "type": "minecraft:crafting_shaped"
@@ -10951,7 +10728,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:golden_carrot"
       },
       "type": "minecraft:crafting_shaped"
@@ -10971,12 +10747,31 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:golden_chestplate"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/golden_chestplate.json",
+    "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "category": "misc",
+      "key": {
+        "#": "minecraft:gold_nugget",
+        "I": "minecraft:dandelion"
+      },
+      "pattern": [
+        "###",
+        "#I#",
+        "###"
+      ],
+      "result": {
+        "id": "minecraft:golden_dandelion"
+      },
+      "type": "minecraft:crafting_shaped"
+    },
+    "path": "data/minecraft/recipe/golden_dandelion.json",
     "type": "minecraft:crafting_shaped"
   },
   {
@@ -10990,7 +10785,6 @@
         "X X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:golden_helmet"
       },
       "type": "minecraft:crafting_shaped"
@@ -11011,7 +10805,6 @@
         " #"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:golden_hoe"
       },
       "type": "minecraft:crafting_shaped"
@@ -11031,7 +10824,6 @@
         "X X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:golden_leggings"
       },
       "type": "minecraft:crafting_shaped"
@@ -11052,7 +10844,6 @@
         " # "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:golden_pickaxe"
       },
       "type": "minecraft:crafting_shaped"
@@ -11073,7 +10864,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:golden_shovel"
       },
       "type": "minecraft:crafting_shaped"
@@ -11094,7 +10884,6 @@
         "#  "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:golden_spear"
       },
       "type": "minecraft:crafting_shaped"
@@ -11115,7 +10904,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:golden_sword"
       },
       "type": "minecraft:crafting_shaped"
@@ -11131,7 +10919,6 @@
         "minecraft:quartz"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:granite"
       },
       "type": "minecraft:crafting_shapeless"
@@ -11193,7 +10980,6 @@
     "data": {
       "ingredient": "minecraft:granite",
       "result": {
-        "count": 1,
         "id": "minecraft:granite_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -11224,7 +11010,6 @@
     "data": {
       "ingredient": "minecraft:granite",
       "result": {
-        "count": 1,
         "id": "minecraft:granite_wall"
       },
       "type": "minecraft:stonecutting"
@@ -11246,13 +11031,23 @@
         " | "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:gray_banner"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/gray_banner.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "banner": "minecraft:gray_banner",
+      "result": {
+        "id": "minecraft:gray_banner"
+      },
+      "type": "minecraft:crafting_special_bannerduplicate"
+    },
+    "path": "data/minecraft/recipe/gray_banner_duplicate.json",
+    "type": "minecraft:crafting_special_bannerduplicate"
   },
   {
     "data": {
@@ -11267,7 +11062,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:gray_bed"
       },
       "type": "minecraft:crafting_shaped"
@@ -11298,7 +11092,6 @@
         "minecraft:gray_dye"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:gray_candle"
       },
       "type": "minecraft:crafting_shapeless"
@@ -11374,7 +11167,6 @@
         "minecraft:closed_eyeblossom"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:gray_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -11410,7 +11202,6 @@
         "G#G"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:gray_harness"
       },
       "type": "minecraft:crafting_shaped"
@@ -11532,13 +11323,23 @@
         " | "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:green_banner"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/green_banner.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "banner": "minecraft:green_banner",
+      "result": {
+        "id": "minecraft:green_banner"
+      },
+      "type": "minecraft:crafting_special_bannerduplicate"
+    },
+    "path": "data/minecraft/recipe/green_banner_duplicate.json",
+    "type": "minecraft:crafting_special_bannerduplicate"
   },
   {
     "data": {
@@ -11553,7 +11354,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:green_bed"
       },
       "type": "minecraft:crafting_shaped"
@@ -11584,7 +11384,6 @@
         "minecraft:green_dye"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:green_candle"
       },
       "type": "minecraft:crafting_shapeless"
@@ -11677,7 +11476,6 @@
         "G#G"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:green_harness"
       },
       "type": "minecraft:crafting_shaped"
@@ -11798,7 +11596,6 @@
         "# #"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:grindstone"
       },
       "type": "minecraft:crafting_shaped"
@@ -11821,7 +11618,6 @@
         "minecraft:wheat"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:hay_block"
       },
       "type": "minecraft:crafting_shapeless"
@@ -11839,7 +11635,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:heavy_weighted_pressure_plate"
       },
       "type": "minecraft:crafting_shaped"
@@ -11858,7 +11653,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:honey_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -11896,7 +11690,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:honeycomb_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -11917,7 +11710,6 @@
         " I "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:hopper"
       },
       "type": "minecraft:crafting_shaped"
@@ -11933,7 +11725,6 @@
         "minecraft:minecart"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:hopper_minecart"
       },
       "type": "minecraft:crafting_shapeless"
@@ -11987,7 +11778,6 @@
         " #"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:iron_axe"
       },
       "type": "minecraft:crafting_shaped"
@@ -12026,7 +11816,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:iron_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -12045,7 +11834,6 @@
         "X X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:iron_boots"
       },
       "type": "minecraft:crafting_shaped"
@@ -12066,7 +11854,6 @@
         "N"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:iron_chain"
       },
       "type": "minecraft:crafting_shaped"
@@ -12086,7 +11873,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:iron_chestplate"
       },
       "type": "minecraft:crafting_shaped"
@@ -12125,7 +11911,6 @@
         "X X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:iron_helmet"
       },
       "type": "minecraft:crafting_shaped"
@@ -12146,7 +11931,6 @@
         " #"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:iron_hoe"
       },
       "type": "minecraft:crafting_shaped"
@@ -12228,7 +12012,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:iron_ingot"
       },
       "type": "minecraft:crafting_shaped"
@@ -12293,7 +12076,6 @@
         "X X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:iron_leggings"
       },
       "type": "minecraft:crafting_shaped"
@@ -12391,7 +12173,6 @@
         " # "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:iron_pickaxe"
       },
       "type": "minecraft:crafting_shaped"
@@ -12412,7 +12193,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:iron_shovel"
       },
       "type": "minecraft:crafting_shaped"
@@ -12433,7 +12213,6 @@
         "#  "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:iron_spear"
       },
       "type": "minecraft:crafting_shaped"
@@ -12454,7 +12233,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:iron_sword"
       },
       "type": "minecraft:crafting_shaped"
@@ -12473,7 +12251,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:iron_trapdoor"
       },
       "type": "minecraft:crafting_shaped"
@@ -12494,7 +12271,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:item_frame"
       },
       "type": "minecraft:crafting_shaped"
@@ -12514,7 +12290,6 @@
         "B"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:jack_o_lantern"
       },
       "type": "minecraft:crafting_shaped"
@@ -12535,7 +12310,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:jukebox"
       },
       "type": "minecraft:crafting_shaped"
@@ -12555,7 +12329,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:jungle_boat"
       },
       "type": "minecraft:crafting_shaped"
@@ -12571,7 +12344,6 @@
         "minecraft:jungle_planks"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:jungle_button"
       },
       "type": "minecraft:crafting_shapeless"
@@ -12588,7 +12360,6 @@
         "minecraft:jungle_boat"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:jungle_chest_boat"
       },
       "type": "minecraft:crafting_shapeless"
@@ -12651,7 +12422,6 @@
         "#W#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:jungle_fence_gate"
       },
       "type": "minecraft:crafting_shaped"
@@ -12708,7 +12478,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:jungle_pressure_plate"
       },
       "type": "minecraft:crafting_shaped"
@@ -12872,7 +12641,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:lantern"
       },
       "type": "minecraft:crafting_shaped"
@@ -12892,7 +12660,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:lapis_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -13020,7 +12787,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:leather"
       },
       "type": "minecraft:crafting_shaped"
@@ -13039,13 +12805,26 @@
         "X X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:leather_boots"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/leather_boots.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "category": "misc",
+      "dye": "#minecraft:dyes",
+      "group": "dyed_armor",
+      "result": {
+        "id": "minecraft:leather_boots"
+      },
+      "target": "minecraft:leather_boots",
+      "type": "minecraft:crafting_dye"
+    },
+    "path": "data/minecraft/recipe/leather_boots_dyed.json",
+    "type": "minecraft:crafting_dye"
   },
   {
     "data": {
@@ -13059,13 +12838,26 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:leather_chestplate"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/leather_chestplate.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "category": "misc",
+      "dye": "#minecraft:dyes",
+      "group": "dyed_armor",
+      "result": {
+        "id": "minecraft:leather_chestplate"
+      },
+      "target": "minecraft:leather_chestplate",
+      "type": "minecraft:crafting_dye"
+    },
+    "path": "data/minecraft/recipe/leather_chestplate_dyed.json",
+    "type": "minecraft:crafting_dye"
   },
   {
     "data": {
@@ -13078,13 +12870,26 @@
         "X X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:leather_helmet"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/leather_helmet.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "category": "misc",
+      "dye": "#minecraft:dyes",
+      "group": "dyed_armor",
+      "result": {
+        "id": "minecraft:leather_helmet"
+      },
+      "target": "minecraft:leather_helmet",
+      "type": "minecraft:crafting_dye"
+    },
+    "path": "data/minecraft/recipe/leather_helmet_dyed.json",
+    "type": "minecraft:crafting_dye"
   },
   {
     "data": {
@@ -13098,13 +12903,26 @@
         "X X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:leather_horse_armor"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/leather_horse_armor.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "category": "misc",
+      "dye": "#minecraft:dyes",
+      "group": "dyed_armor",
+      "result": {
+        "id": "minecraft:leather_horse_armor"
+      },
+      "target": "minecraft:leather_horse_armor",
+      "type": "minecraft:crafting_dye"
+    },
+    "path": "data/minecraft/recipe/leather_horse_armor_dyed.json",
+    "type": "minecraft:crafting_dye"
   },
   {
     "data": {
@@ -13118,13 +12936,26 @@
         "X X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:leather_leggings"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/leather_leggings.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "category": "misc",
+      "dye": "#minecraft:dyes",
+      "group": "dyed_armor",
+      "result": {
+        "id": "minecraft:leather_leggings"
+      },
+      "target": "minecraft:leather_leggings",
+      "type": "minecraft:crafting_dye"
+    },
+    "path": "data/minecraft/recipe/leather_leggings_dyed.json",
+    "type": "minecraft:crafting_dye"
   },
   {
     "data": {
@@ -13139,7 +12970,6 @@
         " S "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:lectern"
       },
       "type": "minecraft:crafting_shaped"
@@ -13159,7 +12989,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:lever"
       },
       "type": "minecraft:crafting_shaped"
@@ -13181,13 +13010,23 @@
         " | "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_blue_banner"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/light_blue_banner.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "banner": "minecraft:light_blue_banner",
+      "result": {
+        "id": "minecraft:light_blue_banner"
+      },
+      "type": "minecraft:crafting_special_bannerduplicate"
+    },
+    "path": "data/minecraft/recipe/light_blue_banner_duplicate.json",
+    "type": "minecraft:crafting_special_bannerduplicate"
   },
   {
     "data": {
@@ -13202,7 +13041,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_blue_bed"
       },
       "type": "minecraft:crafting_shaped"
@@ -13233,7 +13071,6 @@
         "minecraft:light_blue_dye"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_blue_candle"
       },
       "type": "minecraft:crafting_shapeless"
@@ -13292,7 +13129,6 @@
         "minecraft:blue_orchid"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_blue_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -13345,7 +13181,6 @@
         "G#G"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_blue_harness"
       },
       "type": "minecraft:crafting_shaped"
@@ -13467,13 +13302,23 @@
         " | "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_gray_banner"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/light_gray_banner.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "banner": "minecraft:light_gray_banner",
+      "result": {
+        "id": "minecraft:light_gray_banner"
+      },
+      "type": "minecraft:crafting_special_bannerduplicate"
+    },
+    "path": "data/minecraft/recipe/light_gray_banner_duplicate.json",
+    "type": "minecraft:crafting_special_bannerduplicate"
   },
   {
     "data": {
@@ -13488,7 +13333,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_gray_bed"
       },
       "type": "minecraft:crafting_shaped"
@@ -13519,7 +13363,6 @@
         "minecraft:light_gray_dye"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_gray_candle"
       },
       "type": "minecraft:crafting_shapeless"
@@ -13578,7 +13421,6 @@
         "minecraft:azure_bluet"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_gray_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -13629,7 +13471,6 @@
         "minecraft:oxeye_daisy"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_gray_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -13645,7 +13486,6 @@
         "minecraft:white_tulip"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_gray_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -13681,7 +13521,6 @@
         "G#G"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_gray_harness"
       },
       "type": "minecraft:crafting_shaped"
@@ -13799,7 +13638,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:light_weighted_pressure_plate"
       },
       "type": "minecraft:crafting_shaped"
@@ -13819,7 +13657,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:lightning_rod"
       },
       "type": "minecraft:crafting_shaped"
@@ -13841,13 +13678,23 @@
         " | "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:lime_banner"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/lime_banner.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "banner": "minecraft:lime_banner",
+      "result": {
+        "id": "minecraft:lime_banner"
+      },
+      "type": "minecraft:crafting_special_bannerduplicate"
+    },
+    "path": "data/minecraft/recipe/lime_banner_duplicate.json",
+    "type": "minecraft:crafting_special_bannerduplicate"
   },
   {
     "data": {
@@ -13862,7 +13709,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:lime_bed"
       },
       "type": "minecraft:crafting_shaped"
@@ -13893,7 +13739,6 @@
         "minecraft:lime_dye"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:lime_candle"
       },
       "type": "minecraft:crafting_shapeless"
@@ -14002,7 +13847,6 @@
         "G#G"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:lime_harness"
       },
       "type": "minecraft:crafting_shaped"
@@ -14123,7 +13967,6 @@
         "SSS"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:lodestone"
       },
       "type": "minecraft:crafting_shaped"
@@ -14143,7 +13986,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:loom"
       },
       "type": "minecraft:crafting_shaped"
@@ -14163,7 +14005,6 @@
         " I "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:mace"
       },
       "type": "minecraft:crafting_shaped"
@@ -14185,13 +14026,23 @@
         " | "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:magenta_banner"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/magenta_banner.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "banner": "minecraft:magenta_banner",
+      "result": {
+        "id": "minecraft:magenta_banner"
+      },
+      "type": "minecraft:crafting_special_bannerduplicate"
+    },
+    "path": "data/minecraft/recipe/magenta_banner_duplicate.json",
+    "type": "minecraft:crafting_special_bannerduplicate"
   },
   {
     "data": {
@@ -14206,7 +14057,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:magenta_bed"
       },
       "type": "minecraft:crafting_shaped"
@@ -14237,7 +14087,6 @@
         "minecraft:magenta_dye"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:magenta_candle"
       },
       "type": "minecraft:crafting_shapeless"
@@ -14296,7 +14145,6 @@
         "minecraft:allium"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:magenta_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -14402,7 +14250,6 @@
         "G#G"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:magenta_harness"
       },
       "type": "minecraft:crafting_shaped"
@@ -14521,7 +14368,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:magma_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -14537,7 +14383,6 @@
         "minecraft:slime_ball"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:magma_cream"
       },
       "type": "minecraft:crafting_shapeless"
@@ -14557,7 +14402,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:mangrove_boat"
       },
       "type": "minecraft:crafting_shaped"
@@ -14573,7 +14417,6 @@
         "minecraft:mangrove_planks"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:mangrove_button"
       },
       "type": "minecraft:crafting_shapeless"
@@ -14590,7 +14433,6 @@
         "minecraft:mangrove_boat"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:mangrove_chest_boat"
       },
       "type": "minecraft:crafting_shapeless"
@@ -14653,7 +14495,6 @@
         "#W#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:mangrove_fence_gate"
       },
       "type": "minecraft:crafting_shaped"
@@ -14710,7 +14551,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:mangrove_pressure_plate"
       },
       "type": "minecraft:crafting_shaped"
@@ -14854,7 +14694,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:map"
       },
       "type": "minecraft:crafting_shaped"
@@ -14864,15 +14703,30 @@
   },
   {
     "data": {
+      "add_material_count_to_result": true,
       "category": "misc",
-      "type": "minecraft:crafting_special_mapcloning"
+      "group": "map_cloning",
+      "input": "minecraft:filled_map",
+      "material": "minecraft:map",
+      "material_count": {
+        "max": 8,
+        "min": 1
+      },
+      "result": {
+        "id": "minecraft:filled_map"
+      },
+      "type": "minecraft:crafting_transmute"
     },
     "path": "data/minecraft/recipe/map_cloning.json",
-    "type": "minecraft:crafting_special_mapcloning"
+    "type": "minecraft:crafting_transmute"
   },
   {
     "data": {
-      "category": "misc",
+      "map": "minecraft:filled_map",
+      "material": "minecraft:paper",
+      "result": {
+        "id": "minecraft:filled_map"
+      },
       "type": "minecraft:crafting_special_mapextending"
     },
     "path": "data/minecraft/recipe/map_extending.json",
@@ -14893,7 +14747,6 @@
         "minecraft:melon_slice"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:melon"
       },
       "type": "minecraft:crafting_shapeless"
@@ -14908,7 +14761,6 @@
         "minecraft:melon_slice"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:melon_seeds"
       },
       "type": "minecraft:crafting_shapeless"
@@ -14927,7 +14779,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:minecart"
       },
       "type": "minecraft:crafting_shaped"
@@ -14943,7 +14794,6 @@
         "minecraft:enchanted_golden_apple"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:mojang_banner_pattern"
       },
       "type": "minecraft:crafting_shapeless"
@@ -14979,7 +14829,6 @@
         "minecraft:moss_block"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:mossy_cobblestone"
       },
       "type": "minecraft:crafting_shapeless"
@@ -14996,7 +14845,6 @@
         "minecraft:vine"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:mossy_cobblestone"
       },
       "type": "minecraft:crafting_shapeless"
@@ -15058,7 +14906,6 @@
     "data": {
       "ingredient": "minecraft:mossy_cobblestone",
       "result": {
-        "count": 1,
         "id": "minecraft:mossy_cobblestone_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -15089,7 +14936,6 @@
     "data": {
       "ingredient": "minecraft:mossy_cobblestone",
       "result": {
-        "count": 1,
         "id": "minecraft:mossy_cobblestone_wall"
       },
       "type": "minecraft:stonecutting"
@@ -15124,7 +14970,7 @@
       },
       "type": "minecraft:stonecutting"
     },
-    "path": "data/minecraft/recipe/mossy_stone_brick_slab_from_mossy_stone_brick_stonecutting.json",
+    "path": "data/minecraft/recipe/mossy_stone_brick_slab_from_mossy_stone_bricks_stonecutting.json",
     "type": "minecraft:stonecutting"
   },
   {
@@ -15151,12 +14997,11 @@
     "data": {
       "ingredient": "minecraft:mossy_stone_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:mossy_stone_brick_stairs"
       },
       "type": "minecraft:stonecutting"
     },
-    "path": "data/minecraft/recipe/mossy_stone_brick_stairs_from_mossy_stone_brick_stonecutting.json",
+    "path": "data/minecraft/recipe/mossy_stone_brick_stairs_from_mossy_stone_bricks_stonecutting.json",
     "type": "minecraft:stonecutting"
   },
   {
@@ -15182,12 +15027,11 @@
     "data": {
       "ingredient": "minecraft:mossy_stone_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:mossy_stone_brick_wall"
       },
       "type": "minecraft:stonecutting"
     },
-    "path": "data/minecraft/recipe/mossy_stone_brick_wall_from_mossy_stone_brick_stonecutting.json",
+    "path": "data/minecraft/recipe/mossy_stone_brick_wall_from_mossy_stone_bricks_stonecutting.json",
     "type": "minecraft:stonecutting"
   },
   {
@@ -15199,7 +15043,6 @@
         "minecraft:moss_block"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:mossy_stone_bricks"
       },
       "type": "minecraft:crafting_shapeless"
@@ -15216,7 +15059,6 @@
         "minecraft:vine"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:mossy_stone_bricks"
       },
       "type": "minecraft:crafting_shapeless"
@@ -15278,7 +15120,6 @@
     "data": {
       "ingredient": "minecraft:mud_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:mud_brick_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -15309,7 +15150,6 @@
     "data": {
       "ingredient": "minecraft:mud_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:mud_brick_wall"
       },
       "type": "minecraft:stonecutting"
@@ -15344,7 +15184,6 @@
         "minecraft:mangrove_roots"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:muddy_mangrove_roots"
       },
       "type": "minecraft:crafting_shapeless"
@@ -15361,7 +15200,6 @@
         "minecraft:bowl"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:mushroom_stew"
       },
       "type": "minecraft:crafting_shapeless"
@@ -15384,13 +15222,31 @@
         "minecraft:disc_fragment_5"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:music_disc_5"
       },
       "type": "minecraft:crafting_shapeless"
     },
     "path": "data/minecraft/recipe/music_disc_5.json",
     "type": "minecraft:crafting_shapeless"
+  },
+  {
+    "data": {
+      "category": "equipment",
+      "key": {
+        "#": "minecraft:paper",
+        "X": "#minecraft:metal_nuggets"
+      },
+      "pattern": [
+        " X",
+        "# "
+      ],
+      "result": {
+        "id": "minecraft:name_tag"
+      },
+      "type": "minecraft:crafting_shaped"
+    },
+    "path": "data/minecraft/recipe/name_tag.json",
+    "type": "minecraft:crafting_shaped"
   },
   {
     "data": {
@@ -15480,7 +15336,6 @@
     "data": {
       "ingredient": "minecraft:nether_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:nether_brick_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -15511,7 +15366,6 @@
     "data": {
       "ingredient": "minecraft:nether_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:nether_brick_wall"
       },
       "type": "minecraft:stonecutting"
@@ -15530,7 +15384,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:nether_bricks"
       },
       "type": "minecraft:crafting_shaped"
@@ -15553,7 +15406,6 @@
         "minecraft:nether_wart"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:nether_wart_block"
       },
       "type": "minecraft:crafting_shapeless"
@@ -15586,7 +15438,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:netherite_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -15674,7 +15525,6 @@
         "minecraft:gold_ingot"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:netherite_ingot"
       },
       "type": "minecraft:crafting_shapeless"
@@ -15839,7 +15689,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:note_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -15859,7 +15708,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:oak_boat"
       },
       "type": "minecraft:crafting_shaped"
@@ -15875,7 +15723,6 @@
         "minecraft:oak_planks"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:oak_button"
       },
       "type": "minecraft:crafting_shapeless"
@@ -15892,7 +15739,6 @@
         "minecraft:oak_boat"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:oak_chest_boat"
       },
       "type": "minecraft:crafting_shapeless"
@@ -15955,7 +15801,6 @@
         "#W#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:oak_fence_gate"
       },
       "type": "minecraft:crafting_shaped"
@@ -16012,7 +15857,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:oak_pressure_plate"
       },
       "type": "minecraft:crafting_shaped"
@@ -16157,7 +16001,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:observer"
       },
       "type": "minecraft:crafting_shaped"
@@ -16179,13 +16022,23 @@
         " | "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:orange_banner"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/orange_banner.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "banner": "minecraft:orange_banner",
+      "result": {
+        "id": "minecraft:orange_banner"
+      },
+      "type": "minecraft:crafting_special_bannerduplicate"
+    },
+    "path": "data/minecraft/recipe/orange_banner_duplicate.json",
+    "type": "minecraft:crafting_special_bannerduplicate"
   },
   {
     "data": {
@@ -16200,7 +16053,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:orange_bed"
       },
       "type": "minecraft:crafting_shaped"
@@ -16231,7 +16083,6 @@
         "minecraft:orange_dye"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:orange_candle"
       },
       "type": "minecraft:crafting_shapeless"
@@ -16290,7 +16141,6 @@
         "minecraft:open_eyeblossom"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:orange_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -16306,7 +16156,6 @@
         "minecraft:orange_tulip"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:orange_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -16339,7 +16188,6 @@
         "minecraft:torchflower"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:orange_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -16375,7 +16223,6 @@
         "G#G"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:orange_harness"
       },
       "type": "minecraft:crafting_shaped"
@@ -16494,7 +16341,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:oxidized_chiseled_copper"
       },
       "type": "minecraft:crafting_shaped"
@@ -16518,7 +16364,6 @@
     "data": {
       "ingredient": "minecraft:oxidized_cut_copper",
       "result": {
-        "count": 1,
         "id": "minecraft:oxidized_chiseled_copper"
       },
       "type": "minecraft:stonecutting"
@@ -16691,7 +16536,6 @@
     "data": {
       "ingredient": "minecraft:oxidized_cut_copper",
       "result": {
-        "count": 1,
         "id": "minecraft:oxidized_cut_copper_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -16714,7 +16558,6 @@
         "minecraft:ice"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:packed_ice"
       },
       "type": "minecraft:crafting_shapeless"
@@ -16730,7 +16573,6 @@
         "minecraft:wheat"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:packed_mud"
       },
       "type": "minecraft:crafting_shapeless"
@@ -16751,7 +16593,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:painting"
       },
       "type": "minecraft:crafting_shaped"
@@ -16790,7 +16631,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:pale_oak_boat"
       },
       "type": "minecraft:crafting_shaped"
@@ -16806,7 +16646,6 @@
         "minecraft:pale_oak_planks"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:pale_oak_button"
       },
       "type": "minecraft:crafting_shapeless"
@@ -16823,7 +16662,6 @@
         "minecraft:pale_oak_boat"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:pale_oak_chest_boat"
       },
       "type": "minecraft:crafting_shapeless"
@@ -16886,7 +16724,6 @@
         "#W#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:pale_oak_fence_gate"
       },
       "type": "minecraft:crafting_shaped"
@@ -16943,7 +16780,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:pale_oak_pressure_plate"
       },
       "type": "minecraft:crafting_shaped"
@@ -17106,13 +16942,23 @@
         " | "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:pink_banner"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/pink_banner.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "banner": "minecraft:pink_banner",
+      "result": {
+        "id": "minecraft:pink_banner"
+      },
+      "type": "minecraft:crafting_special_bannerduplicate"
+    },
+    "path": "data/minecraft/recipe/pink_banner_duplicate.json",
+    "type": "minecraft:crafting_special_bannerduplicate"
   },
   {
     "data": {
@@ -17127,7 +16973,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:pink_bed"
       },
       "type": "minecraft:crafting_shaped"
@@ -17158,7 +17003,6 @@
         "minecraft:pink_dye"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:pink_candle"
       },
       "type": "minecraft:crafting_shapeless"
@@ -17217,7 +17061,6 @@
         "minecraft:cactus_flower"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:pink_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -17249,7 +17092,6 @@
         "minecraft:pink_petals"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:pink_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -17265,7 +17107,6 @@
         "minecraft:pink_tulip"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:pink_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -17318,7 +17159,6 @@
         "G#G"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:pink_harness"
       },
       "type": "minecraft:crafting_shaped"
@@ -17441,7 +17281,6 @@
         "#R#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:piston"
       },
       "type": "minecraft:crafting_shaped"
@@ -17472,7 +17311,6 @@
     "data": {
       "ingredient": "minecraft:andesite",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_andesite"
       },
       "type": "minecraft:stonecutting"
@@ -17546,7 +17384,6 @@
     "data": {
       "ingredient": "minecraft:andesite",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_andesite_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -17558,7 +17395,6 @@
     "data": {
       "ingredient": "minecraft:polished_andesite",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_andesite_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -17589,7 +17425,6 @@
     "data": {
       "ingredient": "minecraft:basalt",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_basalt"
       },
       "type": "minecraft:stonecutting"
@@ -17694,7 +17529,6 @@
     "data": {
       "ingredient": "minecraft:blackstone",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_blackstone_brick_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -17706,7 +17540,6 @@
     "data": {
       "ingredient": "minecraft:polished_blackstone_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_blackstone_brick_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -17718,7 +17551,6 @@
     "data": {
       "ingredient": "minecraft:polished_blackstone",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_blackstone_brick_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -17749,7 +17581,6 @@
     "data": {
       "ingredient": "minecraft:blackstone",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_blackstone_brick_wall"
       },
       "type": "minecraft:stonecutting"
@@ -17761,7 +17592,6 @@
     "data": {
       "ingredient": "minecraft:polished_blackstone_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_blackstone_brick_wall"
       },
       "type": "minecraft:stonecutting"
@@ -17773,7 +17603,6 @@
     "data": {
       "ingredient": "minecraft:polished_blackstone",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_blackstone_brick_wall"
       },
       "type": "minecraft:stonecutting"
@@ -17785,11 +17614,11 @@
     "data": {
       "category": "building",
       "key": {
-        "S": "minecraft:polished_blackstone"
+        "#": "minecraft:polished_blackstone"
       },
       "pattern": [
-        "SS",
-        "SS"
+        "##",
+        "##"
       ],
       "result": {
         "count": 4,
@@ -17804,7 +17633,6 @@
     "data": {
       "ingredient": "minecraft:blackstone",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_blackstone_bricks"
       },
       "type": "minecraft:stonecutting"
@@ -17816,7 +17644,6 @@
     "data": {
       "ingredient": "minecraft:polished_blackstone",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_blackstone_bricks"
       },
       "type": "minecraft:stonecutting"
@@ -17831,7 +17658,6 @@
         "minecraft:polished_blackstone"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:polished_blackstone_button"
       },
       "type": "minecraft:crafting_shapeless"
@@ -17843,7 +17669,6 @@
     "data": {
       "ingredient": "minecraft:blackstone",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_blackstone"
       },
       "type": "minecraft:stonecutting"
@@ -17861,7 +17686,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:polished_blackstone_pressure_plate"
       },
       "type": "minecraft:crafting_shaped"
@@ -17935,7 +17759,6 @@
     "data": {
       "ingredient": "minecraft:blackstone",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_blackstone_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -17947,7 +17770,6 @@
     "data": {
       "ingredient": "minecraft:polished_blackstone",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_blackstone_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -17978,7 +17800,6 @@
     "data": {
       "ingredient": "minecraft:blackstone",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_blackstone_wall"
       },
       "type": "minecraft:stonecutting"
@@ -17990,7 +17811,6 @@
     "data": {
       "ingredient": "minecraft:polished_blackstone",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_blackstone_wall"
       },
       "type": "minecraft:stonecutting"
@@ -18021,7 +17841,6 @@
     "data": {
       "ingredient": "minecraft:cobbled_deepslate",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_deepslate"
       },
       "type": "minecraft:stonecutting"
@@ -18095,7 +17914,6 @@
     "data": {
       "ingredient": "minecraft:cobbled_deepslate",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_deepslate_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -18107,7 +17925,6 @@
     "data": {
       "ingredient": "minecraft:polished_deepslate",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_deepslate_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -18138,7 +17955,6 @@
     "data": {
       "ingredient": "minecraft:cobbled_deepslate",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_deepslate_wall"
       },
       "type": "minecraft:stonecutting"
@@ -18150,7 +17966,6 @@
     "data": {
       "ingredient": "minecraft:polished_deepslate",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_deepslate_wall"
       },
       "type": "minecraft:stonecutting"
@@ -18181,7 +17996,6 @@
     "data": {
       "ingredient": "minecraft:diorite",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_diorite"
       },
       "type": "minecraft:stonecutting"
@@ -18255,7 +18069,6 @@
     "data": {
       "ingredient": "minecraft:diorite",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_diorite_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -18267,7 +18080,6 @@
     "data": {
       "ingredient": "minecraft:polished_diorite",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_diorite_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -18298,7 +18110,6 @@
     "data": {
       "ingredient": "minecraft:granite",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_granite"
       },
       "type": "minecraft:stonecutting"
@@ -18372,7 +18183,6 @@
     "data": {
       "ingredient": "minecraft:granite",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_granite_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -18384,7 +18194,6 @@
     "data": {
       "ingredient": "minecraft:polished_granite",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_granite_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -18415,7 +18224,6 @@
     "data": {
       "ingredient": "minecraft:tuff",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_tuff"
       },
       "type": "minecraft:stonecutting"
@@ -18489,7 +18297,6 @@
     "data": {
       "ingredient": "minecraft:polished_tuff",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_tuff_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -18501,7 +18308,6 @@
     "data": {
       "ingredient": "minecraft:tuff",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_tuff_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -18532,7 +18338,6 @@
     "data": {
       "ingredient": "minecraft:polished_tuff",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_tuff_wall"
       },
       "type": "minecraft:stonecutting"
@@ -18544,7 +18349,6 @@
     "data": {
       "ingredient": "minecraft:tuff",
       "result": {
-        "count": 1,
         "id": "minecraft:polished_tuff_wall"
       },
       "type": "minecraft:stonecutting"
@@ -18599,7 +18403,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:prismarine"
       },
       "type": "minecraft:crafting_shaped"
@@ -18634,7 +18437,7 @@
       },
       "type": "minecraft:stonecutting"
     },
-    "path": "data/minecraft/recipe/prismarine_brick_slab_from_prismarine_stonecutting.json",
+    "path": "data/minecraft/recipe/prismarine_brick_slab_from_prismarine_bricks_stonecutting.json",
     "type": "minecraft:stonecutting"
   },
   {
@@ -18661,12 +18464,11 @@
     "data": {
       "ingredient": "minecraft:prismarine_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:prismarine_brick_stairs"
       },
       "type": "minecraft:stonecutting"
     },
-    "path": "data/minecraft/recipe/prismarine_brick_stairs_from_prismarine_stonecutting.json",
+    "path": "data/minecraft/recipe/prismarine_brick_stairs_from_prismarine_bricks_stonecutting.json",
     "type": "minecraft:stonecutting"
   },
   {
@@ -18684,7 +18486,6 @@
         "minecraft:prismarine_shard"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:prismarine_bricks"
       },
       "type": "minecraft:crafting_shapeless"
@@ -18746,7 +18547,6 @@
     "data": {
       "ingredient": "minecraft:prismarine",
       "result": {
-        "count": 1,
         "id": "minecraft:prismarine_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -18777,7 +18577,6 @@
     "data": {
       "ingredient": "minecraft:prismarine",
       "result": {
-        "count": 1,
         "id": "minecraft:prismarine_wall"
       },
       "type": "minecraft:stonecutting"
@@ -18794,7 +18593,6 @@
         "#minecraft:eggs"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:pumpkin_pie"
       },
       "type": "minecraft:crafting_shapeless"
@@ -18831,13 +18629,23 @@
         " | "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:purple_banner"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/purple_banner.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "banner": "minecraft:purple_banner",
+      "result": {
+        "id": "minecraft:purple_banner"
+      },
+      "type": "minecraft:crafting_special_bannerduplicate"
+    },
+    "path": "data/minecraft/recipe/purple_banner_duplicate.json",
+    "type": "minecraft:crafting_special_bannerduplicate"
   },
   {
     "data": {
@@ -18852,7 +18660,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:purple_bed"
       },
       "type": "minecraft:crafting_shaped"
@@ -18883,7 +18690,6 @@
         "minecraft:purple_dye"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:purple_candle"
       },
       "type": "minecraft:crafting_shapeless"
@@ -18978,7 +18784,6 @@
         "G#G"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:purple_harness"
       },
       "type": "minecraft:crafting_shaped"
@@ -19116,7 +18921,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:purpur_pillar"
       },
       "type": "minecraft:crafting_shaped"
@@ -19128,7 +18932,6 @@
     "data": {
       "ingredient": "minecraft:purpur_block",
       "result": {
-        "count": 1,
         "id": "minecraft:purpur_pillar"
       },
       "type": "minecraft:stonecutting"
@@ -19196,7 +18999,6 @@
     "data": {
       "ingredient": "minecraft:purpur_block",
       "result": {
-        "count": 1,
         "id": "minecraft:purpur_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -19229,7 +19031,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:quartz_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -19260,7 +19061,6 @@
     "data": {
       "ingredient": "minecraft:quartz_block",
       "result": {
-        "count": 1,
         "id": "minecraft:quartz_bricks"
       },
       "type": "minecraft:stonecutting"
@@ -19305,7 +19105,6 @@
     "data": {
       "ingredient": "minecraft:quartz_block",
       "result": {
-        "count": 1,
         "id": "minecraft:quartz_pillar"
       },
       "type": "minecraft:stonecutting"
@@ -19344,7 +19143,7 @@
       },
       "type": "minecraft:stonecutting"
     },
-    "path": "data/minecraft/recipe/quartz_slab_from_stonecutting.json",
+    "path": "data/minecraft/recipe/quartz_slab_from_quartz_block_stonecutting.json",
     "type": "minecraft:stonecutting"
   },
   {
@@ -19375,7 +19174,6 @@
     "data": {
       "ingredient": "minecraft:quartz_block",
       "result": {
-        "count": 1,
         "id": "minecraft:quartz_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -19395,7 +19193,6 @@
         "minecraft:brown_mushroom"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:rabbit_stew"
       },
       "type": "minecraft:crafting_shapeless"
@@ -19415,7 +19212,6 @@
         "minecraft:red_mushroom"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:rabbit_stew"
       },
       "type": "minecraft:crafting_shapeless"
@@ -19504,7 +19300,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:raw_copper_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -19539,7 +19334,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:raw_gold_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -19574,7 +19368,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:raw_iron_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -19595,7 +19388,6 @@
         "SSS"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:recovery_compass"
       },
       "type": "minecraft:crafting_shaped"
@@ -19617,13 +19409,23 @@
         " | "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:red_banner"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/red_banner.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "banner": "minecraft:red_banner",
+      "result": {
+        "id": "minecraft:red_banner"
+      },
+      "type": "minecraft:crafting_special_bannerduplicate"
+    },
+    "path": "data/minecraft/recipe/red_banner_duplicate.json",
+    "type": "minecraft:crafting_special_bannerduplicate"
   },
   {
     "data": {
@@ -19638,7 +19440,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:red_bed"
       },
       "type": "minecraft:crafting_shaped"
@@ -19669,7 +19470,6 @@
         "minecraft:red_dye"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:red_candle"
       },
       "type": "minecraft:crafting_shapeless"
@@ -19728,7 +19528,6 @@
         "minecraft:beetroot"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:red_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -19744,7 +19543,6 @@
         "minecraft:poppy"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:red_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -19776,7 +19574,6 @@
         "minecraft:red_tulip"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:red_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -19812,7 +19609,6 @@
         "G#G"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:red_harness"
       },
       "type": "minecraft:crafting_shaped"
@@ -19874,7 +19670,6 @@
     "data": {
       "ingredient": "minecraft:red_nether_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:red_nether_brick_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -19905,7 +19700,6 @@
     "data": {
       "ingredient": "minecraft:red_nether_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:red_nether_brick_wall"
       },
       "type": "minecraft:stonecutting"
@@ -19925,7 +19719,6 @@
         "WN"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:red_nether_bricks"
       },
       "type": "minecraft:crafting_shaped"
@@ -19944,7 +19737,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:red_sandstone"
       },
       "type": "minecraft:crafting_shaped"
@@ -20013,7 +19805,6 @@
     "data": {
       "ingredient": "minecraft:red_sandstone",
       "result": {
-        "count": 1,
         "id": "minecraft:red_sandstone_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -20044,7 +19835,6 @@
     "data": {
       "ingredient": "minecraft:red_sandstone",
       "result": {
-        "count": 1,
         "id": "minecraft:red_sandstone_wall"
       },
       "type": "minecraft:stonecutting"
@@ -20179,7 +19969,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:redstone_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -20260,7 +20049,6 @@
         " R "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:redstone_lamp"
       },
       "type": "minecraft:crafting_shaped"
@@ -20280,7 +20068,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:redstone_torch"
       },
       "type": "minecraft:crafting_shaped"
@@ -20290,7 +20077,6 @@
   },
   {
     "data": {
-      "category": "misc",
       "type": "minecraft:crafting_special_repairitem"
     },
     "path": "data/minecraft/recipe/repair_item.json",
@@ -20309,7 +20095,6 @@
         "III"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:repeater"
       },
       "type": "minecraft:crafting_shaped"
@@ -20329,7 +20114,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:resin_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -20405,7 +20189,6 @@
     "data": {
       "ingredient": "minecraft:resin_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:resin_brick_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -20436,7 +20219,6 @@
     "data": {
       "ingredient": "minecraft:resin_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:resin_brick_wall"
       },
       "type": "minecraft:stonecutting"
@@ -20455,7 +20237,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:resin_bricks"
       },
       "type": "minecraft:crafting_shaped"
@@ -20491,7 +20272,6 @@
         "OOO"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:respawn_anchor"
       },
       "type": "minecraft:crafting_shaped"
@@ -20544,7 +20324,6 @@
         "X#X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:saddle"
       },
       "type": "minecraft:crafting_shaped"
@@ -20563,7 +20342,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:sandstone"
       },
       "type": "minecraft:crafting_shaped"
@@ -20632,7 +20410,6 @@
     "data": {
       "ingredient": "minecraft:sandstone",
       "result": {
-        "count": 1,
         "id": "minecraft:sandstone_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -20663,7 +20440,6 @@
     "data": {
       "ingredient": "minecraft:sandstone",
       "result": {
-        "count": 1,
         "id": "minecraft:sandstone_wall"
       },
       "type": "minecraft:stonecutting"
@@ -20705,7 +20481,6 @@
         "SCS"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:sea_lantern"
       },
       "type": "minecraft:crafting_shaped"
@@ -20790,7 +20565,6 @@
         "# "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:shears"
       },
       "type": "minecraft:crafting_shaped"
@@ -20811,7 +20585,6 @@
         " W "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:shield"
       },
       "type": "minecraft:crafting_shaped"
@@ -20821,7 +20594,11 @@
   },
   {
     "data": {
-      "category": "misc",
+      "banner": "#minecraft:banners",
+      "result": {
+        "id": "minecraft:shield"
+      },
+      "target": "minecraft:shield",
       "type": "minecraft:crafting_special_shielddecoration"
     },
     "path": "data/minecraft/recipe/shield_decoration.json",
@@ -20840,7 +20617,6 @@
         "-"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:shulker_box"
       },
       "type": "minecraft:crafting_shaped"
@@ -20889,7 +20665,6 @@
         "minecraft:wither_skeleton_skull"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:skull_banner_pattern"
       },
       "type": "minecraft:crafting_shapeless"
@@ -20924,7 +20699,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:slime_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -20945,7 +20719,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:smithing_table"
       },
       "type": "minecraft:crafting_shaped"
@@ -20966,7 +20739,6 @@
         " # "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:smoker"
       },
       "type": "minecraft:crafting_shaped"
@@ -21056,7 +20828,6 @@
     "data": {
       "ingredient": "minecraft:smooth_quartz",
       "result": {
-        "count": 1,
         "id": "minecraft:smooth_quartz_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -21132,7 +20903,6 @@
     "data": {
       "ingredient": "minecraft:smooth_red_sandstone",
       "result": {
-        "count": 1,
         "id": "minecraft:smooth_red_sandstone_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -21208,7 +20978,6 @@
     "data": {
       "ingredient": "minecraft:smooth_sandstone",
       "result": {
-        "count": 1,
         "id": "minecraft:smooth_sandstone_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -21322,7 +21091,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:snow_block"
       },
       "type": "minecraft:crafting_shaped"
@@ -21344,7 +21112,6 @@
         "LLL"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:soul_campfire"
       },
       "type": "minecraft:crafting_shaped"
@@ -21365,7 +21132,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:soul_lantern"
       },
       "type": "minecraft:crafting_shaped"
@@ -21478,7 +21244,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:spruce_boat"
       },
       "type": "minecraft:crafting_shaped"
@@ -21494,7 +21259,6 @@
         "minecraft:spruce_planks"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:spruce_button"
       },
       "type": "minecraft:crafting_shapeless"
@@ -21511,7 +21275,6 @@
         "minecraft:spruce_boat"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:spruce_chest_boat"
       },
       "type": "minecraft:crafting_shapeless"
@@ -21574,7 +21337,6 @@
         "#W#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:spruce_fence_gate"
       },
       "type": "minecraft:crafting_shaped"
@@ -21631,7 +21393,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:spruce_pressure_plate"
       },
       "type": "minecraft:crafting_shaped"
@@ -21775,7 +21536,6 @@
         " X "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:spyglass"
       },
       "type": "minecraft:crafting_shaped"
@@ -21815,7 +21575,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:stick"
       },
       "type": "minecraft:crafting_shaped"
@@ -21835,7 +21594,6 @@
         "P"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:sticky_piston"
       },
       "type": "minecraft:crafting_shaped"
@@ -21870,7 +21628,6 @@
         " #"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:stone_axe"
       },
       "type": "minecraft:crafting_shaped"
@@ -21944,7 +21701,6 @@
     "data": {
       "ingredient": "minecraft:stone_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:stone_brick_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -21956,7 +21712,6 @@
     "data": {
       "ingredient": "minecraft:stone",
       "result": {
-        "count": 1,
         "id": "minecraft:stone_brick_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -21987,7 +21742,6 @@
     "data": {
       "ingredient": "minecraft:stone_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:stone_brick_wall"
       },
       "type": "minecraft:stonecutting"
@@ -21999,12 +21753,11 @@
     "data": {
       "ingredient": "minecraft:stone",
       "result": {
-        "count": 1,
         "id": "minecraft:stone_brick_wall"
       },
       "type": "minecraft:stonecutting"
     },
-    "path": "data/minecraft/recipe/stone_brick_walls_from_stone_stonecutting.json",
+    "path": "data/minecraft/recipe/stone_brick_wall_from_stone_stonecutting.json",
     "type": "minecraft:stonecutting"
   },
   {
@@ -22030,7 +21783,6 @@
     "data": {
       "ingredient": "minecraft:stone",
       "result": {
-        "count": 1,
         "id": "minecraft:stone_bricks"
       },
       "type": "minecraft:stonecutting"
@@ -22045,7 +21797,6 @@
         "minecraft:stone"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:stone_button"
       },
       "type": "minecraft:crafting_shapeless"
@@ -22066,7 +21817,6 @@
         " #"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:stone_hoe"
       },
       "type": "minecraft:crafting_shaped"
@@ -22087,7 +21837,6 @@
         " # "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:stone_pickaxe"
       },
       "type": "minecraft:crafting_shaped"
@@ -22105,7 +21854,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:stone_pressure_plate"
       },
       "type": "minecraft:crafting_shaped"
@@ -22126,7 +21874,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:stone_shovel"
       },
       "type": "minecraft:crafting_shaped"
@@ -22177,7 +21924,6 @@
         "#  "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:stone_spear"
       },
       "type": "minecraft:crafting_shaped"
@@ -22209,7 +21955,6 @@
     "data": {
       "ingredient": "minecraft:stone",
       "result": {
-        "count": 1,
         "id": "minecraft:stone_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -22230,7 +21975,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:stone_sword"
       },
       "type": "minecraft:crafting_shaped"
@@ -22250,7 +21994,6 @@
         "###"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:stonecutter"
       },
       "type": "minecraft:crafting_shaped"
@@ -22502,7 +22245,6 @@
         "minecraft:sugar_cane"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:sugar"
       },
       "type": "minecraft:crafting_shapeless"
@@ -22529,7 +22271,6 @@
             }
           ]
         },
-        "count": 1,
         "id": "minecraft:suspicious_stew"
       },
       "type": "minecraft:crafting_shapeless"
@@ -22556,7 +22297,6 @@
             }
           ]
         },
-        "count": 1,
         "id": "minecraft:suspicious_stew"
       },
       "type": "minecraft:crafting_shapeless"
@@ -22583,7 +22323,6 @@
             }
           ]
         },
-        "count": 1,
         "id": "minecraft:suspicious_stew"
       },
       "type": "minecraft:crafting_shapeless"
@@ -22610,7 +22349,6 @@
             }
           ]
         },
-        "count": 1,
         "id": "minecraft:suspicious_stew"
       },
       "type": "minecraft:crafting_shapeless"
@@ -22637,7 +22375,6 @@
             }
           ]
         },
-        "count": 1,
         "id": "minecraft:suspicious_stew"
       },
       "type": "minecraft:crafting_shapeless"
@@ -22664,12 +22401,37 @@
             }
           ]
         },
-        "count": 1,
         "id": "minecraft:suspicious_stew"
       },
       "type": "minecraft:crafting_shapeless"
     },
     "path": "data/minecraft/recipe/suspicious_stew_from_dandelion.json",
+    "type": "minecraft:crafting_shapeless"
+  },
+  {
+    "data": {
+      "category": "misc",
+      "group": "suspicious_stew",
+      "ingredients": [
+        "minecraft:bowl",
+        "minecraft:brown_mushroom",
+        "minecraft:red_mushroom",
+        "minecraft:golden_dandelion"
+      ],
+      "result": {
+        "components": {
+          "minecraft:suspicious_stew_effects": [
+            {
+              "duration": 7,
+              "id": "minecraft:saturation"
+            }
+          ]
+        },
+        "id": "minecraft:suspicious_stew"
+      },
+      "type": "minecraft:crafting_shapeless"
+    },
+    "path": "data/minecraft/recipe/suspicious_stew_from_golden_dandelion.json",
     "type": "minecraft:crafting_shapeless"
   },
   {
@@ -22691,7 +22453,6 @@
             }
           ]
         },
-        "count": 1,
         "id": "minecraft:suspicious_stew"
       },
       "type": "minecraft:crafting_shapeless"
@@ -22718,7 +22479,6 @@
             }
           ]
         },
-        "count": 1,
         "id": "minecraft:suspicious_stew"
       },
       "type": "minecraft:crafting_shapeless"
@@ -22745,7 +22505,6 @@
             }
           ]
         },
-        "count": 1,
         "id": "minecraft:suspicious_stew"
       },
       "type": "minecraft:crafting_shapeless"
@@ -22772,7 +22531,6 @@
             }
           ]
         },
-        "count": 1,
         "id": "minecraft:suspicious_stew"
       },
       "type": "minecraft:crafting_shapeless"
@@ -22799,7 +22557,6 @@
             }
           ]
         },
-        "count": 1,
         "id": "minecraft:suspicious_stew"
       },
       "type": "minecraft:crafting_shapeless"
@@ -22826,7 +22583,6 @@
             }
           ]
         },
-        "count": 1,
         "id": "minecraft:suspicious_stew"
       },
       "type": "minecraft:crafting_shapeless"
@@ -22853,7 +22609,6 @@
             }
           ]
         },
-        "count": 1,
         "id": "minecraft:suspicious_stew"
       },
       "type": "minecraft:crafting_shapeless"
@@ -22880,7 +22635,6 @@
             }
           ]
         },
-        "count": 1,
         "id": "minecraft:suspicious_stew"
       },
       "type": "minecraft:crafting_shapeless"
@@ -22907,7 +22661,6 @@
             }
           ]
         },
-        "count": 1,
         "id": "minecraft:suspicious_stew"
       },
       "type": "minecraft:crafting_shapeless"
@@ -22934,7 +22687,6 @@
             }
           ]
         },
-        "count": 1,
         "id": "minecraft:suspicious_stew"
       },
       "type": "minecraft:crafting_shapeless"
@@ -22955,7 +22707,6 @@
         " R "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:target"
       },
       "type": "minecraft:crafting_shaped"
@@ -23034,10 +22785,16 @@
   {
     "data": {
       "category": "misc",
-      "type": "minecraft:crafting_special_tippedarrow"
+      "material": "minecraft:arrow",
+      "result": {
+        "count": 8,
+        "id": "minecraft:tipped_arrow"
+      },
+      "source": "minecraft:lingering_potion",
+      "type": "minecraft:crafting_imbue"
     },
     "path": "data/minecraft/recipe/tipped_arrow.json",
-    "type": "minecraft:crafting_special_tippedarrow"
+    "type": "minecraft:crafting_imbue"
   },
   {
     "data": {
@@ -23055,7 +22812,6 @@
         "X#X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:tnt"
       },
       "type": "minecraft:crafting_shaped"
@@ -23071,7 +22827,6 @@
         "minecraft:minecart"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:tnt_minecart"
       },
       "type": "minecraft:crafting_shapeless"
@@ -23110,7 +22865,6 @@
         "minecraft:tripwire_hook"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:trapped_chest"
       },
       "type": "minecraft:crafting_shapeless"
@@ -23218,7 +22972,6 @@
     "data": {
       "ingredient": "minecraft:polished_tuff",
       "result": {
-        "count": 1,
         "id": "minecraft:tuff_brick_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -23230,7 +22983,6 @@
     "data": {
       "ingredient": "minecraft:tuff_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:tuff_brick_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -23242,7 +22994,6 @@
     "data": {
       "ingredient": "minecraft:tuff",
       "result": {
-        "count": 1,
         "id": "minecraft:tuff_brick_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -23273,7 +23024,6 @@
     "data": {
       "ingredient": "minecraft:polished_tuff",
       "result": {
-        "count": 1,
         "id": "minecraft:tuff_brick_wall"
       },
       "type": "minecraft:stonecutting"
@@ -23285,7 +23035,6 @@
     "data": {
       "ingredient": "minecraft:tuff_bricks",
       "result": {
-        "count": 1,
         "id": "minecraft:tuff_brick_wall"
       },
       "type": "minecraft:stonecutting"
@@ -23297,7 +23046,6 @@
     "data": {
       "ingredient": "minecraft:tuff",
       "result": {
-        "count": 1,
         "id": "minecraft:tuff_brick_wall"
       },
       "type": "minecraft:stonecutting"
@@ -23309,11 +23057,11 @@
     "data": {
       "category": "building",
       "key": {
-        "S": "minecraft:polished_tuff"
+        "#": "minecraft:polished_tuff"
       },
       "pattern": [
-        "SS",
-        "SS"
+        "##",
+        "##"
       ],
       "result": {
         "count": 4,
@@ -23328,7 +23076,6 @@
     "data": {
       "ingredient": "minecraft:polished_tuff",
       "result": {
-        "count": 1,
         "id": "minecraft:tuff_bricks"
       },
       "type": "minecraft:stonecutting"
@@ -23340,7 +23087,6 @@
     "data": {
       "ingredient": "minecraft:tuff",
       "result": {
-        "count": 1,
         "id": "minecraft:tuff_bricks"
       },
       "type": "minecraft:stonecutting"
@@ -23402,7 +23148,6 @@
     "data": {
       "ingredient": "minecraft:tuff",
       "result": {
-        "count": 1,
         "id": "minecraft:tuff_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -23433,7 +23178,6 @@
     "data": {
       "ingredient": "minecraft:tuff",
       "result": {
-        "count": 1,
         "id": "minecraft:tuff_wall"
       },
       "type": "minecraft:stonecutting"
@@ -23452,7 +23196,6 @@
         "X X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:turtle_helmet"
       },
       "type": "minecraft:crafting_shaped"
@@ -23534,7 +23277,6 @@
         "minecraft:warped_planks"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:warped_button"
       },
       "type": "minecraft:crafting_shapeless"
@@ -23597,7 +23339,6 @@
         "#W#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:warped_fence_gate"
       },
       "type": "minecraft:crafting_shaped"
@@ -23617,7 +23358,6 @@
         " X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:warped_fungus_on_a_stick"
       },
       "type": "minecraft:crafting_shaped"
@@ -23694,7 +23434,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:warped_pressure_plate"
       },
       "type": "minecraft:crafting_shaped"
@@ -23817,7 +23556,6 @@
         " M "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_chiseled_copper"
       },
       "type": "minecraft:crafting_shaped"
@@ -23834,7 +23572,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_chiseled_copper"
       },
       "type": "minecraft:crafting_shapeless"
@@ -23858,7 +23595,6 @@
     "data": {
       "ingredient": "minecraft:waxed_cut_copper",
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_chiseled_copper"
       },
       "type": "minecraft:stonecutting"
@@ -23875,7 +23611,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_copper_bars"
       },
       "type": "minecraft:crafting_shapeless"
@@ -23892,7 +23627,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_copper_block"
       },
       "type": "minecraft:crafting_shapeless"
@@ -23932,7 +23666,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_copper_bulb"
       },
       "type": "minecraft:crafting_shapeless"
@@ -23949,7 +23682,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_copper_chain"
       },
       "type": "minecraft:crafting_shapeless"
@@ -23966,7 +23698,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_copper_chest"
       },
       "type": "minecraft:crafting_shapeless"
@@ -23983,7 +23714,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_copper_door"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24000,7 +23730,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_copper_golem_statue"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24038,7 +23767,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_copper_grate"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24067,7 +23795,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_copper_lantern"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24084,7 +23811,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_copper_trapdoor"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24121,7 +23847,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_cut_copper"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24169,7 +23894,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_cut_copper_slab"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24231,7 +23955,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_cut_copper_stairs"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24255,7 +23978,6 @@
     "data": {
       "ingredient": "minecraft:waxed_cut_copper",
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_cut_copper_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -24275,7 +23997,6 @@
         " M "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_exposed_chiseled_copper"
       },
       "type": "minecraft:crafting_shaped"
@@ -24292,7 +24013,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_exposed_chiseled_copper"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24316,7 +24036,6 @@
     "data": {
       "ingredient": "minecraft:waxed_exposed_cut_copper",
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_exposed_chiseled_copper"
       },
       "type": "minecraft:stonecutting"
@@ -24333,7 +24052,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_exposed_copper_bars"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24373,7 +24091,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_exposed_copper_bulb"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24390,7 +24107,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_exposed_copper_chain"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24407,7 +24123,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_exposed_copper_chest"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24424,7 +24139,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_exposed_copper_door"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24441,7 +24155,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_exposed_copper"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24458,7 +24171,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_exposed_copper_golem_statue"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24496,7 +24208,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_exposed_copper_grate"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24525,7 +24236,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_exposed_copper_lantern"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24542,7 +24252,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_exposed_copper_trapdoor"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24579,7 +24288,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_exposed_cut_copper"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24627,7 +24335,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_exposed_cut_copper_slab"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24689,7 +24396,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_exposed_cut_copper_stairs"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24713,7 +24419,6 @@
     "data": {
       "ingredient": "minecraft:waxed_exposed_cut_copper",
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_exposed_cut_copper_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -24730,7 +24435,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_exposed_lightning_rod"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24747,7 +24451,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_lightning_rod"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24767,7 +24470,6 @@
         " M "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_oxidized_chiseled_copper"
       },
       "type": "minecraft:crafting_shaped"
@@ -24784,7 +24486,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_oxidized_chiseled_copper"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24808,7 +24509,6 @@
     "data": {
       "ingredient": "minecraft:waxed_oxidized_cut_copper",
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_oxidized_chiseled_copper"
       },
       "type": "minecraft:stonecutting"
@@ -24825,7 +24525,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_oxidized_copper_bars"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24865,7 +24564,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_oxidized_copper_bulb"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24882,7 +24580,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_oxidized_copper_chain"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24899,7 +24596,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_oxidized_copper_chest"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24916,7 +24612,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_oxidized_copper_door"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24933,7 +24628,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_oxidized_copper"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24950,7 +24644,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_oxidized_copper_golem_statue"
       },
       "type": "minecraft:crafting_shapeless"
@@ -24988,7 +24681,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_oxidized_copper_grate"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25017,7 +24709,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_oxidized_copper_lantern"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25034,7 +24725,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_oxidized_copper_trapdoor"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25071,7 +24761,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_oxidized_cut_copper"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25119,7 +24808,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_oxidized_cut_copper_slab"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25181,7 +24869,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_oxidized_cut_copper_stairs"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25205,7 +24892,6 @@
     "data": {
       "ingredient": "minecraft:waxed_oxidized_cut_copper",
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_oxidized_cut_copper_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -25222,7 +24908,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_oxidized_lightning_rod"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25242,7 +24927,6 @@
         " M "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_weathered_chiseled_copper"
       },
       "type": "minecraft:crafting_shaped"
@@ -25259,7 +24943,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_weathered_chiseled_copper"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25283,7 +24966,6 @@
     "data": {
       "ingredient": "minecraft:waxed_weathered_cut_copper",
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_weathered_chiseled_copper"
       },
       "type": "minecraft:stonecutting"
@@ -25300,7 +24982,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_weathered_copper_bars"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25340,7 +25021,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_weathered_copper_bulb"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25357,7 +25037,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_weathered_copper_chain"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25374,7 +25053,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_weathered_copper_chest"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25391,7 +25069,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_weathered_copper_door"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25408,7 +25085,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_weathered_copper"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25425,7 +25101,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_weathered_copper_golem_statue"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25463,7 +25138,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_weathered_copper_grate"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25492,7 +25166,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_weathered_copper_lantern"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25509,7 +25182,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_weathered_copper_trapdoor"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25546,7 +25218,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_weathered_cut_copper"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25594,7 +25265,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_weathered_cut_copper_slab"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25656,7 +25326,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_weathered_cut_copper_stairs"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25680,7 +25349,6 @@
     "data": {
       "ingredient": "minecraft:waxed_weathered_cut_copper",
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_weathered_cut_copper_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -25697,7 +25365,6 @@
         "minecraft:honeycomb"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:waxed_weathered_lightning_rod"
       },
       "type": "minecraft:crafting_shapeless"
@@ -25749,7 +25416,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:weathered_chiseled_copper"
       },
       "type": "minecraft:crafting_shaped"
@@ -25773,7 +25439,6 @@
     "data": {
       "ingredient": "minecraft:weathered_cut_copper",
       "result": {
-        "count": 1,
         "id": "minecraft:weathered_chiseled_copper"
       },
       "type": "minecraft:stonecutting"
@@ -25946,7 +25611,6 @@
     "data": {
       "ingredient": "minecraft:weathered_cut_copper",
       "result": {
-        "count": 1,
         "id": "minecraft:weathered_cut_copper_stairs"
       },
       "type": "minecraft:stonecutting"
@@ -25983,13 +25647,23 @@
         " | "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:white_banner"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/white_banner.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "banner": "minecraft:white_banner",
+      "result": {
+        "id": "minecraft:white_banner"
+      },
+      "type": "minecraft:crafting_special_bannerduplicate"
+    },
+    "path": "data/minecraft/recipe/white_banner_duplicate.json",
+    "type": "minecraft:crafting_special_bannerduplicate"
   },
   {
     "data": {
@@ -26004,7 +25678,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:white_bed"
       },
       "type": "minecraft:crafting_shaped"
@@ -26035,7 +25708,6 @@
         "minecraft:white_dye"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:white_candle"
       },
       "type": "minecraft:crafting_shapeless"
@@ -26094,7 +25766,6 @@
         "minecraft:bone_meal"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:white_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -26110,7 +25781,6 @@
         "minecraft:lily_of_the_valley"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:white_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -26146,7 +25816,6 @@
         "G#G"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:white_harness"
       },
       "type": "minecraft:crafting_shaped"
@@ -26265,7 +25934,6 @@
         "##"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:white_wool"
       },
       "type": "minecraft:crafting_shaped"
@@ -26333,13 +26001,26 @@
         "X X"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:wolf_armor"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/wolf_armor.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "category": "misc",
+      "dye": "#minecraft:dyes",
+      "group": "dyed_armor",
+      "result": {
+        "id": "minecraft:wolf_armor"
+      },
+      "target": "minecraft:wolf_armor",
+      "type": "minecraft:crafting_dye"
+    },
+    "path": "data/minecraft/recipe/wolf_armor_dyed.json",
+    "type": "minecraft:crafting_dye"
   },
   {
     "data": {
@@ -26354,7 +26035,6 @@
         " #"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:wooden_axe"
       },
       "type": "minecraft:crafting_shaped"
@@ -26375,7 +26055,6 @@
         " #"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:wooden_hoe"
       },
       "type": "minecraft:crafting_shaped"
@@ -26396,7 +26075,6 @@
         " # "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:wooden_pickaxe"
       },
       "type": "minecraft:crafting_shaped"
@@ -26417,7 +26095,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:wooden_shovel"
       },
       "type": "minecraft:crafting_shaped"
@@ -26438,7 +26115,6 @@
         "#  "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:wooden_spear"
       },
       "type": "minecraft:crafting_shaped"
@@ -26459,7 +26135,6 @@
         "#"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:wooden_sword"
       },
       "type": "minecraft:crafting_shaped"
@@ -26476,7 +26151,6 @@
         "minecraft:feather"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:writable_book"
       },
       "type": "minecraft:crafting_shapeless"
@@ -26498,13 +26172,23 @@
         " | "
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:yellow_banner"
       },
       "type": "minecraft:crafting_shaped"
     },
     "path": "data/minecraft/recipe/yellow_banner.json",
     "type": "minecraft:crafting_shaped"
+  },
+  {
+    "data": {
+      "banner": "minecraft:yellow_banner",
+      "result": {
+        "id": "minecraft:yellow_banner"
+      },
+      "type": "minecraft:crafting_special_bannerduplicate"
+    },
+    "path": "data/minecraft/recipe/yellow_banner_duplicate.json",
+    "type": "minecraft:crafting_special_bannerduplicate"
   },
   {
     "data": {
@@ -26519,7 +26203,6 @@
         "XXX"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:yellow_bed"
       },
       "type": "minecraft:crafting_shaped"
@@ -26550,7 +26233,6 @@
         "minecraft:yellow_dye"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:yellow_candle"
       },
       "type": "minecraft:crafting_shapeless"
@@ -26609,12 +26291,26 @@
         "minecraft:dandelion"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:yellow_dye"
       },
       "type": "minecraft:crafting_shapeless"
     },
     "path": "data/minecraft/recipe/yellow_dye_from_dandelion.json",
+    "type": "minecraft:crafting_shapeless"
+  },
+  {
+    "data": {
+      "category": "misc",
+      "group": "yellow_dye",
+      "ingredients": [
+        "minecraft:golden_dandelion"
+      ],
+      "result": {
+        "id": "minecraft:yellow_dye"
+      },
+      "type": "minecraft:crafting_shapeless"
+    },
+    "path": "data/minecraft/recipe/yellow_dye_from_golden_dandelion.json",
     "type": "minecraft:crafting_shapeless"
   },
   {
@@ -26641,7 +26337,6 @@
         "minecraft:wildflowers"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:yellow_dye"
       },
       "type": "minecraft:crafting_shapeless"
@@ -26677,7 +26372,6 @@
         "G#G"
       ],
       "result": {
-        "count": 1,
         "id": "minecraft:yellow_harness"
       },
       "type": "minecraft:crafting_shaped"

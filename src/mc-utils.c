@@ -128,6 +128,9 @@ int main(int argc, char *argv[])
         if (argc < 3) { fprintf(stderr, "Error: --recipe requires an item name\n"); return 1; }
         print_recipe(argv[2], recipes_path);
     }
+    else if (strcmp(argv[1], "--generate-list") == 0) {
+        list_items(recipes_path);
+    }
     else if (strcmp(argv[1], "--generate-recipes") == 0 || strcmp(argv[1], "generate_recipes") == 0) {
         /* options: --jar <path> or --download */
         const char *jar_path = NULL;

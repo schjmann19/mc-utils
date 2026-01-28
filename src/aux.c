@@ -43,6 +43,9 @@ static void print_usage(void){
     puts("    Options for --recipe:");
     puts("      --recipes=<path>                  Use custom recipes JSON file (default: extractor/recipes.json)");
     puts("      --netherite                       Use netherite in crafting recipes");
+    puts("  mc-util --generate-list              List all craftable item names (one per line, for fuzzy finding)");
+    puts("    Options for --generate-list:");
+    puts("      --recipes=<path>                  Use custom recipes JSON file (default: extractor/recipes.json)");
 }
 
 static void help(void){

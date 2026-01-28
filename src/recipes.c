@@ -178,3 +178,53 @@ static void print_recipe(const char *item, const char *recipes_path) {
     if (!found) printf("No recipe found for %s\n", full);
     free(buf);
 }
+
+static void list_items(const char *recipes_path) {
+    char *buf = read_file_all(recipes_path);
+    if (!buf) { fprintf(stderr, "Could not open %s\n", recipes_path); return; }
+
+    /* Track seen items to avoid duplicates */
+    char **seen = malloc(sizeof(char*) * 2000);  /* max ~2000 unique items */
+    int seen_count = 0;
+
+    char *p = buf;
+    while ((p = strstr(p, "\"result\"")) != NULL) {
+        /* look for an "id": "..." inside the result object */
+        char *idpos = strstr(p, "\"id\": \"");
+        if (!idpos) { p = p + 8; continue; }
+        char *idstart = idpos + strlen("\"id\": \"");
+        char *idend = strchr(idstart, '"');
+        if (!idend) { p = idpos + 1; continue; }
+        size_t idlen = idend - idstart;
+
+        /* extract the item ID */
+        char *itemid = malloc(idlen + 1);
+        if (!itemid) break;
+        memcpy(itemid, idstart, idlen);
+        itemid[idlen] = '\0';
+
+        /* check if we've already seen this item */
+        int already_seen = 0;
+        for (int i = 0; i < seen_count; i++) {
+            if (strcmp(seen[i], itemid) == 0) {
+                already_seen = 1;
+                break;
+            }
+        }
+
+        if (!already_seen && seen_count < 2000) {
+            printf("%s\n", itemid);
+            seen[seen_count++] = itemid;
+        } else {
+            free(itemid);
+        }
+
+        p = idpos + 1;
+    }
+
+    for (int i = 0; i < seen_count; i++) {
+        free(seen[i]);
+    }
+    free(seen);
+    free(buf);
+}

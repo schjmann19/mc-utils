@@ -1,12 +1,133 @@
 #define _POSIX_C_SOURCE 200809L
 #include "aux.h"
 #include "crconvert.h"
+#include "dns.h"
+#include "protocol.h"
 #include "netherite-left.h"
 #include "recipes.h"
+#include "../common_utils/color.h"
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
+
+static const char *motd_color_to_ansi(const char *color);
+
+static const char *legacy_motd_code(const char code) {
+    switch (code) {
+        case '0': return FG_BLACK;
+        case '1': return FG_BLUE;
+        case '2': return FG_GREEN;
+        case '3': return FG_CYAN;
+        case '4': return FG_RED;
+        case '5': return FG_MAGENTA;
+        case '6': return FG_YELLOW;
+        case '7': return FG_WHITE;
+        case '8': return FG_BRIGHT_BLACK;
+        case '9': return FG_BRIGHT_BLUE;
+        case 'a': return FG_BRIGHT_GREEN;
+        case 'b': return FG_BRIGHT_CYAN;
+        case 'c': return FG_BRIGHT_RED;
+        case 'd': return FG_BRIGHT_MAGENTA;
+        case 'e': return FG_BRIGHT_YELLOW;
+        case 'f': return FG_BRIGHT_WHITE;
+        case 'l': return BOLD;
+        case 'o': return ITALIC;
+        case 'n': return UNDERLINE;
+        case 'm': return STRIKETHROUGH;
+        case 'r': return RESET;
+        default: return "";
+    }
+}
+
+static void print_motd(const char *motd, const char *motd_color) {
+    if (!motd || !motd[0]) {
+        printf("MOTD: unknown\n");
+        return;
+    }
+
+    printf("MOTD: ");
+    const char *ansi = "";
+    if (motd_color && motd_color[0]) {
+        ansi = motd_color_to_ansi(motd_color);
+        fputs(ansi, stdout);
+    }
+
+    const char *p = motd;
+    while (*p) {
+        if ((unsigned char)*p == 0xC2 && (unsigned char)p[1] == 0xA7 && p[2]) {
+            const char *code = legacy_motd_code(p[2]);
+            if (code[0]) {
+                fputs(code, stdout);
+            }
+            p += 3;
+            continue;
+        }
+        if (*p == '\n') {
+            fputs("\n      ", stdout);
+            p++;
+            continue;
+        }
+        putchar(*p);
+        p++;
+    }
+    fputs(RESET "\n", stdout);
+}
+
+static const char *motd_color_to_ansi(const char *color) {
+    if (!color || !color[0]) {
+        return "";
+    }
+    if (strcmp(color, "black") == 0) {
+        return FG_BLACK;
+    }
+    if (strcmp(color, "dark_blue") == 0) {
+        return FG_BLUE;
+    }
+    if (strcmp(color, "dark_green") == 0) {
+        return FG_GREEN;
+    }
+    if (strcmp(color, "dark_aqua") == 0) {
+        return FG_CYAN;
+    }
+    if (strcmp(color, "dark_red") == 0) {
+        return FG_RED;
+    }
+    if (strcmp(color, "dark_purple") == 0) {
+        return FG_MAGENTA;
+    }
+    if (strcmp(color, "gold") == 0) {
+        return FG_YELLOW;
+    }
+    if (strcmp(color, "gray") == 0) {
+        return FG_WHITE;
+    }
+    if (strcmp(color, "dark_gray") == 0) {
+        return FG_BRIGHT_BLACK;
+    }
+    if (strcmp(color, "blue") == 0) {
+        return FG_BRIGHT_BLUE;
+    }
+    if (strcmp(color, "green") == 0) {
+        return FG_BRIGHT_GREEN;
+    }
+    if (strcmp(color, "aqua") == 0) {
+        return FG_BRIGHT_CYAN;
+    }
+    if (strcmp(color, "red") == 0) {
+        return FG_BRIGHT_RED;
+    }
+    if (strcmp(color, "light_purple") == 0) {
+        return FG_BRIGHT_MAGENTA;
+    }
+    if (strcmp(color, "yellow") == 0) {
+        return FG_BRIGHT_YELLOW;
+    }
+    if (strcmp(color, "white") == 0) {
+        return FG_BRIGHT_WHITE;
+    }
+    return "";
+}
 
 extern int32_t extract_recipes(const char *jar_path, const char *output_path);
 extern int32_t download_minecraft_jar(const char *dest);
@@ -173,6 +294,36 @@ int main(int argc, char *argv[]) {
         printf("%s\n", cstr(&out));
         str_destroy(&cmd);
         str_destroy(&out);
+    } else if (strcmp(argv[1], "--status") == 0) {
+        if (argc < 3) {
+            fprintf(stderr, "Usage: %s --status <hostname> [port]\n", argv[0]);
+            return 1;
+        }
+        uint16_t port = 0;
+        if (argc >= 4) {
+            port = (uint16_t)atoi(argv[3]);
+        }
+        mc_endpoint endpoint;
+        if (mc_resolve(argv[2], port, &endpoint) != 0) {
+            fprintf(stderr, "Failed to resolve hostname %s\n", argv[2]);
+            return 1;
+        }
+
+        mc_status status;
+        if (mc_status_query(argv[2], port, &status) != 0) {
+            fprintf(stderr, "Failed to query server status for %s\n", argv[2]);
+            mc_endpoint_free(&endpoint);
+            return 1;
+        }
+        printf("Host: %s:%u\n", endpoint.host, endpoint.port);
+        mc_endpoint_free(&endpoint);
+        printf("Online: %s\n", status.online ? "yes" : "no");
+        printf("Version: %s\n", status.version[0] ? status.version : "unknown");
+        print_motd(status.motd, status.motd_color);
+        printf("Players: %d/%d\n", status.players_online, status.players_max);
+        printf("Latency: %d ms\n", status.latency_ms);
+        //printf("JSON: %s\n", status.json.data ? cstr(&status.json) : "{}");
+        mc_status_free(&status);
     } else if (strcmp(argv[1], "--recipe") == 0) {
         if (argc < 3) {
             fprintf(stderr, "Error: --recipe requires an item name\n");

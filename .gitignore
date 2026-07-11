@@ -2,3 +2,4 @@
 .OBSOLETE
 extractor/target
 minecraftjar/*.jar
+*.MD

@@ -4,9 +4,9 @@ DEBUG ?= 0
 ifeq ($(DEBUG),0)
 	CFLAGS += -s
 endif
-LDFLAGS ?= -Wl,-Bstatic -L extractor/target/release -l mc_recipe_extractor -Wl,-Bdynamic -lbz2 -lssl -lcrypto -lm
+LDFLAGS ?= -Wl,-Bstatic -L extractor/target/release -l mc_recipe_extractor -Wl,-Bdynamic -lbz2 -lssl -lcrypto -lm -lresolv
 BIN_DIR := bin
-SRC := src/mc-utils.c src/aux.c src/netherite-left.c src/recipes.c src/crconvert.c common_utils/src/strings.c
+SRC := src/mc-utils.c src/aux.c src/netherite-left.c src/recipes.c src/crconvert.c src/dns.c src/varint.c src/packet.c src/protocol.c common_utils/src/strings.c
 
 .PHONY: all extractor noembed mc-util clean debug
 

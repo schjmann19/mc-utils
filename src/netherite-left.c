@@ -1,11 +1,10 @@
-#include "aux.h"
 #include <getopt.h>
 #include <stdio.h>
 #include <stdlib.h>
 
 #define BEACON_REQ_SCRAPS 5904
 
-#define NETHERITE_LEFT_VER 0.2
+#define NETHERITE_LEFT_VER "0.2"
 
 #define _ -1
 
@@ -15,7 +14,7 @@ static void NL_bad_arg(void) {
 }
 
 static void NL_ver(void) {
-    printf("netherite-left version %.1f\n", NETHERITE_LEFT_VER);
+    printf("netherite-left version %s\n", NETHERITE_LEFT_VER);
     puts("by Jimena Neumann (schjmann19@gmail.com)");
 }
 

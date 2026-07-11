@@ -1,19 +1,18 @@
-#include <stdio.h>
+#include "aux.h"
 
-#pragma once
-
-#define VER 0.5
+#define VER "0.6"
 
 #define SUCCESS 0
 #define NOT_SUCCESS 1
 #define HOW_DID_THAT_HAPPEN -2
 
-static void ver(void){
-    printf("mc-utils version %.1f\n", VER);
+void ver(void) {
+    printf("mc-utils version %s\n", VER);
     puts("by Jimena Neumann (schjmann19@gmail.com)\n");
+    printf("compiled on %s, %s", __TIME__, __DATE__);
 }
 
-static void enchanting_table(void){
+void enchanting_table(void) {
     puts("For level 15, you need 45 books.");
     puts("for which you need 45 leather and 135 paper.");
     puts("for which you need 2 stacks and 7 sugar cane.");
@@ -21,12 +20,12 @@ static void enchanting_table(void){
     puts("or 23 logs.\n");
 }
 
-static void anvil(void){
+void anvil(void) {
     puts("to craft an anvil, you need 3 blocks of iron and 4 iron ingots.");
     puts("for which you need 31 iron ingots\n");
 }
 
-static void print_usage(void){
+void print_usage(void) {
     puts("Usage:");
     puts("  mc-util --goal <number> [--small]    Calculate stacks for given number");
     puts("  mc-util --enchant                    Show enchanting table requirements");
@@ -48,17 +47,17 @@ static void print_usage(void){
     puts("      --recipes=<path>                  Use custom recipes JSON file (default: extractor/recipes.json)");
 }
 
-static void help(void){
+void help(void) {
     ver();
     puts("Handy item quantity and crafting recipes calculator and cheatsheet");
     puts("note: btw i blindly assume that your terminal is at least ~115 characters wide, hope you don't mind\n");
     print_usage();
 }
 
-int six_seven(int ret){
-    if (!ret) { return HOW_DID_THAT_HAPPEN; }
+int six_seven(int ret) {
+    if (!ret) {
+        return HOW_DID_THAT_HAPPEN;
+    }
     puts("you flippin twat");
     return ret;
 }
-
-

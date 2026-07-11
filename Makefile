@@ -6,7 +6,7 @@ ifeq ($(DEBUG),0)
 endif
 LDFLAGS ?= -Wl,-Bstatic -L extractor/target/release -l mc_recipe_extractor -Wl,-Bdynamic -lbz2 -lssl -lcrypto -lm
 BIN_DIR := bin
-SRC := src/mc-utils.c
+SRC := src/mc-utils.c src/aux.c src/netherite-left.c src/recipes.c src/crconvert.c common_utils/src/strings.c
 
 .PHONY: all extractor noembed mc-util clean debug
 

@@ -9,7 +9,7 @@
 void ver(void) {
     printf("mc-utils version %s\n", VER);
     puts("by Jimena Neumann (schjmann19@gmail.com)\n");
-    printf("compiled on %s, %s", __TIME__, __DATE__);
+    printf("compiled on %s, %s\n\n", __TIME__, __DATE__);
 }
 
 void enchanting_table(void) {

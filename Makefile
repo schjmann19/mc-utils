@@ -1,16 +1,24 @@
 CC ?= clang
 CFLAGS ?= -std=c11 -Wall -Wextra -O3
 DEBUG ?= 0
+
+PREFIX ?= /usr/local
+BINDIR ?= $(PREFIX)/bin
+DESTDIR ?=
+
 ifeq ($(DEBUG),0)
 	CFLAGS += -s
 endif
+
 LDFLAGS ?= -Wl,-Bstatic -L extractor/target/release -l mc_recipe_extractor -Wl,-Bdynamic -lbz2 -lssl -lcrypto -lm -lresolv
+
 BIN_DIR := bin
 SRC := src/mc-utils.c src/aux.c src/netherite-left.c src/recipes.c src/crconvert.c src/dns.c src/varint.c src/packet.c src/protocol.c common_utils/src/strings.c
 
-.PHONY: all extractor noembed mc-util clean debug
+.PHONY: all extractor noembed mc-util install uninstall clean debug
 
 all: mc-util
+
 debug: DEBUG=1
 debug: mc-util
 
@@ -32,6 +40,13 @@ noembed: extractor $(BIN_DIR) $(SRC)
 
 $(BIN_DIR):
 	mkdir -p $(BIN_DIR)
+
+install: mc-util
+	install -d $(DESTDIR)$(BINDIR)
+	install -m 755 $(BIN_DIR)/mc-util $(DESTDIR)$(BINDIR)/mc-util
+
+uninstall:
+	rm -f $(DESTDIR)$(BINDIR)/mc-util
 
 clean:
 	rm -f $(BIN_DIR)/mc-util

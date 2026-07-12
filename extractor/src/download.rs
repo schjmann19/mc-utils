@@ -1,8 +1,8 @@
-use std::fs;
-use std::path::Path;
-use std::ffi::CStr;
-use std::os::raw::c_char;
 use serde_json::Value;
+use std::ffi::CStr;
+use std::fs;
+use std::os::raw::c_char;
+use std::path::Path;
 
 pub fn download_latest_jar(dest: &str) -> Result<(), Box<dyn std::error::Error>> {
     // Fetch latest version info from launcher metadata
@@ -18,9 +18,7 @@ pub fn download_latest_jar(dest: &str) -> Result<(), Box<dyn std::error::Error>>
         .and_then(|v: &Value| v.as_array())
         .ok_or("Failed to get versions array")?;
 
-    let version_info = versions
-        .first()
-        .ok_or("No versions available")?;
+    let version_info = versions.first().ok_or("No versions available")?;
 
     let version_json_url = version_info
         .get("url")

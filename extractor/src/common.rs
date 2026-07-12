@@ -1,7 +1,7 @@
+use serde_json::{json, Value};
 use std::fs::File;
 use std::io::{Read, Write};
 use zip::ZipArchive;
-use serde_json::{Value, json};
 
 fn is_real_recipe(json: &Value) -> bool {
     match json.get("type").and_then(|v| v.as_str()) {

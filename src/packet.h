@@ -1,9 +1,9 @@
 #ifndef MC_PACKET_H
 #define MC_PACKET_H
 
-#include <stdint.h>
-#include <stddef.h>
 #include "varint.h"
+#include <stddef.h>
+#include <stdint.h>
 
 #define MC_PACKET_MAX 65536
 

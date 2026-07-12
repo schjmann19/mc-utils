@@ -2,8 +2,8 @@
 #define MC_DNS_H
 
 #include <stdint.h>
-#include <sys/types.h>
 #include <sys/socket.h>
+#include <sys/types.h>
 
 #define MC_HOSTNAME_MAX 256
 #define MC_DEFAULT_PORT 25565

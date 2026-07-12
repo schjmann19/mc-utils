@@ -188,23 +188,39 @@ static const char *parse_json_string_at(const char *src, char *dst, size_t dstca
                 break;
             }
             switch (*src) {
-                case '"': dst[len++] = '"'; break;
-                case '\\': dst[len++] = '\\'; break;
-                case '/': dst[len++] = '/'; break;
-                case 'b': dst[len++] = '\b'; break;
-                case 'f': dst[len++] = '\f'; break;
-                case 'n': dst[len++] = '\n'; break;
-                case 'r': dst[len++] = '\r'; break;
-                case 't': dst[len++] = '\t'; break;
-                case 'u':
-                    for (int i = 0; i < 4 && *src; ++i) {
-                        src++;
-                    }
-                    dst[len++] = '?';
-                    break;
-                default:
-                    dst[len++] = *src;
-                    break;
+            case '"':
+                dst[len++] = '"';
+                break;
+            case '\\':
+                dst[len++] = '\\';
+                break;
+            case '/':
+                dst[len++] = '/';
+                break;
+            case 'b':
+                dst[len++] = '\b';
+                break;
+            case 'f':
+                dst[len++] = '\f';
+                break;
+            case 'n':
+                dst[len++] = '\n';
+                break;
+            case 'r':
+                dst[len++] = '\r';
+                break;
+            case 't':
+                dst[len++] = '\t';
+                break;
+            case 'u':
+                for (int i = 0; i < 4 && *src; ++i) {
+                    src++;
+                }
+                dst[len++] = '?';
+                break;
+            default:
+                dst[len++] = *src;
+                break;
             }
         } else {
             dst[len++] = *src;

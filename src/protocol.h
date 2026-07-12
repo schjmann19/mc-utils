@@ -1,9 +1,9 @@
 #ifndef MC_PROTOCOL_H
 #define MC_PROTOCOL_H
 
+#include "../../common_utils/simple_strings.h"
 #include <stdbool.h>
 #include <stdint.h>
-#include "../../common_utils/simple_strings.h"
 
 #define MC_PROTOCOL_UNKNOWN -1
 #define MC_PROTOCOL_FALLBACK 0

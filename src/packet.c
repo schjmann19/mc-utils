@@ -40,7 +40,9 @@ void pkt_write_u64(mc_packet *pkt, uint64_t value) {
 
 size_t pkt_finish(const mc_packet *pkt, uint8_t *out_buf, size_t out_cap) {
     size_t header_len = mc_write_varint(out_buf, (int32_t)pkt->length);
-    if (header_len + pkt->length > out_cap) { return 0; }
+    if (header_len + pkt->length > out_cap) {
+        return 0;
+    }
     memcpy(out_buf + header_len, pkt->data, pkt->length);
     return header_len + pkt->length;
 }

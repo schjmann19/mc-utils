@@ -29,6 +29,93 @@ static char *read_file_all(const char *path) {
     return buf;
 }
 
+static int cmp_strptr(const void *a, const void *b) {
+    const char *const *sa = a;
+    const char *const *sb = b;
+    return strcmp(*sa, *sb);
+}
+
+static char **collect_item_ids(const char *recipes_path, int *out_count) {
+    char *buf = read_file_all(recipes_path);
+    if (!buf) {
+        *out_count = 0;
+        return NULL;
+    }
+
+    char **items = NULL;
+    int count = 0;
+    int cap = 0;
+    char *p = buf;
+
+    while ((p = strstr(p, "\"result\"")) != NULL) {
+        char *idpos = strstr(p, "\"id\": \"");
+        if (!idpos) {
+            p = p + 8;
+            continue;
+        }
+        char *idstart = idpos + strlen("\"id\": \"");
+        char *idend = strchr(idstart, '"');
+        if (!idend) {
+            p = idpos + 1;
+            continue;
+        }
+        size_t idlen = idend - idstart;
+        if (idlen == 0) {
+            p = idend + 1;
+            continue;
+        }
+
+        char *itemid = malloc(idlen + 1);
+        if (!itemid) {
+            break;
+        }
+        memcpy(itemid, idstart, idlen);
+        itemid[idlen] = '\0';
+
+        if (count >= cap) {
+            cap = cap ? cap * 2 : 128;
+            char **new_items = realloc(items, cap * sizeof(*new_items));
+            if (!new_items) {
+                free(itemid);
+                break;
+            }
+            items = new_items;
+        }
+        items[count++] = itemid;
+        p = idpos + 1;
+    }
+
+    free(buf);
+    if (!items) {
+        *out_count = 0;
+        return NULL;
+    }
+
+    qsort(items, count, sizeof(*items), cmp_strptr);
+
+    int uniq = 0;
+    for (int i = 0; i < count; ++i) {
+        if (uniq == 0 || strcmp(items[i], items[uniq - 1]) != 0) {
+            items[uniq++] = items[i];
+        } else {
+            free(items[i]);
+        }
+    }
+
+    *out_count = uniq;
+    return items;
+}
+
+static void free_item_ids(char **items, int count) {
+    if (!items) {
+        return;
+    }
+    for (int i = 0; i < count; ++i) {
+        free(items[i]);
+    }
+    free(items);
+}
+
 void print_recipe(const char *item, const char *recipes_path) {
     char full[256];
     if (strncmp(item, "minecraft:", 10) == 0) {
@@ -268,63 +355,39 @@ void print_recipe(const char *item, const char *recipes_path) {
     free(buf);
 }
 
+int write_item_list(const char *recipes_path, const char *list_path) {
+    int count = 0;
+    char **items = collect_item_ids(recipes_path, &count);
+    if (!items) {
+        fprintf(stderr, "Could not open %s\n", recipes_path);
+        return 1;
+    }
+
+    FILE *f = fopen(list_path, "w");
+    if (!f) {
+        fprintf(stderr, "Could not write %s\n", list_path);
+        free_item_ids(items, count);
+        return 1;
+    }
+
+    for (int i = 0; i < count; ++i) {
+        fprintf(f, "%s\n", items[i]);
+    }
+    fclose(f);
+    free_item_ids(items, count);
+    return 0;
+}
+
 void list_items(const char *recipes_path) {
-    char *buf = read_file_all(recipes_path);
-    if (!buf) {
+    int count = 0;
+    char **items = collect_item_ids(recipes_path, &count);
+    if (!items) {
         fprintf(stderr, "Could not open %s\n", recipes_path);
         return;
     }
 
-    /* Track seen items to avoid duplicates */
-    char **seen = malloc(sizeof(char *) * 2000); /* max ~2000 unique items */
-    int seen_count = 0;
-
-    char *p = buf;
-    while ((p = strstr(p, "\"result\"")) != NULL) {
-        /* look for an "id": "..." inside the result object */
-        char *idpos = strstr(p, "\"id\": \"");
-        if (!idpos) {
-            p = p + 8;
-            continue;
-        }
-        char *idstart = idpos + strlen("\"id\": \"");
-        char *idend = strchr(idstart, '"');
-        if (!idend) {
-            p = idpos + 1;
-            continue;
-        }
-        size_t idlen = idend - idstart;
-
-        /* extract the item ID */
-        char *itemid = malloc(idlen + 1);
-        if (!itemid) {
-            break;
-        }
-        memcpy(itemid, idstart, idlen);
-        itemid[idlen] = '\0';
-
-        /* check if we've already seen this item */
-        int already_seen = 0;
-        for (int i = 0; i < seen_count; i++) {
-            if (strcmp(seen[i], itemid) == 0) {
-                already_seen = 1;
-                break;
-            }
-        }
-
-        if (!already_seen && seen_count < 2000) {
-            printf("%s\n", itemid);
-            seen[seen_count++] = itemid;
-        } else {
-            free(itemid);
-        }
-
-        p = idpos + 1;
+    for (int i = 0; i < count; ++i) {
+        printf("%s\n", items[i]);
     }
-
-    for (int i = 0; i < seen_count; i++) {
-        free(seen[i]);
-    }
-    free(seen);
-    free(buf);
+    free_item_ids(items, count);
 }

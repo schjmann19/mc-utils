@@ -1,52 +1,77 @@
 #define _POSIX_C_SOURCE 200809L
+#include "../common_utils/color.h"
 #include "aux.h"
 #include "crconvert.h"
 #include "dns.h"
-#include "protocol.h"
 #include "netherite-left.h"
+#include "protocol.h"
 #include "recipes.h"
-#include "../common_utils/color.h"
+#include <limits.h>
 #include <stdint.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
+#include <sys/stat.h>
 #include <unistd.h>
 
 static const char *motd_color_to_ansi(const char *color);
 
 static const char *legacy_motd_code(const char code) {
     switch (code) {
-        case '0': return FG_BLACK;
-        case '1': return FG_BLUE;
-        case '2': return FG_GREEN;
-        case '3': return FG_CYAN;
-        case '4': return FG_RED;
-        case '5': return FG_MAGENTA;
-        case '6': return FG_YELLOW;
-        case '7': return FG_WHITE;
-        case '8': return FG_BRIGHT_BLACK;
-        case '9': return FG_BRIGHT_BLUE;
-        case 'a': return FG_BRIGHT_GREEN;
-        case 'b': return FG_BRIGHT_CYAN;
-        case 'c': return FG_BRIGHT_RED;
-        case 'd': return FG_BRIGHT_MAGENTA;
-        case 'e': return FG_BRIGHT_YELLOW;
-        case 'f': return FG_BRIGHT_WHITE;
-        case 'l': return BOLD;
-        case 'o': return ITALIC;
-        case 'n': return UNDERLINE;
-        case 'm': return STRIKETHROUGH;
-        case 'r': return RESET;
-        default: return "";
+    case '0':
+        return FG_BLACK;
+    case '1':
+        return FG_BLUE;
+    case '2':
+        return FG_GREEN;
+    case '3':
+        return FG_CYAN;
+    case '4':
+        return FG_RED;
+    case '5':
+        return FG_MAGENTA;
+    case '6':
+        return FG_YELLOW;
+    case '7':
+        return FG_WHITE;
+    case '8':
+        return FG_BRIGHT_BLACK;
+    case '9':
+        return FG_BRIGHT_BLUE;
+    case 'a':
+        return FG_BRIGHT_GREEN;
+    case 'b':
+        return FG_BRIGHT_CYAN;
+    case 'c':
+        return FG_BRIGHT_RED;
+    case 'd':
+        return FG_BRIGHT_MAGENTA;
+    case 'e':
+        return FG_BRIGHT_YELLOW;
+    case 'f':
+        return FG_BRIGHT_WHITE;
+    case 'l':
+        return BOLD;
+    case 'o':
+        return ITALIC;
+    case 'n':
+        return UNDERLINE;
+    case 'm':
+        return STRIKETHROUGH;
+    case 'r':
+        return RESET;
+    default:
+        return "";
     }
 }
 
 static void print_motd(const char *motd, const char *motd_color) {
     if (!motd || !motd[0]) {
-        printf("MOTD: unknown\n");
+        printf(ITALIC "MOTD: unknown\n" RESET);
         return;
     }
 
-    printf("MOTD: ");
+    printf(ITALIC "MOTD: " RESET);
     const char *ansi = "";
     if (motd_color && motd_color[0]) {
         ansi = motd_color_to_ansi(motd_color);
@@ -150,15 +175,149 @@ static int file_exists(const char *path) {
 }
 
 /* Download latest minecraft client jar into minecraftjar/<version>.jar */
+/* Build paths inside ~/mc-util/data/ */
+static void build_data_path(char *out, size_t outlen, const char *suffix) {
+    const char *home = getenv("HOME");
+    if (!home) {
+        home = "/tmp";
+    }
+    snprintf(out, outlen, "%s/mc-util/data/%s", home, suffix);
+}
+
+static void ensure_data_dirs(void) {
+    char cmd[PATH_MAX + 64];
+    const char *home = getenv("HOME");
+    if (!home) {
+        home = "/tmp";
+    }
+    /* create base data dir and minecraftjar subdir */
+    snprintf(cmd, sizeof(cmd), "mkdir -p '%s/mc-util/data' '%s/mc-util/data/minecraft'", home, home);
+    system(cmd);
+}
+
 static int download_latest_jar(char *dest, size_t destlen) {
-    snprintf(dest, destlen, "minecraftjar/latest.jar");
+    ensure_data_dirs();
+    build_data_path(dest, destlen, "minecraft/latest.jar");
     return download_minecraft_jar(dest);
 }
 
 /* Run the extractor binary (if present) or fall back to `cargo run`.
    jar_path is the path to the downloaded/provided jar. Returns 0 on success. */
 static int run_extractor_with_jar(const char *jar_path) {
-    return extract_recipes(jar_path, "extractor/recipes.json");
+    char recipes[PATH_MAX];
+    build_data_path(recipes, sizeof(recipes), "recipes.json");
+    ensure_data_dirs();
+    return extract_recipes(jar_path, recipes);
+}
+
+/* Ensure recipes file exists. If `is_default` is true we will attempt to
+ * download the jar and run the embedded extractor to produce it. Returns 0
+ * on success. */
+static void trim_newline(char *s) {
+    if (!s) {
+        return;
+    }
+    char *p = strchr(s, '\n');
+    if (p) {
+        *p = '\0';
+    }
+    p = strchr(s, '\r');
+    if (p) {
+        *p = '\0';
+    }
+}
+
+static int run_fzf_selection(const char *list_path, char *out, size_t outlen) {
+    char cmd[PATH_MAX + 128];
+    snprintf(cmd, sizeof(cmd), "fzf --prompt='Recipe: ' < '%s' 2>/dev/null", list_path);
+    FILE *f = popen(cmd, "r");
+    if (!f) {
+        return 1;
+    }
+    if (!fgets(out, outlen, f)) {
+        pclose(f);
+        return 1;
+    }
+    pclose(f);
+    trim_newline(out);
+    return out[0] ? 0 : 1;
+}
+
+static int get_item_list_path(const char *recipes_path, int is_default, char *out, size_t outlen, int *is_temp) {
+    if (is_default) {
+        ensure_data_dirs();
+        build_data_path(out, outlen, "items.txt");
+        *is_temp = 0;
+        return 0;
+    }
+
+    char tmp[] = "/tmp/mc-util-items-XXXXXX";
+    int fd = mkstemp(tmp);
+    if (fd < 0) {
+        return 1;
+    }
+    close(fd);
+    if (strlen(tmp) >= outlen) {
+        unlink(tmp);
+        return 1;
+    }
+    strcpy(out, tmp);
+    *is_temp = 1;
+    return 0;
+}
+
+static int select_recipe_item(char *selected, size_t selected_len, const char *recipes_path, int is_default) {
+    char list_path[PATH_MAX];
+    int is_temp;
+    if (get_item_list_path(recipes_path, is_default, list_path, sizeof(list_path), &is_temp) != 0) {
+        fprintf(stderr, "Failed to prepare item list\n");
+        return 1;
+    }
+    if (!file_exists(list_path)) {
+        if (write_item_list(recipes_path, list_path) != 0) {
+            if (is_temp) {
+                unlink(list_path);
+            }
+            return 1;
+        }
+    }
+    int r = run_fzf_selection(list_path, selected, selected_len);
+    if (is_temp) {
+        unlink(list_path);
+    }
+    return r;
+}
+
+static int ensure_recipes_present(const char *recipes_path, int is_default) {
+    if (file_exists(recipes_path)) {
+        return 0;
+    }
+    if (!is_default) {
+        fprintf(stderr, "Could not open %s\n", recipes_path);
+        return 1;
+    }
+
+    char jarbuf[PATH_MAX];
+    build_data_path(jarbuf, sizeof(jarbuf), "minecraft/latest.jar");
+    if (!file_exists(jarbuf)) {
+        printf("recipes.json missing, downloading jar first...\n");
+        if (download_minecraft_jar(jarbuf) != 0) {
+            fprintf(stderr, "Failed to download jar\n");
+            return 1;
+        }
+    }
+
+    printf("Generating recipes.json using extractor...\n");
+    int r = run_extractor_with_jar(jarbuf);
+    if (r != 0) {
+        fprintf(stderr, "Extractor failed (code %d)\n", r);
+        return r;
+    }
+    if (!file_exists(recipes_path)) {
+        fprintf(stderr, "Extractor did not produce %s\n", recipes_path);
+        return 1;
+    }
+    return 0;
 }
 
 void calculate_stacks(int total_items, int stack_size) {
@@ -182,7 +341,10 @@ int calculate_total(int num_stacks, int remaining_items, int stack_size) {
 
 int main(int argc, char *argv[]) {
     /* allow overriding recipes file: remove any --recipes=... or --recipes <path> args early */
-    const char *recipes_path = "extractor/recipes.json";
+    char recipes_path_buf[PATH_MAX];
+    build_data_path(recipes_path_buf, sizeof(recipes_path_buf), "recipes.json");
+    const char *recipes_path = recipes_path_buf;
+    int recipes_is_default = 1;
     char **nargv = malloc(sizeof(char *) * (argc + 1));
     if (!nargv) {
         fprintf(stderr, "Out of memory\n");
@@ -193,9 +355,11 @@ int main(int argc, char *argv[]) {
     for (int i = 1; i < argc; ++i) {
         if (strncmp(argv[i], "--recipes=", 10) == 0) {
             recipes_path = argv[i] + 10;
+            recipes_is_default = 0;
         } else if (strcmp(argv[i], "--recipes") == 0) {
             if (i + 1 < argc) {
                 recipes_path = argv[i + 1];
+                recipes_is_default = 0;
                 ++i;
             }
         } else {
@@ -266,7 +430,9 @@ int main(int argc, char *argv[]) {
         anvil();
     } else if (strcmp(argv[1], "--download") == 0) {
         printf("Downloading latest Minecraft jar...\n");
-        char dest[] = "minecraftjar/latest.jar";
+        char dest[PATH_MAX];
+        ensure_data_dirs();
+        build_data_path(dest, sizeof(dest), "minecraft/latest.jar");
         if (download_minecraft_jar(dest) != 0) {
             fprintf(stderr, "Failed to download jar\n");
             return 1;
@@ -315,22 +481,51 @@ int main(int argc, char *argv[]) {
             mc_endpoint_free(&endpoint);
             return 1;
         }
-        printf("Host: %s:%u\n", endpoint.host, endpoint.port);
+        printf(ITALIC "Host: " RESET);
+        printf("%s:%u\n", endpoint.host, endpoint.port);
         mc_endpoint_free(&endpoint);
-        printf("Online: %s\n", status.online ? "yes" : "no");
-        printf("Version: %s\n", status.version[0] ? status.version : "unknown");
+        printf(ITALIC "Online: " RESET);
+        printf("%s\n", status.online ? "yes" : "no");
+        printf(ITALIC "Version: " RESET);
+        printf("%s\n", status.version[0] ? status.version : "unknown");
         print_motd(status.motd, status.motd_color);
-        printf("Players: %d/%d\n", status.players_online, status.players_max);
-        printf("Latency: %d ms\n", status.latency_ms);
-        //printf("JSON: %s\n", status.json.data ? cstr(&status.json) : "{}");
+        printf(ITALIC "Players: " RESET);
+        printf("%d/%d\n", status.players_online, status.players_max);
+        printf(ITALIC "Latency: " RESET);
+        printf("%d ms\n", status.latency_ms);
+        // printf("JSON: %s\n", status.json.data ? cstr(&status.json) : "{}");
         mc_status_free(&status);
     } else if (strcmp(argv[1], "--recipe") == 0) {
-        if (argc < 3) {
-            fprintf(stderr, "Error: --recipe requires an item name\n");
+        if (ensure_recipes_present(recipes_path, recipes_is_default) != 0) {
             return 1;
         }
-        print_recipe(argv[2], recipes_path);
+        char item[256];
+        if (argc < 3) {
+            if (select_recipe_item(item, sizeof(item), recipes_path, recipes_is_default) != 0) {
+                fprintf(stderr, "No recipe selected.\n");
+                return 1;
+            }
+            print_recipe(item, recipes_path);
+        } else {
+            print_recipe(argv[2], recipes_path);
+        }
     } else if (strcmp(argv[1], "--generate-list") == 0) {
+        char list_path[PATH_MAX];
+        int list_temp = 0;
+        if (ensure_recipes_present(recipes_path, recipes_is_default) != 0) {
+            return 1;
+        }
+        if (get_item_list_path(recipes_path, recipes_is_default, list_path, sizeof(list_path), &list_temp) == 0) {
+            if (write_item_list(recipes_path, list_path) != 0) {
+                if (list_temp) {
+                    unlink(list_path);
+                }
+                return 1;
+            }
+            if (list_temp) {
+                unlink(list_path);
+            }
+        }
         list_items(recipes_path);
     } else if (strcmp(argv[1], "--generate-recipes") == 0 || strcmp(argv[1], "generate_recipes") == 0) {
         /* options: --jar <path> or --download */
@@ -360,8 +555,9 @@ int main(int argc, char *argv[]) {
             jar_path = jarbuf;
         }
         if (!jar_path) {
-            /* default to latest downloaded jar */
-            jar_path = "minecraftjar/latest.jar";
+            /* default to latest downloaded jar in data dir */
+            build_data_path(jarbuf, sizeof(jarbuf), "minecraft/latest.jar");
+            jar_path = jarbuf;
         }
 
         if (!file_exists(jar_path)) {

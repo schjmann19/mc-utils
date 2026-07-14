@@ -460,7 +460,7 @@ int main(int argc, char *argv[]) {
         printf("%s\n", cstr(&out));
         str_destroy(&cmd);
         str_destroy(&out);
-    } else if (strcmp(argv[1], "--status") == 0) {
+    } else if (strcmp(argv[1], "--status") == 0 || strcmp(argv[1], "--srvcheck") == 0) {
         if (argc < 3) {
             fprintf(stderr, "Usage: %s --status <hostname> [port]\n", argv[0]);
             return 1;

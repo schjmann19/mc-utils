@@ -116,6 +116,84 @@ static void free_item_ids(char **items, int count) {
     free(items);
 }
 
+static void print_recipe_ingredients(const char *win) {
+    if (!win) {
+        return;
+    }
+
+    printf("Ingredients:\n");
+    const char *ing = strstr(win, "\"ingredients\"");
+    if (!ing) {
+        return;
+    }
+
+    const char *br = strchr(ing, '[');
+    if (!br) {
+        return;
+    }
+
+    const char *s = br + 1;
+    const char *end = strchr(br, ']');
+    if (!end) {
+        end = win + strlen(win);
+    }
+
+    char *seen[64] = {0};
+    int seen_count = 0;
+
+    while (s < end) {
+        while (s < end && (*s == ' ' || *s == '\n' || *s == '\r' || *s == '\t' || *s == ',')) {
+            s++;
+        }
+        if (s >= end || *s == ']') {
+            break;
+        }
+        if (*s != '"') {
+            s++;
+            continue;
+        }
+
+        const char *q = s + 1;
+        const char *q2 = strchr(q, '"');
+        if (!q2) {
+            break;
+        }
+
+        int len = q2 - q;
+        char *val = malloc(len + 1);
+        if (!val) {
+            break;
+        }
+        memcpy(val, q, len);
+        val[len] = '\0';
+
+        int duplicate = 0;
+        for (int i = 0; i < seen_count; ++i) {
+            if (strcmp(seen[i], val) == 0) {
+                duplicate = 1;
+                break;
+            }
+        }
+
+        if (!duplicate) {
+            printf("  %s\n", val);
+            if (seen_count < 64) {
+                seen[seen_count++] = val;
+            } else {
+                free(val);
+            }
+        } else {
+            free(val);
+        }
+
+        s = q2 + 1;
+    }
+
+    for (int i = 0; i < seen_count; ++i) {
+        free(seen[i]);
+    }
+}
+
 void print_recipe(const char *item, const char *recipes_path) {
     char full[256];
     if (strncmp(item, "minecraft:", 10) == 0) {
@@ -310,35 +388,7 @@ void print_recipe(const char *item, const char *recipes_path) {
 
         /* ingredients (shapeless or subrecipes) */
         if (win && strstr(win, "\"ingredients\"")) {
-            printf("Ingredients:\n");
-            char *ing = strstr(win, "\"ingredients\"");
-            if (ing) {
-                char *br = strchr(ing, '[');
-                if (br) {
-                    char *s = br + 1;
-                    while (1) {
-                        char *q = strchr(s, '"');
-                        if (!q) {
-                            break;
-                        }
-                        char *q2 = strchr(q + 1, '"');
-                        if (!q2) {
-                            break;
-                        }
-                        int len = q2 - (q + 1);
-                        char *val = malloc(len + 1);
-                        memcpy(val, q + 1, len);
-                        val[len] = '\0';
-                        printf("  %s\n", val);
-                        free(val);
-                        s = q2 + 1;
-                        char *closebr = strchr(s, ']');
-                        if (closebr && (strchr(s, '"') == NULL || closebr < strchr(s, '"'))) {
-                            break;
-                        }
-                    }
-                }
-            }
+            print_recipe_ingredients(win);
         }
 
         printf("\n");

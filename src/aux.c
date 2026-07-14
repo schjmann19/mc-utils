@@ -9,7 +9,7 @@
 
 void ver(void) {
     printf("mc-utils version %s\n", VER);
-    printf("compiled on %s, %s\n\n", __TIME__, __DATE__);
+    printf("compiled on %s, %s; for %s\n\n", __TIME__, __DATE__);
     puts("by Jimena Neumann <schjmann19@gmail.com>\n");
 }
 

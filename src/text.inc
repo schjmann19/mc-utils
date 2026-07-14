@@ -1,5 +1,6 @@
 #define USAGE_TEXT \
     "\
+    mc-util --status, --srvcheck         Check the status of a Minecraft server (online?, players?, MOTD, etc)\n\
     mc-util --goal <number> [--small]    Calculates stacks for a given number\n\
     mc-util --enchant                    Show enchanting table requirements (wip)\n\
     mc-util --anvil                      Show anvil crafting requirements\n\

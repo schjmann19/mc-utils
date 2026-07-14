@@ -6,21 +6,19 @@ PREFIX ?= /usr/local
 BINDIR ?= $(PREFIX)/bin
 DESTDIR ?=
 
-ifeq ($(DEBUG),0)
-	CFLAGS += -s
-endif
+STRIPFLAG != if [ "$(DEBUG)" = "0" ]; then echo "-s"; fi
 
 LDFLAGS ?= -Wl,-Bstatic -L extractor/target/release -lmc_recipe_extractor -Wl,-Bdynamic -lbz2 -lssl -lcrypto -lm -lresolv
 
-BIN_DIR := bin
-SRC := src/mc-utils.c src/aux.c src/netherite-left.c src/recipes.c src/crconvert.c src/dns.c src/varint.c src/packet.c src/protocol.c common_utils/src/strings.c
+BIN_DIR = bin
+SRC = src/mc-utils.c src/aux.c src/netherite-left.c src/recipes.c src/crconvert.c src/dns.c src/varint.c src/packet.c src/protocol.c common_utils/src/strings.c
 
 .PHONY: all extractor noembed mc-util install uninstall clean debug
 
 all: mc-util
 
-debug: DEBUG=1
-debug: mc-util
+debug:
+	$(MAKE) DEBUG=1 mc-util
 
 # build extractor with cargo
 extractor:
@@ -32,11 +30,11 @@ extractor:
 
 # build mc-util with static linked rust lib
 mc-util: extractor $(BIN_DIR) $(SRC)
-	$(CC) $(CFLAGS) -o $(BIN_DIR)/mc-util $(SRC) $(LDFLAGS)
+	$(CC) $(CFLAGS) $(STRIPFLAG) -o $(BIN_DIR)/mc-util $(SRC) $(LDFLAGS)
 
 # build mc-util without embedded extractor
 noembed: extractor $(BIN_DIR) $(SRC)
-	$(CC) $(CFLAGS) -o $(BIN_DIR)/mc-util $(SRC) $(LDFLAGS)
+	$(CC) $(CFLAGS) $(STRIPFLAG) -o $(BIN_DIR)/mc-util $(SRC) $(LDFLAGS)
 
 $(BIN_DIR):
 	mkdir -p $(BIN_DIR)
